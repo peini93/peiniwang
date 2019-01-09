@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-family:Verdana, Arial,微軟正黑體; margin:0; background:url(../img/intro_bg.jpg) top center no-repeat #16151b; -webkit-text-size-adjust: none; overflow:hidden;}
+.circle{ width:670px; height:670px; position:absolute; left:50%; top:50%; margin-top:-335px; margin-left:-335px; z-index:995;}
+.circle2{ width:670px; height:670px; position:absolute; left:50%; top:50%; margin-top:-335px; margin-left:-335px; z-index:998;}
+.word{ width:150px; height:50px; position:absolute; left:50%; top:50%; margin-top:-25px; margin-left:-75px; z-index:996; opacity:0;}
+.word1{ width:240px; height:240px; position:absolute;  z-index:996; top:50%; left:50%; margin-top:-138px; margin-left:-116px; opacity:0; filter:alpha(opacity=0);}
+.word2{ width:490px; height:160px; position:absolute; z-index:1000; top:50%; left:50%; margin-left:-245px; margin-top:-100px; opacity:0; filter:alpha(opacity=0);}
+.word3-1{ width:350px; height:90px; position:absolute; top:50%; left:50%; margin-left:-560px; margin-top:-180px; opacity:0; filter:alpha(opacity=0);}
+.word3-2{ width:290px; height:70px; position:absolute; top:50%; left:50%; margin-left:100px; margin-top:-350px; opacity:0; filter:alpha(opacity=0);}
+.word3-3{ width:360px; height:90px; position:absolute; top:50%; left:50%; margin-left:200px; margin-top:150px; opacity:0; filter:alpha(opacity=0);}
+.box{ width:240px; height:200px; position:absolute; z-index:996px; top:50%; left:50%; margin-top:-100px; margin-left:-120px; overflow:hidden;}
+.pro1{ width:240px; height:250px; position:absolute; z-index:994; top:50%; left:50%; margin-top:-400px; margin-left:-700px; opacity:0;}
+.pro2{ width:260px; height:280px; position:absolute; z-index:994; top:50%; left:50%; margin-top:-100px; margin-left:500px; opacity:0;}
+.pro3{ width:140px; height:210px; position:absolute; z-index:994; top:50%; left:50%; margin-top:-500px; margin-left:300px; opacity:0;}
+.pro4{ width:370px; height:210px; position:absolute; z-index:994; top:50%; left:50%; margin-top:250px; margin-left:-850px; opacity:0;}
+.pro5{ width:390px; height:360px; position:absolute; z-index:994; top:50%; left:50%; margin-top:150px; margin-left:-150px; opacity:0;}
+.pro6{ width:510px; height:380px; position:absolute; z-index:994; top:50%; left:50%; margin-top:-600px; margin-left:650px; opacity:0;}
+.pro7{ width:360px; height:420px; position:absolute; z-index:994; top:50%; left:50%; margin-top:-100px; margin-left:-1350px; opacity:0;}
+.pro8{ width:450px; height:220px; position:absolute; z-index:994; top:50%; left:50%; margin-top:-400px; margin-left:-900px; opacity:0;}
+.pro9{ width:420px; height:300px; position:absolute; z-index:994; top:50%; left:50%; margin-top:-750px; margin-left:-200px; opacity:0;}
+.pro10{ width:470px; height:360px; position:absolute; z-index:994; top:50%; left:50%; margin-top:150px; margin-left:950px; opacity:0;}
+
+
+

@@ -1,0 +1,67 @@
+$img: "../images/"
+$img_m: "../images/mobile/"
+
+%clear
+	content: ''
+	display: block
+	clear: both
+
+@mixin bg($pic)
+	background: url(#{$img}#{$pic}) no-repeat
+	width: image-width("#{$img}#{$pic}")  
+	height: image-height("#{$img}#{$pic}")
+
+
+@mixin rwd($point)
+	@if $point == pc
+		@media only screen and (max-width: 1200px)
+			@content
+	@else if $point == pad
+		@media only screen and (max-width: 992px)
+			@content
+	@else if $point == mobile
+		@media only screen and (max-width: 768px)
+			@content
+
+@mixin text-hide
+	text-indent: 100%
+	white-space: nowrap
+	overflow: hidden
+
+@mixin poa($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
+	position: absolute
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left
+	z-index: $zindex
+	@content
+
+@mixin por($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
+	position: relative
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left
+	z-index: $zindex
+	@content
+
+@mixin pof($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
+	position: fixed
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left
+	z-index: $zindex
+	@content
+
+// @mixin grid($cloum_number,$cloum_gutter)  
+// 	//總寬度 -    欄位間距  *    (欄位數量-1)      /   欄位數量  
+// 	width: ($width - $cloum_gutter*($cloum_number - 1) ) / $cloum_number  
+// 	margin-right: $cloum_gutter  
+// 	-webkit-box-sizing: border-box  
+// 	-moz-box-sizing: border-box  
+// 	box-sizing: border-box  
+//   //   欄位數量  
+//   &:nth-child(#{$cloum_number}n)  
+// 		margin-right: 0 

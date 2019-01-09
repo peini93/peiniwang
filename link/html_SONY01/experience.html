@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="">
+<meta property="og:title" content="" />
+<meta property="og:image" content="" />
+<title>Sony Xperia™ Z 感動，才正要開始！</title>
+<link rel="shortcut icon" href="http://www.sonymobile.com/global-zh/wp-content/themes/semc-main/img/ico/favicon.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+<link href="style/reset.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/sonyZ.js"></script>
+<script type="text/javascript" src="js/share.js"></script>
+<script type='text/javascript'>
+$(document).ready(function(){
+	$(function(){
+		$('body').waitForImages({
+			waitForAll: true,
+			finished: function() {
+				$("#loading").fadeOut("slow",function(){});
+			}
+		});
+	});
+	
+	Resize();
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+<div id="loading"></div>
+
+<div id="header">
+<div id="logo"><a href="http://www.sonymobile.com/" target="_blank">sony</a></div>
+<ul id="nav">
+<li><a href="index.html">活動首頁</a></li>
+<li><a href="game.html">新年祈願</a></li>
+<li><a href="rule.html">活動辦法</a></li>
+<li><a href="products.html">產品介紹</a></li>
+<li><a href="video.html">影片欣賞</a></li>
+<li><a href="experience.html" class="selected">體驗會參加說明</a></li>
+</ul>
+</div><!--header End-->
+
+
+<div id="main" class="comingsoon">
+
+</div><!--main End-->
+
+
+<div id="footer" class="hideword">
+<div id="L"><a href="#" onclick="share('f'); return false;" class="share">分享fb</a></div>
+<div id="R"><a href="https://www.facebook.com/sonymobiletw" target="_blank" class="fans">加入Sony Mobile TW 粉絲團</a></div>
+</div><!--footer End-->
+
+
+</div><!--containter End-->
+</body>
+</html>

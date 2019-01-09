@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* for all
+------------------------------ */
+
+#google-search {
+	line-height: 16px;
+}
+#headline a {
+	height: 460px;
+}
+#index-category .category, #section .main {
+	display: inline;
+}
+#index-category .item {
+	display: inline;
+}
+#index-category .category a.group h3 {
+	margin-top: -3px;
+	white-space: normal;
+	text-overflow: normal;
+	overflow: visible;
+}
+#index-category .category a.group p {
+	height: 30px;
+	overflow: hidden;
+	margin-left: 100px;
+	cursor: pointer;
+}
+#index-category .category .row {
+	padding-bottom: 12px;
+}
+.sidebar a, .sidebar h2 {
+	height: 1%;
+}
+.sidebar .inner {
+	position: relative;
+	top: 0px;
+}
+.footer-article li {
+	height: 1%;
+}
+.panel-item:hover {
+}
+/* buttons hack */
+
+.btns .btn, .btns button {
+	line-height: 1.3em;
+	background: #bee0bd;
+	border: 1px solid #a1bea0;
+	padding: 7px 20px 4px;
+}
+.btns button {
+	padding: 8px 10px 5px;
+}
+.btns .btn:hover, .btns button:hover {
+	color: #454;
+	border-color: #676;
+}
+.btns .btn:active, .btns button:active {
+	background: #a9a25d;
+}
+.tablelist .btns .btn {
+	display: block;
+}
+#section .main .fast a:hover .reply-icon {
+	background: url(../images/replysymbol2.png) no-repeat left top;
+}
+/* post  */
+
+.forum-content .single-post .inner {
+	height: 55px;
+	max-height: 55px;
+	margin-bottom: 70px;
+}
+.forum-content .single-post .inner .author-detail {
+	top:65px;
+}
+/* #section .post-page form .input-text */
+#section .post-page form textarea {
+	display: block;
+	float: left;
+}
+#section .main table .subject-text img {
+	vertical-align: middle;
+}
+/* for ie6
+------------------------------ */
+
+* html .group {
+	height: 1%;
+}
+* html #index-category .item h2 a:hover:after {
+	letter-spacing: 1px;
+}
+* html .sidebar .fast-ad a:hover .row {
+	border: 100px solid #ccc;
+}
+* html .sidebar .fast-ad a:hover .row p {
+	text-decoration: underline;
+}
+* html #section .main {
+	height: 1500px;
+}
+* html #section .main form div {
+	height: 1%;
+	overflow: visible;
+}
+* html #section .main form .title {
+	position: relative;
+	top: 2px;
+}
+* html #section .main form .input-text, * html #section .sidebar form .input-text, * html #section .main form textarea {
+	background: none;
+}
+* html #section .main form .btns, * html #section .main form .item-text, * html #section .main form .note {
+	padding-left: 214px;
+}
+* html #section .main form .ie-text {
+	padding-left: 0px;
+}
+* html #section .main form .ie-button {
+	padding-left: 113px;
+}
+* #section .left-side .inner {
+	margin-right: 0px;
+	margin-left: 11px;
+}
+/* for ie7
+------------------------------ */
+
+*:first-child+html .group {
+	min-height: 1px;
+}
+.navbar {
+	line-height:1.2em;
+}
+#section button {
+	padding-top: 5px;
+}
+#action {
+	padding-top: 5px;
+}
+#section .main .subject-menu ul li a.subject-menu-ad {
+	background:none;
+	padding:4px 8px 0px;	
+}
+#section .main form .item-text #forumrule {
+	margin-left:0px;
+	padding:5px 10px 5px 10px;
+	border:1px solid #eeeeee;
+	height:180px;
+	overflow:scroll;
+}
+#section .main form .item-text #previewblock {
+	padding:0px;
+	width:100%;
+}
+#section .main form .item-text #imagepreview {
+	padding:0px;
+	width:100%;
+}
+#section form {
+	padding-left:0px;
+}
+.navbar-b {
+	width:740px;
+	margin-top:20px;
+	margin-left:20px;
+}
+#section .main blockquote {
+	font-size:12px;
+	line-height:1.2em;
+	color:#666666;
+	border:#CCCCCC 1px dotted;
+	padding:5px;
+	margin:5px;
+}
+.single-post .tools .btn {
+	padding:3px 4px 0px;
+}

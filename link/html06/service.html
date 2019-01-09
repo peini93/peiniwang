@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="zh-TW">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="zh-tw">
+	<meta name="description" content="即日起，至活動網站上傳照片，加入櫻花改造行列，就有機會獲得渦輪變頻除油煙機、雙內焰安全爐、淨水器，最大獎10萬元改造金！參加票選還能再抽康寧平底鍋！快! 立馬參加~即刻拍照上傳，大獎就有機會到你家!">
+	<meta property="og:title" content="【10萬獎金等你拿，櫻花改造地獄廚房！】" />
+	<meta property="og:image" content="http://sakura.2of3.net/img/200x200.jpg" />
+	<title>櫻花愛在家</title>
+	<script src="https://connect.facebook.net/zh_TW/all.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script src="js/jpreloader.min.js"></script>
+	<script type="text/javascript" src="js/ga.js"></script>
+	<script type="text/javascript" src="js/share.js"></script>
+	<link rel="shortcut icon" href="img/16x16.jpg"/>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/style_sakura.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/jpreloader.css" />
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			addPageView("serve");
+			$('body').jpreLoader({
+				splashID: "#jSplash",
+				loaderVPos: '41%',
+				autoClose: true
+     		}, function() {	
+				$('#wrapper').fadeIn(500);
+	   		});
+		});	
+
+		var flashvars = {}
+  		var attributes = {name:"flashcontent"}
+  		var params ={allowFullScreen:'true',allowScriptAccess:'always',quality:'high',menu:'false',wmode:'opaque'}
+  		swfobject.embedSWF("swf/service.swf", "flashcontent", "100%", "620","11","js/expressInstall.swf",flashvars,params,attributes);
+	</script>
+</head>
+
+<body>
+	<!-- loading Screen -->
+	<div id="jSplash">
+		<img src="img/logo.gif" ></div>
+	<!-- End loading Screen -->
+
+	<div id="wrapper">
+		<!--上選單開始 -->
+		<div class="top">
+			<div class="top_main">
+				<ul>
+					<li class="top_main1"></li>
+					<li class="top_main2">
+						<a href="index.html" onclick="addEvent('btn','index');"><div class="btn01">上傳照片活動截止囉!即日起，參加【地獄廚房票選】就有機會獲得廚房好禮喔!</div></a>
+					</li>
+					<li class="top_main3">
+						<a href="vote.html" onclick="addEvent('btn','vote');"></a>
+					</li>
+					<li class="top_main4">
+						<a href="rule.html" onclick="addEvent('btn','rule');"></a>
+					</li>
+					<li class="select5">
+						<a href="service.html" onclick="addEvent('btn','serve');"></a>
+					</li>
+					<li class="top_main6">
+						<a href="winners.html" onclick="addEvent('btn','winners');"></a>
+						<!-- <a href="list.html"></a>-->
+					</li>
+					<li class="top_main7">
+						<a href="#" onclick="addEvent('btn','fb_1'); share(); return false;"></a>
+					</li>
+				</ul>
+		</div>
+	</div>
+	<!--上選單結束 -->
+	<div class="service_main" >
+		<div id="flashcontent"></div>
+	</div>
+
+	<div class="all_down">
+		<div class="footer_other">
+			<a href="https://www.facebook.com/sakura.tw" class="fbicon" onclick="addEvent('btn','fb_2');"></a>
+			服務專線 0800-021818 / 服務信箱 service@sakura.com.tw Copyright © 2013 Taiwan Sakura Corporation. All rights reserved.
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

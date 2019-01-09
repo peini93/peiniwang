@@ -1,0 +1,432 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.content::after, .main .btns::after, .blogger ul::after, .blogger ul li a::after, .products ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html, body {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+}
+
+a {
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  text-decoration: none;
+}
+
+#jSplash {
+  width: 430px;
+  height: 150px;
+  background: url(../images/loading.png) no-repeat;
+  margin: auto;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+  position: relative;
+}
+
+.index {
+  background: url(../images/indexBG.jpg) no-repeat center top;
+}
+
+.content {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 54px;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid #898989;
+}
+.header a.logo {
+  display: block;
+  float: left;
+  margin: 15px 0 0 0;
+}
+.header a.logo img {
+  display: block;
+}
+
+.main {
+  width: 100%;
+}
+.main .content {
+  height: 646px;
+}
+.main h1 {
+  width: 465px;
+  height: 260px;
+  position: absolute;
+  top: 24px;
+  left: 535px;
+  z-index: 1;
+}
+.main .theta360 {
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  z-index: 1;
+}
+.main .theta360 .photo360 {
+  width: 525px;
+  height: 267px;
+}
+.main .btns {
+  margin: 18px 0 0 0;
+  overflow: hidden;
+}
+.main .btns a {
+  height: 36px;
+  padding: 0px 10px 0px 0px;
+  display: block;
+  float: left;
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+}
+.main .btns a span {
+  position: relative;
+  z-index: 2;
+}
+.main .btns a .bg {
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+.main .btns a:hover {
+  text-decoration: underline;
+}
+.main .btns a:hover .bg {
+  background: #787878 url(../images/icon1.png) no-repeat right center;
+  -moz-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+.main .btns .btn1 {
+  width: 165px;
+  margin: 0 7px 0 0;
+}
+.main .btns .btn1 .bg {
+  width: 175px;
+  background: #e95a92 url(../images/icon1.png) no-repeat right center;
+}
+.main .btns .btn2 {
+  width: 175px;
+  margin: 0 7px 0 0;
+}
+.main .btns .btn2 .bg {
+  width: 185px;
+  background: #2fbae7 url(../images/icon1.png) no-repeat right center;
+}
+.main .btns .btn3 {
+  width: 141px;
+}
+.main .btns .btn3 .bg {
+  width: 151px;
+  background: #d8d61a url(../images/icon1.png) no-repeat right center;
+}
+.main .cf {
+  width: 530px;
+  height: 250px;
+  background: url(../images/main_cf.png) no-repeat;
+  position: absolute;
+  top: 380px;
+  left: 0px;
+  z-index: 1;
+}
+.main .cf .youtube {
+  width: 330px;
+  height: 185px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.main .cf p {
+  width: 330px;
+  font-size: 15px;
+  color: #000;
+  line-height: 20px;
+  position: absolute;
+  top: 195px;
+  right: 5px;
+}
+.main .p1 {
+  width: 292px;
+  height: 349px;
+  position: absolute;
+  top: 323px;
+  left: 527px;
+  z-index: 3;
+  -moz-animation: p1ani 2s linear infinite alternate;
+  -webkit-animation: p1ani 2s linear infinite alternate;
+  animation: p1ani 2s linear infinite alternate;
+}
+.main .p2 {
+  width: 371px;
+  height: 344px;
+  position: absolute;
+  top: 290px;
+  left: 695px;
+  z-index: 2;
+  -moz-animation: p2ani 5s linear infinite alternate;
+  -webkit-animation: p2ani 5s linear infinite alternate;
+  animation: p2ani 5s linear infinite alternate;
+}
+.main .shadow {
+  width: 260px;
+  height: 100px;
+  position: absolute;
+  top: 620px;
+  left: 617px;
+  z-index: 2;
+  -moz-animation: shadowani 2s linear infinite alternate;
+  -webkit-animation: shadowani 2s linear infinite alternate;
+  animation: shadowani 2s linear infinite alternate;
+}
+
+@-moz-keyframes p1ani {
+  to {
+    -moz-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+  }
+}
+@-webkit-keyframes p1ani {
+  to {
+    -webkit-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+  }
+}
+@keyframes p1ani {
+  to {
+    -moz-transform: translate(0, -30px);
+    -ms-transform: translate(0, -30px);
+    -webkit-transform: translate(0, -30px);
+    transform: translate(0, -30px);
+  }
+}
+@-moz-keyframes shadowani {
+  to {
+    opacity: 0.3;
+  }
+}
+@-webkit-keyframes shadowani {
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes shadowani {
+  to {
+    opacity: 0.3;
+  }
+}
+@-moz-keyframes p2ani {
+  to {
+    -moz-transform: translate(10px, -20px) scale(0.93);
+    transform: translate(10px, -20px) scale(0.93);
+  }
+}
+@-webkit-keyframes p2ani {
+  to {
+    -webkit-transform: translate(10px, -20px) scale(0.93);
+    transform: translate(10px, -20px) scale(0.93);
+  }
+}
+@keyframes p2ani {
+  to {
+    -moz-transform: translate(10px, -20px) scale(0.93);
+    -ms-transform: translate(10px, -20px) scale(0.93);
+    -webkit-transform: translate(10px, -20px) scale(0.93);
+    transform: translate(10px, -20px) scale(0.93);
+  }
+}
+.blogger {
+  width: 100%;
+  height: 260px;
+  background: #2fbae7;
+}
+.blogger .content {
+  padding: 60px 0 0 0;
+}
+.blogger h2 {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+}
+.blogger ul {
+  overflow: hidden;
+}
+.blogger ul li {
+  float: left;
+  margin: 0 20px 0 0;
+  margin: 0 13px 0 0\9;
+}
+.blogger ul li:nth-child(3n) {
+  margin: 0;
+}
+.blogger ul li a {
+  position: relative;
+  display: block;
+}
+.blogger ul li a .pic {
+  float: left;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+.blogger ul li a:hover .pic {
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.blogger ul li a:hover .word p {
+  text-decoration: underline;
+}
+.blogger ul li a .word {
+  width: 127px;
+  float: left;
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 18px;
+  position: relative;
+}
+.blogger ul li a .word .name {
+  font-size: 16px;
+  line-height: 22px;
+  color: #faff1c;
+  font-weight: bold;
+  border-bottom: 1px solid #faff1c;
+  padding: 0px 0 5px 0;
+  margin: 0 0 5px 0;
+}
+.blogger ul li a .word .name span {
+  font-size: 20px;
+}
+.blogger ul li a .word .more {
+  width: 76px;
+  height: 34px;
+  position: absolute;
+  top: 152px;
+  right: -3px;
+}
+.blogger ul li a .word .more img {
+  display: block;
+}
+
+.products {
+  width: 100%;
+  height: 360px;
+  background: #e95a92;
+}
+.products .content {
+  width: 972px;
+  padding: 66px 0 0 28px;
+}
+.products h2 {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+}
+.products ul {
+  cursor: pointer;
+  overflow: hidden;
+}
+.products ul:hover li p {
+  text-decoration: underline;
+}
+.products ul li {
+  float: left;
+  margin: 0 24px 0 0;
+}
+.products ul li:nth-child(4n) {
+  margin: 0;
+}
+.products ul li img {
+  display: block;
+}
+.products ul li p {
+  font-size: 18px;
+  color: #faff1c;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  line-height: 23px;
+  text-align: center;
+  margin: 12px 0 0 0;
+}
+
+/*# sourceMappingURL=main.css.map */

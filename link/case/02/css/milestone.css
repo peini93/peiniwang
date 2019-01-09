@@ -1,0 +1,309 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+}
+
+#container{
+	width:1000px;
+	height:760px;
+	background:#17151c;
+	position:relative;
+	overflow:hidden;
+}
+
+#header a,#footer a,#main a{
+	width:100%;
+	height:100%;
+	text-indent:-9999px; 
+    font-size:0;
+	display:block;
+}
+
+#header{
+	width:100%;
+	height: 75px;
+	background: #000;
+	position:relative;
+	z-index: 9999;
+}
+
+#header a#logo{
+	width: 156px;
+	height: 75px;
+	background: url(../img/sony_logo.png) no-repeat;
+	float: left;
+}
+
+
+#header ul{
+	width: 389px;
+	height:75px;
+	float:right;
+}
+#header ul li{float:left;}
+#header a{height:75px;}
+#header a.nav1{width:150px; background:url(../img/nav1.jpg) no-repeat top;}
+#header a.nav2{width:107px; background:url(../img/nav2.jpg) no-repeat top;}
+#header a.nav3{width:132px; background:url(../img/nav3.jpg) no-repeat top;}
+#header a.nav1:hover,#header a.nav2:hover,#header a.nav3:hover,#header a.selected{background-position:bottom;}
+
+
+#footer{width:100%; height: 30px; background: #000; position:relative; z-index: 9999;}
+
+#footer #fL{width:350px; height:30px; background:url(../img/footer_l.png) no-repeat; position:relative; float:left;}
+#footer #fL a.share{width:50px; height:15px; position:absolute; top:8px; left:293px; background:url(../img/share_btn.png) no-repeat top;}
+#footer #fL a.share:hover{background-position:bottom;}
+
+#footer #fR{width:200px; height:30px; position:relative; float:right;}
+#footer #fR a.fans{width:150px; height:16px; position:absolute; top:7px; left:25px; background:url(../img/fans_btn.png) no-repeat top;}
+#footer #fR a.fans:hover{background-position:bottom;}
+
+
+#quiz{
+	width:100%;
+	height:100%;
+	display: none;
+}
+
+
+#main{
+	width:100%;
+	height:655px;
+	position:relative;
+}
+
+#titleWord{
+	width:1000px;
+	height:125px;
+	background: url(../img/titlePic.png) 100px 18px no-repeat;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 5099;
+}
+
+#titleWord a.go{
+	width:211px;
+	height:90px;
+	background: url(../img/go_btn.png) no-repeat top;
+	position: absolute;
+	top:23px;
+	left:700px;
+}
+#titleWord a.go:hover{background-position:bottom;}
+
+#yearMenu{
+	width:1000px;
+	height:35px;
+	background: url(../img/yearBtn.png) no-repeat top;
+	position: absolute;
+	top:620px;
+	left:0;
+	z-index: 5099;
+}
+
+#yearMenu ul li{float:left;}
+#yearMenu a{height:35px;}
+#yearMenu a.y1{width:72px;}
+#yearMenu a.y2{width:55px;}
+#yearMenu a.y3{width:55px;}
+#yearMenu a.y4{width:55px;}
+#yearMenu a.y5{width:62px;}
+#yearMenu a.y6{width:55px;}
+#yearMenu a.y7{width:55px;}
+#yearMenu a.y8{width:48px;}
+#yearMenu a.y9{width:48px;}
+#yearMenu a.y10{width:62px;}
+#yearMenu a.y11{width:63px;}
+#yearMenu a.y12{width:58px;}
+#yearMenu a.y13{width:65px;}
+#yearMenu a.y14{width:46px;}
+#yearMenu a.y15{width:45px;}
+#yearMenu a.y16{width:57px;}
+#yearMenu a.y17{width:57px;}
+#yearMenu a.y18{width:42px;}
+#yearMenu a.y1:hover,#yearMenu a.y1.selected{background:url(../img/yearBtn.png) 0px bottom;}
+#yearMenu a.y2:hover,#yearMenu a.y2.selected{background:url(../img/yearBtn.png) -72px bottom;}
+#yearMenu a.y3:hover,#yearMenu a.y3.selected{background:url(../img/yearBtn.png) -127px bottom;}
+#yearMenu a.y4:hover,#yearMenu a.y4.selected{background:url(../img/yearBtn.png) -182px bottom;}
+#yearMenu a.y5:hover,#yearMenu a.y5.selected{background:url(../img/yearBtn.png) -237px bottom;}
+#yearMenu a.y6:hover,#yearMenu a.y6.selected{background:url(../img/yearBtn.png) -299px bottom;}
+#yearMenu a.y7:hover,#yearMenu a.y7.selected{background:url(../img/yearBtn.png) -354px bottom;}
+#yearMenu a.y8:hover,#yearMenu a.y8.selected{background:url(../img/yearBtn.png) -409px bottom;}
+#yearMenu a.y9:hover,#yearMenu a.y9.selected{background:url(../img/yearBtn.png) -457px bottom;}
+#yearMenu a.y10:hover,#yearMenu a.y10.selected{background:url(../img/yearBtn.png) -505px bottom;}
+#yearMenu a.y11:hover,#yearMenu a.y11.selected{background:url(../img/yearBtn.png) -567px bottom;}
+#yearMenu a.y12:hover,#yearMenu a.y12.selected{background:url(../img/yearBtn.png) -630px bottom;}
+#yearMenu a.y13:hover,#yearMenu a.y13.selected{background:url(../img/yearBtn.png) -688px bottom;}
+#yearMenu a.y14:hover,#yearMenu a.y14.selected{background:url(../img/yearBtn.png) -753px bottom;}
+#yearMenu a.y15:hover,#yearMenu a.y15.selected{background:url(../img/yearBtn.png) -799px bottom;}
+#yearMenu a.y16:hover,#yearMenu a.y16.selected{background:url(../img/yearBtn.png) -844px bottom;}
+#yearMenu a.y17:hover,#yearMenu a.y17.selected{background:url(../img/yearBtn.png) -901px bottom;}
+#yearMenu a.y18:hover,#yearMenu a.y18.selected{background:url(../img/yearBtn.png) -958px bottom;}
+
+
+
+#bgBar{
+	width:100%;
+	height:100%;
+	background: url(../img/bgbg.png) repeat-x center;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 998;
+}
+
+#bgBall1{
+	width:20000px;
+	height:100%;
+	background: #17151c url(../img/bg.jpg) repeat-x center;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 996;
+}
+
+#bgBall2{
+	width:18000px;
+	height:100%;
+	background: url(../img/bgBall2.png) no-repeat 0px center;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 997;
+}
+
+#bgBall3{
+	width:18000px;
+	height:100%;
+	background: url(../img/bgBall3.png) no-repeat 0px center;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 2009;
+}
+
+#allphone{
+	width:18000px;
+	height:655px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 1010;
+}
+#allword{
+	width:18000px;
+	height:655px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 1009;
+}
+#alltime{
+	width:18000px;
+	height:655px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	z-index: 1011;
+}
+
+.area{width: 1000px; height: 655px; position: relative; float:left;}
+.phone1{width: 375px; height: 490px; position: absolute; top:105px; left:85px;}
+.word1{width: 525px; height: 305px; position: absolute; top:230px; left:475px;}
+.time1_1{width: 525px; height: 200px; position: absolute; top:425px; left:-129px;}
+.time1_2{width: 290px; height: 95px; position: absolute; top:190px; left:685px;}
+
+.phone2{width: 445px; height: 485px; position: absolute; top:110px; left:75px;}
+.word2{width: 540px; height: 330px; position: absolute; top:245px; left:478px;}
+.time2{width: 480px; height: 170px; position: absolute; top:160px; left:520px;}
+
+.phone3{width: 450px; height: 390px; position: absolute; top:120px; left:180px;}
+.word3{width: 565px; height: 330px; position: absolute; top:165px; left:467px;}
+.time3{width: 450px; height: 180px; position: absolute; top:395px; left:80px;}
+
+.phone4{width: 410px; height: 435px; position: absolute; top:130px; left:90px;}
+.word4{width: 570px; height: 325px; position: absolute; top:230px; left:460px;}
+.time4{width: 475px; height: 175px; position: absolute; top:444px; left:-115px;}
+
+.phone5{width: 350px; height: 400px; position: absolute; top:120px; left:95px;}
+.word5{width: 545px; height: 330px; position: absolute; top:140px; left:442px;}
+.time5{width: 455px; height: 160px; position: absolute; top:447px; left:361px;}
+
+.phone6_1{width: 435px; height: 470px; position: absolute; top:130px; left:80px;}
+.phone6_2{width: 270px; height: 205px; position: absolute; top:400px; left:695px;}
+.word6{width: 540px; height: 310px; position: absolute; top:193px; left:472px;}
+.time6{width: 420px; height: 155px; position: absolute; top:110px; left:505px;}
+
+.phone7_1{width: 330px; height: 430px; position: absolute; top:125px; left:100px;}
+.phone7_2{width: 270px; height: 200px; position: absolute; top:395px; left:691px;}
+.word7{width: 540px; height: 320px; position: absolute; top:167px; left:460px;}
+.time7{width: 420px; height: 150px; position: absolute; top:465px; left:225px;}
+
+.phone8_1{width: 350px; height: 360px; position: absolute; top:120px; left:90px;}
+.phone8_2{width: 390px; height: 235px; position: absolute; top:354px; left:572px;}
+.word8{width: 540px; height: 320px; position: absolute; top:135px; left:444px;}
+.time8{width: 410px; height: 155px; position: absolute; top:450px; left:75px;}
+
+.phone9{width: 360px; height: 360px; position: absolute; top:158px; left:75px;}
+.word9{width: 550px; height: 330px; position: absolute; top:235px; left:420px;}
+.time9{width: 450px; height: 150px; position: absolute; top:158px; left:460px;}
+
+.phone10_1{width: 420px; height: 300px; position: absolute; top:190px; left:30px;}
+.phone10_2{width: 240px; height: 180px; position: absolute; top:404px; left:696px;}
+.phone10_3{width: 270px; height: 390px; position: absolute; top:-90px; left:234px;}
+.word10{width: 545px; height: 320px; position: absolute; top:195px; left:455px;}
+.time10{width: 450px; height: 145px; position: absolute; top:440px; left:130px;}
+
+.phone11_1{width: 370px; height: 305px; position: absolute; top:163px; left:72px;}
+.phone11_2{width: 170px; height: 190px; position: absolute; top:410px; left:758px;}
+.word11{width: 540px; height: 320px; position: absolute; top:197px; left:460px;}
+.time11_1{width: 440px; height: 155px; position: absolute; top:469px; left:40px;}
+.time11_2{width: 330px; height: 110px; position: absolute; top:142px; left:523px;}
+
+.phone12_1{width: 325px; height: 430px; position: absolute; top:110px; left:105px;}
+.phone12_2{width: 340px; height: 240px; position: absolute; top:366px; left:635px;}
+.word12{width: 545px; height: 320px; position: absolute; top:145px; left:455px;}
+.time12{width: 415px; height: 145px; position: absolute; top:455px; left:160px;}
+
+.phone13_1{width: 410px; height: 425px; position: absolute; top:140px; left:30px;}
+.phone13_2{width: 260px; height: 175px; position: absolute; top:433px; left:705px;}
+.word13{width: 540px; height: 325px; position: absolute; top:208px; left:401px;}
+.time13{width: 450px; height: 165px; position: absolute; top:120px; left:355px;}
+
+.phone14_1{width: 250px; height: 385px; position: absolute; top:105px; left:125px;}
+.phone14_2{width: 185px; height: 180px; position: absolute; top:439px; left:692px;}
+.word14{width: 550px; height: 465px; position: absolute; top:92px; left:440px;}
+.time14{width: 410px; height: 140px; position: absolute; top:473px; left:30px;}
+
+.phone15{width: 350px; height: 410px; position: absolute; top:145px; left:75px;}
+.word15{width: 535px; height: 325px; position: absolute; top:285px; left:435px;}
+.time15{width: 410px; height: 150px; position: absolute; top:202px; left:471px;}
+
+.phone16_1{width: 270px; height: 350px; position: absolute; top:125px; left:95px;}
+.phone16_2{width: 210px; height: 145px; position: absolute; top:461px; left:704px;}
+.word16{width: 540px; height: 450px; position: absolute; top:98px; left:438px;}
+.time16{width: 425px; height: 150px; position: absolute; top:470px; left:35px;}
+
+.phone17{width: 410px; height: 400px; position: absolute; top:155px; left:40px;}
+.word17{width: 535px; height: 330px; position: absolute; top:280px; left:450px;}
+.time17{width: 420px; height: 150px; position: absolute; top:195px; left:485px;}
+
+.phone18_1{width: 470px; height: 380px; position: absolute; top:116px; left:49px;}
+.phone18_2{width: 160px; height: 150px; position: absolute; top:440px; left:793px;}
+.word18{width: 560px; height: 455px; position: absolute; top:96px; left:440px;}
+.time18{width: 415px; height: 150px; position: absolute; top:478px; left:95px;}
+
+
+
+
+
+
+
+
+
+
+
+

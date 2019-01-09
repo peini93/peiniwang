@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="">
+<meta property="og:title" content="" />
+<meta property="og:image" content="" />
+<title>Sony Xperia™ Z 感動，才正要開始！</title>
+<link rel="shortcut icon" href="http://www.sonymobile.com/global-zh/wp-content/themes/semc-main/img/ico/favicon.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+
+<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />
+
+<link href="style/reset.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/sonyZ.js"></script>
+<script type="text/javascript" src="js/share.js"></script>
+
+<script type='text/javascript'>
+$(document).ready(function(){
+	
+	$('html,body').scrollTop($(document).height());
+	
+	$(function(){
+		$('body').waitForImages({
+			waitForAll: true,
+			finished: function() {
+				$("#loading").fadeOut("slow",function(){
+					$('html,body').scrollTop($(document).height());
+					$('html,body').animate({scrollTop:0},2500);
+				});
+
+			}
+		});
+	});
+	
+	Resize();
+	
+	$(window).scroll(function(){
+		var x = $(this).scrollTop();
+		$('#img_a').css('top',360+parseInt(-x/10));
+		$('#img_b').css('top',690+parseInt(-x/5));
+		$('#img_c').css('top',1380+parseInt(-x/2));
+		$('#img_d').css('top',60+parseInt(-x/5));
+		$('#movie_min').css('top',608+parseInt(x/5));
+		$('#light01').css('top',1300+parseInt(-x/2));
+		$('#light02').css('top',460+parseInt(-x/2));
+	});
+	
+		
+	$(".fancybox").fancybox({
+		'width' : 705,
+		'height' : 400,
+		'scrolling' : 'no',
+		//'openEffect' : 'elastic',
+		//'closeEffect' : 'elastic',
+		'type' : 'iframe'
+	});
+
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+<div id="loading"></div>
+
+<div id="header">
+<div id="logo"><a href="http://www.sonymobile.com/" target="_blank">sony</a></div>
+<ul id="nav">
+<li><a href="index.html">活動首頁</a></li>
+<li><a href="game.html">新年祈願</a></li>
+<li><a href="wall.html">作品牆</a></li>
+<li><a href="rule.html">活動辦法</a></li>
+<li><a href="products.html">產品介紹</a></li>
+<li><a href="video.html"  class="selected">影片欣賞</a></li>
+<li><a href="experience.html">體驗會參加說明</a></li>
+</ul>
+</div><!--header End-->
+
+<div class="colorball"></div><!--四顆彩色球 End-->
+
+<div id="main_video">
+
+<div id="img_a"></div>
+<div id="img_b"></div>
+<div id="img_c"></div>
+<div id="img_d"></div>
+<div id="light01"></div>
+<div id="light02"></div>
+
+
+    <!--1000px 開始-->
+	<div id="content">
+    
+    <div class="movie">
+    	<div class="movie_bg"><a href="lightbox01.html" class="movie_a fancybox"><img src="images/movie01.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"><a href="lightbox02.html" class="movie_a fancybox"><img src="images/movie02.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"></div>
+        <div class="movie_bg w_hand"></div>
+        <div class="movie_bg"><a href="lightbox03.html" class="movie_b fancybox"><img src="images/movie03.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"><a href="lightbox04.html" class="movie_b fancybox"><img src="images/movie04.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"><a href="lightbox05.html" class="movie_a fancybox"><img src="images/movie05.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"></div>
+        <div class="movie_bg"></div>
+        <div class="movie_bg"><a href="lightbox06.html" class="movie_b fancybox"><img src="images/movie06.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"><a href="lightbox07.html" class="movie_b fancybox"><img src="images/movie07.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"></div>
+        <div class="movie_bg"><a href="lightbox08.html" class="movie_a fancybox"><img src="images/movie08.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"><a href="lightbox09.html" class="movie_a fancybox"><img src="images/movie09.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+        <div class="movie_bg"><a href="lightbox10.html" class="movie_a fancybox"><img src="images/movie10.png"/></a><a href="#" onclick="share('f'); return false;" class="fb"></a></div>
+    </div>
+    
+    <div id="movie_min"></div>
+    <img src="images/videotext01.png" id="videotext01"/> 
+    <img src="images/videotext02.png" id="videotext02"/>
+    <img src="images/videotext03.png" id="videotext03"/> 
+    </div>
+    <!--1000px 結束-->
+    
+    
+</div><!--main_video End-->
+
+
+<div id="footer" class="hideword">
+<div id="L"><a href="#" onclick="share('f'); return false;" class="share">分享fb</a></div>
+<div id="R"><a href="https://www.facebook.com/sonymobiletw" target="_blank" class="fans">加入Sony Mobile TW 粉絲團</a></div>
+</div><!--footer End-->
+
+
+</div><!--containter End-->
+
+</body>
+</html>

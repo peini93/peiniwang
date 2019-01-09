@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background:url(../image/bg.jpg) no-repeat top center #002b64; }
+.main{width:1000px; margin:auto;}
+
+.btnlist{width:920px; margin:auto; }
+.pp{width:920px; height:15px; font-size:12px; color:#000; text-align:center; line-height:50px;}
+ul,li{ list-style:none; margin:0; float:left;}
+.btn01 a{ width:299px; height:105px; background:url(../image/down_01.png) no-repeat; display:block; margin:7px 7px 0 0;}
+.btn01 a:hover{background:url(../image/down01-1.png) no-repeat;}
+.btn02 a{ width:299px; height:105px; background:url(../image/down_02.png) no-repeat; display:block; margin:7px 7px 0 0;}
+.btn02 a:hover{background:url(../image/down02-1.png) no-repeat;}
+.btn03 a{ width:299px; height:105px; background:url(../image/down_03.png) no-repeat; display:block; margin:7px 7px 0 0;}
+.btn03 a:hover{background:url(../image/down03-1.png) no-repeat;}
+.btn04 a{ width:299px; height:105px; background:url(../image/down_04.png) no-repeat; display:block; margin:7px 7px 0 0;}
+.btn04 a:hover{background:url(../image/down04-1.png) no-repeat;}
+.btn05 a{ width:299px; height:105px; background:url(../image/down_05.png) no-repeat; display:block; margin:7px 7px 0 0;}
+.btn05 a:hover{background:url(../image/down05-1.png) no-repeat;}
+.btn06 a{ width:299px; height:105px; background:url(../image/down_06.png) no-repeat; display:block; margin:7px 7px 0 0;}
+.btn06 a:hover{background:url(../image/down06-1.png) no-repeat;}

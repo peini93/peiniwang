@@ -1,0 +1,531 @@
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+TABLE {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+TR {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+BUTTON {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+TH {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+FORM {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+P {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+SELECT {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+INPUT {
+	FONT-SIZE: 12px; COLOR: #3b3b3b; LINE-HEIGHT: 20px; FONT-FAMILY: verdana,·新細明體
+}
+INPUT TEXTAREA {
+	FONT-SIZE: 13px; FONT-FAMILY: verdana,·新細明體
+}
+A {
+	COLOR: #0048ff; TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: none
+}
+A.none {
+	COLOR: #0048ff; TEXT-DECORATION: none
+}
+A.none:hover {
+	TEXT-DECORATION: underline
+}
+A.t11 {
+	FONT-WEIGHT: 100; FONT-SIZE: 11px; COLOR: #0048ff
+}
+A.t11:visited {
+	FONT-WEIGHT: 100; FONT-SIZE: 11px; COLOR: #0048ff
+}
+A.t11:hover {
+	FONT-WEIGHT: 100; FONT-SIZE: 11px; COLOR: #0048ff
+}
+A.t10 {
+	FONT-SIZE: 10px; COLOR: #0048ff
+}
+A.t10:hover {
+	COLOR: red
+}
+#wrapper {
+	MARGIN-LEFT: auto; WIDTH: 970px; MARGIN-RIGHT: auto
+}
+#header {
+	
+}
+#logo {
+	FLOAT: left; MARGIN: 10px 0px 0px
+}
+#search {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: left top; PADDING-LEFT: 2px; FONT-SIZE: 11px; FLOAT: left; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/bg_search.gif); PADDING-BOTTOM: 0px; MARGIN: 16px 0px 17px 16px; WIDTH: 313px; COLOR: #565656; PADDING-TOP: 9px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 27px; BACKGROUND-COLOR: #fff701
+}
+#todayno {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 0px; FONT-SIZE: 11px; FLOAT: right; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+#todayno A {
+	COLOR: #464646; TEXT-DECORATION: none
+}
+#todayno A:hover {
+	TEXT-DECORATION: underline
+}
+.todayno_bold {
+	FONT-WEIGHT: 700; FONT-SIZE: 13px; COLOR: red
+}
+.channel {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: left top; FONT-SIZE: 11px; FLOAT: right; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/bg_channel.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #f1f1f1
+}
+.channel A {
+	COLOR: #464646; TEXT-DECORATION: none
+}
+.channel A:hover {
+	TEXT-DECORATION: underline
+}
+#head_ad {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#tooth {
+	MARGIN-TOP: 5px; FLOAT: left; WIDTH: 970px; BORDER-BOTTOM: #fa3b0e 5px solid
+}
+.tooth {
+	FONT-SIZE: 16px; BACKGROUND: url(../img/bg_tooth.gif); FLOAT: left; WIDTH: 77px; COLOR: #ffffff; LINE-HEIGHT: 30px; PADDING-TOP: 5px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.tooth A {
+	
+}
+.tooth A:hover {
+	
+}
+#path {
+	PADDING-LEFT: 10px; FONT-SIZE: 15px; FLOAT: left; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/bg_path.gif); WIDTH: 960px; COLOR: #fa3b0e; LINE-HEIGHT: 28px; BACKGROUND-REPEAT: repeat-x; HEIGHT: 30px
+}
+#path A {
+	COLOR: #fa3b0e; TEXT-DECORATION: underline
+}
+#path A:hover {
+	TEXT-DECORATION: none
+}
+#textadbar {
+	FLOAT: left; WIDTH: 970px; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+#textadbar A {
+	FONT-SIZE: 16px; COLOR: #0048ff
+}
+#textadbar A:hover {
+	COLOR: red
+}
+.clear {
+	CLEAR: both
+}
+.category {
+	PADDING-LEFT: 12px; FONT-WEIGHT: bold; FONT-SIZE: 16px; MARGIN: 8px 0px 5px 15px; LINE-HEIGHT: 30px; LIST-STYLE-TYPE: none
+}
+A.category_list {
+	BACKGROUND-POSITION: left center; PADDING-LEFT: 25px; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/dottree.gif); MARGIN-LEFT: -20px; COLOR: #0048ff; BACKGROUND-REPEAT: no-repeat
+}
+A.category_list :hover {
+	COLOR: #ff0000
+}
+UL.category_lo {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 20px; FONT-SIZE: 13px; LIST-STYLE-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/bn_a.gif); PADDING-BOTTOM: 0px; MARGIN: 5px 8px 10px 30px; LINE-HEIGHT: 24px; PADDING-TOP: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+UL.category_lo A {
+	COLOR: #0048ff; TEXT-DECORATION: none
+}
+UL.category_lo A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.cate_s {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 8px; FONT-WEIGHT: 700; FONT-SIZE: 18px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px; FONT-FAMILY: Verdana
+}
+.cate_s A {
+	COLOR: #0048ff; TEXT-DECORATION: none
+}
+.cate_s A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+.cost16 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; MARGIN-LEFT: 1px; COLOR: #ff0000; FONT-FAMILY: "Verdana"
+}
+.allcate A {
+	PADDING-LEFT: 12px; FONT-SIZE: 16px; COLOR: #0048ff
+}
+.allcate A:hover {
+	COLOR: #ff0000
+}
+.sideboximg {
+	MARGIN: 6px 0px 0px; TEXT-ALIGN: center
+}
+UL.side1box {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 12px; LIST-STYLE-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/dot_gray.gif); PADDING-BOTTOM: 8px; MARGIN: 5px 0px 0px 12px; PADDING-TOP: 0px
+}
+UL.info {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; MARGIN: 5px 0px 20px -10px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.info A {
+	PADDING-LEFT: 12px; FONT-SIZE: 16px; COLOR: #0048ff
+}
+UL.info A:hover {
+	COLOR: #ff0000
+}
+#content {
+	FLOAT: right; WIDTH: 770px
+}
+#ad_content {
+	BORDER-RIGHT: #e3e3e3 1px solid; BORDER-TOP: #e3e3e3 1px solid; BORDER-LEFT: #e3e3e3 1px solid; BORDER-BOTTOM: #e3e3e3 1px solid
+}
+#side2 {
+	MARGIN-TOP: -10px; FLOAT: left; WIDTH: 175px
+}
+#side_s {
+	FLOAT: left; WIDTH: 175px; BACKGROUND-COLOR: #ffffd2
+}
+#login_box {
+	MARGIN: 0px 10px 0px 15px
+}
+#login_head {
+	BACKGROUND-POSITION: 50% top; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/login_border_01.gif); BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffde00
+}
+#hello {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 15px; PADDING-BOTTOM: 2px; COLOR: #fa390e; PADDING-TOP: 0px; BACKGROUND-COLOR: #ffffff
+}
+.hello_hi {
+	FONT-SIZE: 12px
+}
+#comsumer {
+	PADDING-RIGHT: 30px; PADDING-LEFT: 11px; FONT-SIZE: 15px; PADDING-BOTTOM: 5px; COLOR: #fa390e; PADDING-TOP: 19px
+}
+.comsumer_hi {
+	FONT-SIZE: 12px
+}
+#login {
+	BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/login_border_03.gif); BACKGROUND-REPEAT: repeat-y
+}
+.sidetitle {
+	PADDING-RIGHT: 2px; BACKGROUND-POSITION: center top; PADDING-LEFT: 5px; FONT-WEIGHT: 700; FONT-SIZE: 16px; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/sidetitle_edm.gif); PADDING-BOTTOM: 2px; COLOR: #ffffff; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 30px
+}
+.sidetitle_b {
+	PADDING-RIGHT: 2px; BACKGROUND-POSITION: center top; PADDING-LEFT: 5px; FONT-WEIGHT: 700; FONT-SIZE: 16px; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/sidetitle_b.gif); PADDING-BOTTOM: 2px; COLOR: #ffffff; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 25px
+}
+.side2box {
+	BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #f4f4f4
+}
+.side2box_in {
+	PADDING-RIGHT: 10px; BACKGROUND-POSITION: 50% bottom; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/side2box_in_dn.gif); PADDING-BOTTOM: 10px; MARGIN: 0px 7px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffffff
+}
+.point_black {
+	FONT-WEIGHT: 700; COLOR: #000000
+}
+.po {
+	TEXT-ALIGN: center
+}
+.po A {
+	FONT-WEIGHT: 700; COLOR: #000000; TEXT-DECORATION: none
+}
+.po A:hover {
+	TEXT-DECORATION: underline
+}
+.side2box_txt {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; MARGIN: 0px 5px; PADDING-TOP: 8px
+}
+#cont_s {
+	FLOAT: right; MARGIN: 0px; WIDTH: 777px
+}
+.goods {
+	FLOAT: left
+}
+.cont_box {
+	FLOAT: left; MARGIN: 10px 12px 0px 0px; WIDTH: 180px
+}
+.cont_box_lo {
+	FLOAT: left; MARGIN: 10px 5px 0px 0px; WIDTH: 250px
+}
+.box-r {
+	BACKGROUND-POSITION: center top; FLOAT: right; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/box-r.gif); WIDTH: 180px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 202px
+}
+.cont_box_s {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 6px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 178px; PADDING-TOP: 10px
+}
+.goodsname {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: #3b3b3b; LINE-HEIGHT: 17px
+}
+.goodsname A {
+	COLOR: #3b3b3b
+}
+.goodsname A:hover {
+	COLOR: #0048ff; TEXT-DECORATION: none
+}
+.price_txt {
+	COLOR: #d70000
+}
+.price_sale {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; COLOR: #d70000
+}
+.store {
+	CLEAR: both; FLOAT: left
+}
+.store A {
+	COLOR: #7d7d7d; TEXT-DECORATION: none
+}
+.store A:hover {
+	COLOR: #7d7d7d; TEXT-DECORATION: underline
+}
+.img_left {
+	FLOAT: left; MARGIN: 0px 5px 3px 0px; HEIGHT: auto
+}
+#tag {
+	BACKGROUND-POSITION: left bottom; MARGIN-TOP: 15px; FLOAT: left; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/tag_title_bn.gif); WIDTH: 775px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #ffba00
+}
+#tag_title {
+	FLOAT: left; WIDTH: 27px
+}
+.tag_con {
+	BACKGROUND-POSITION: right 50%; BACKGROUND-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/tag_03.gif); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #fafafa
+}
+.tag_con_body {
+	FONT-SIZE: 13px; MARGIN: 0px 5px 0px 10px; LINE-HEIGHT: 28px
+}
+A.tag_01 {
+	FONT-WEIGHT: bold; FONT-SIZE: 20px; COLOR: #d70000; TEXT-DECORATION: none
+}
+A.tag_01:hover {
+	BORDER-BOTTOM: #993300 1px dashed; BACKGROUND-COLOR: #feffad
+}
+A.tag_02 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #ff7400; TEXT-DECORATION: none
+}
+A.tag_02:hover {
+	COLOR: #d70000; BORDER-BOTTOM: #993300 1px dashed; BACKGROUND-COLOR: #feffad
+}
+A.tag_03 {
+	FONT-SIZE: 15px; COLOR: #538200; TEXT-DECORATION: none
+}
+A.tag_03:hover {
+	COLOR: #d70000; BORDER-BOTTOM: #993300 1px dashed; BACKGROUND-COLOR: #feffad
+}
+A.tag_04 {
+	COLOR: #5d5d5d; TEXT-DECORATION: none
+}
+A.tag_04:hover {
+	COLOR: #d70000; BORDER-BOTTOM: #993300 1px dashed; BACKGROUND-COLOR: #feffad
+}
+#tag_exp {
+	FONT-SIZE: 10px; FLOAT: right; MARGIN: -23px 20px 0px 0px; COLOR: #999999
+}
+#tag_exp A {
+	COLOR: #afafaf
+}
+#footer {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 20px; WIDTH: 970px; COLOR: #000000; LINE-HEIGHT: 18px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+OL.fav_list {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 6px 0px 0px; LINE-HEIGHT: 16px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+OL.fav_list A {
+	PADDING-LEFT: 16px; FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #232323; TEXT-DECORATION: none
+}
+OL.fav_list A:hover {
+	COLOR: #7e7e7e; TEXT-DECORATION: none
+}
+UL.fav_sec_list {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 29px; LIST-STYLE-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/dot_gray.gif); PADDING-BOTTOM: 0px; MARGIN: 5px 5px 0px 10px; PADDING-TOP: 0px
+}
+UL.fav_sec_list A {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 3px 0px 0px; COLOR: #0048ff; LINE-HEIGHT: 18px; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+UL.fav_sec_list A:hover {
+	COLOR: #0048ff; TEXT-DECORATION: underline
+}
+HR.fav_list {
+	WIDTH: 145px; COLOR: #ffba00; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 1px; BACKGROUND-COLOR: #ffba00; BORDER-BOTTOM-STYLE: none
+}
+UL.mytag_list {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.mytag_list A {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #0048ff; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+UL.mytag_list A:hover {
+	COLOR: #0048ff; TEXT-DECORATION: underline
+}
+.top {
+	FONT-SIZE: 10px
+}
+.top A {
+	COLOR: #464646; TEXT-DECORATION: underline
+}
+.top A:hover {
+	COLOR: #464646; TEXT-DECORATION: none
+}
+.hotline {
+	MARGIN-TOP: 8px; FONT-WEIGHT: 700; FONT-SIZE: 16px; COLOR: #353535
+}
+.hotline A {
+	COLOR: red; TEXT-DECORATION: underline
+}
+.hotline A:hover {
+	COLOR: red; TEXT-DECORATION: none
+}
+.cont_box_lo_date {
+	FONT-SIZE: 11px; COLOR: #f04949
+}
+.cont_box_lot {
+	FONT-WEIGHT: 700; COLOR: #f04949
+}
+.gbox {
+	FONT-SIZE: 15px; MARGIN: 6px 3px -8px -18px; LINE-HEIGHT: 24px
+}
+.gbox A {
+	TEXT-DECORATION: none
+}
+.gbox A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+
+/* STORT'S  START  2007.02.06更新 */
+.ul {list-style-image: url(http://img.pstore.pchome.com.tw/web_img/st/hot_03.jpg);font-family: "Arial";color: #02A2FE;font-size: 13px;line-height: 26px;margin: 0 0 0 30px;}
+.ul A{TEXT-DECORATION: none;color: #02A2FE;}
+.ul A:hover{TEXT-DECORATION: underline;color: #02A2FE;}
+.ul2 {list-style-image: url(http://img.pstore.pchome.com.tw/web_img/st/hot_03.jpg);font-family: "Arial";color: #FF6600;font-size: 13px;line-height: 26px;margin: 0 0 0 30px;}
+.ul2 A{TEXT-DECORATION: none;color: #FF6600;}
+.ul2 A:hover{TEXT-DECORATION: underline;color: #FF6600;}
+.t10b{font-family: "Arial";color:#FFFFFF;font-size: 13px;font-weight: bold;}
+.t10b a{ TEXT-DECORATION: none; color: #FFFFFF;}
+.t10b a:hover{ TEXT-DECORATION: underline; color: #FFFFFF;}
+.t10c{font-family: "Arial";color:#FF6600;font-size: 13px;font-weight: bold;}
+.t10c a{ TEXT-DECORATION: none; color: #FF6600;}
+.t10c a:hover{ TEXT-DECORATION: underline; color: #FF6600;}
+
+.t11b{font-family: "Arial";color: #fe6565;font-size: 11px;margin: 0 0 0 6px;}
+.t11-1{font-family: "Arial";color: #656565;font-size: 11px;}
+.t11c{text-align:right;font-family: "Arial";color: #000000;font-size: 11px;padding: 5px 5px 5px 5px;}
+.t11c  a{TEXT-DECORATION: none;color: #000000; }
+.t11c  a:hover{TEXT-DECORATION: underline;color: #000000;}
+.t11d{font-family: "Arial";color: #000000;font-size: 11px;padding: 5px 5px 5px 50px;}
+.t11d  a{TEXT-DECORATION: none;color: #FF0000; }
+.t11d  A:hover{TEXT-DECORATION: underline;color: #FF0000;}
+.t11e{font-family: "Arial";color: #000000;font-size: 11px;padding-top: 8px;}
+
+.t11{font-family: "Arial";color: #373737;font-size: 11px;}
+.t11  a{TEXT-DECORATION: none;color: #373737; }
+.t11  A:hover{TEXT-DECORATION: underline;color: #373737;}
+
+.t12{font-family: "Arial";font-size: 12px;color: #6C6C6C;padding: 2px 40px 0 47px;line-height: 18px;}
+
+.t12top {font-family: "Arial";font-size: 12px;color: #6C6C6C;}
+.t12top a{color: #6C6C6C;TEXT-DECORATION: none}
+.t12top a:hover{color: #6C6C6C;TEXT-DECORATION: underline}
+
+.t12xb{font-family: Arial;font-size: 12px;color: #000000;padding: 2px 40px 0 47px;line-height: 18px;}
+
+.t12b{ color: #58D2F8; FONT-SIZE: 12px; LINE-HEIGHT: 14px; FONT-FAMILY: Arial; text-align: left; padding: 5px 0 3px 0; }
+.t12b A{color: #58D2F8; TEXT-DECORATION: none; }
+.t12b A:hover {color: #58D2F8; TEXT-DECORATION: underline; }
+
+.t12e{font-family: Arial;color: #02a2fe;font-size: 12px;font-weight: bold;}
+.t12e a{font-family: Arial;TEXT-DECORATION: underline;color: #02a2fe;font-size: 12px;font-weight: bold;}
+.t12f{ list-style-image: url(dot.jpg); FONT-SIZE: 12px; LINE-HEIGHT: 18px; FONT-FAMILY: Arial; text-align: left; padding: 2px 0 5px 0; }
+.t12f A{color: #000000; TEXT-DECORATION: none; }
+.t12f A:hover {color: #000000; TEXT-DECORATION: underline; }
+.t12g{font-family: Arial;font-size: 12px;color: #000000;padding: 2px 40px 0 0px;line-height: 18px;}
+.t12h{FONT-SIZE: 12px; LINE-HEIGHT: 18px; FONT-FAMILY: "Arial"}
+.t12i{font-family: "Arial";font-size: 12px;color: #16B6E8;padding: 2px 40px 0 17px;line-height: 18px;}
+.t12i A{color: #16B6E8;TEXT-DECORATION: underline}
+.t12j{font-family: "Arial";font-size: 12px;color: #666666;padding: 2px 40px 0 17px;line-height: 18px;}
+.t12l {font-family: "Arial";font-size: 12px;color: #6C6C6C;line-height: 18px;padding: 0px 10px 0px 5px;}
+.t12m {font-family: "Arial";font-size: 12px;color: #0BB9EF;}
+
+.t13{font-family: "Arial";color: #454545;font-size: 13px;line-height: 26px;padding: 0 30px 0 15px;}
+.t13b{list-style-image: url(dot.jpg);font-family: "Arial";color: #656565;font-size: 13px;line-height: 19px;padding: 0 10px 0 8px;}
+.t13c{font-family: "Arial";color: #656565;font-size: 13px;line-height: 19px;padding: 0 15px 0 30px;}
+.t13d{font-family: "Arial";color: #656565;font-size: 13px;line-height: 19px;padding: 5px 15px 0 10px;}
+.t13e{font-family: Arial;color: #02a2fe;font-size: 13px;font-weight: bold;}
+.t13e a{font-family: Arial;TEXT-DECORATION: underline;color: #02a2fe;font-size: 13px;font-weight: bold;}
+.t13f{font-family: "Arial";color: #656565;font-size: 13px;line-height: 22px;padding: 0 18px 0 40px;}
+.t13g{font-family: "Arial";color: #656565;font-size: 13px;line-height: 22px;padding: 0 0 0 40px;}
+.t13h{font-family: "Arial";color: #656565;font-size: 13px;line-height: 25px;padding: 0 5px 0 40px;}
+.t13i{font-family: "Arial";color: #656565;font-size: 13px;line-height: 22px;padding: 0 0 0 18px;}
+.t13i  a{TEXT-DECORATION: none;color: #FF0000; }
+.t13i  A:hover{TEXT-DECORATION: underline;color: #FF0000;}
+.t13j{font-family: "Arial";color: #454545;font-size: 13px;line-height: 26px;padding: 5px 0 5px 0;}
+.t13k{font-family: "Arial";color: #000000;font-size: 13px;line-height: 22px;padding: 5px 0 5px 10px;text-align:left;}
+.t13l{font-family: "Arial";color: ##02a2fe;font-size: 13px;line-height: 19px;padding: 5px 0 5px 0px;text-align:left;}
+.t13l  a{TEXT-DECORATION: none;color: #02a2fe; }
+.t13l  a:hover{TEXT-DECORATION: underline;color: #02a2fe;}
+.t13m{font-family: "Arial";color: #000000;font-size: 13px;line-height: 19px;padding: 5px 0 5px 0;text-align:left;}
+.t13n{font-family: "Arial";color: #02A2FE;font-size: 13px; padding: 5px 10px 2px 5px;}
+.t13n a{TEXT-DECORATION: none; color: #02A2FE;}
+.t13n a:hover{TEXT-DECORATION: underline; color: #02A2FE;}
+.t13o{font-family: "Arial";color: #000000;font-size: 13px;line-height: 18px;text-align: center;}
+.t13o a{ TEXT-DECORATION: none; color: #000000;}
+.t13o a:hover{ TEXT-DECORATION: underline; color: #000000;}
+.t13p{font-family: "Arial";color: #BEBAB9;font-size: 13px;line-height: 18px;text-align: center;}
+.t13p a{ TEXT-DECORATION: none; color: #BEBAB9;}
+.t13p a:hover{ TEXT-DECORATION: underline; color: #BEBAB9;}
+
+.t15 {color: #02a2fe;font-family: Arial;font-size: 15px;line-height: 20px;}
+.t15  a{TEXT-DECORATION: none;color: #02a2fe;}
+.t15  a:hover{TEXT-DECORATION: underline;color: #02a2fe;}
+.t15b{color: #000000;font-family: Arial;font-size: 15px;line-height: 20px;font-weight: bold;padding: 5px 0 0 30px;}
+.t15c{list-style-image: url(http://img.pstore.pchome.com.tw/web_img/st/yel.jpg);color: #02a2fe;font-family: Arial;font-size: 15px;line-height: 20px;font-weight: bold;padding: 5px 0 0 30px;}
+.t15c a{color: #02a2fe;TEXT-DECORATION:none;}
+.t15c a:hover{color: #02a2fe;TEXT-DECORATION:underline;}
+.t15d{color: #000000;font-family: Arial;font-size: 15px;line-height: 20px;font-weight: bold;padding: 8px 0 0 10px;}
+.t15e {color: #0BB9EF;font-family: "Arial";font-size: 15px;line-height: 20px;font-weight: bold;}
+.t15e A{TEXT-DECORATION: none; color: #0BB9EF;}
+.t15e A:hover{TEXT-DECORATION:underline; color: #0BB9EF;}
+.t15f {color: #ffffff;font-family: Arial;font-size: 15px;line-height: 20px;padding: 5px 0 5px 0;}
+.t15f  a{TEXT-DECORATION: none;color: #02a2fe; }
+.t15f  A:hover{TEXT-DECORATION: underline;color: #02a2fe;}
+.t15g{list-style-image: url(http://img.pstore.pchome.com.tw/web_img/st/yel.jpg);color: #373737;font-family: "Arial";font-size: 15px;line-height: 20px;font-weight: bold;}
+.t15g a{color: #373737;TEXT-DECORATION:none;}
+.t15g a:hover{color: #373737;TEXT-DECORATION:underline;}
+.t15h{color: #02a2fe;font-family: "Arial";font-size: 15px;line-height: 20px;font-weight: bold;}
+.t15h a{ TEXT-DECORATION: none; color: #02a2fe;}
+.t15h a:hover{ TEXT-DECORATION: underline; color: #02a2fe;}
+
+.t16top {color: #02A2FE;TEXT-DECORATION: none;font-family: "Arial";font-size: 16px;line-height: 30px;padding: 0 10px 0 15px;font-weight: bold;}
+.t16top a{color: #02A2FE; TEXT-DECORATION: none; }
+.t16top a:hover {color: #02A2FE; TEXT-DECORATION: underline; }
+.t16c{list-style-image: url(http://img.store.pchome.com.tw/web_img/st/yel.jpg);color: #02a2fe;font-family: "Verdana";font-size: 16px;line-height: 20px;font-weight: bold;}
+.t16d {color: #02A2FE;font-family: "Arial";font-size: 15px;font-weight: bold;margin: 5px 10px 5px 0;}
+.t16d a{color: #02A2FE; TEXT-DECORATION: none; }
+.t16d a:hover {color: #02A2FE; TEXT-DECORATION: underline; }
+.t16e{list-style-image: url(http://img.store.pchome.com.tw/web_img/st/q.jpg);color: #FF5A00;font-family: "Verdana";font-size: 16px;line-height: 20px;font-weight: bold; }
+.t16f {color: 373737;font-family: "Arial";font-size: 16px;line-height: 30px;padding: 10px 10px 0 0;font-weight: bold;}
+
+.style1 {color: #000000}
+/*  STORT'S CSS  END  2007.02.06更新 */
+
+/* EPAPERCSS   START  2007.02.06更新 */
+.te10b {	font-size: 9px;line-height: 16px;font-weight: lighter;font-variant: normal;font-style: normal;}
+.te12{font-family: "Arial";font-size: 12px;color: #6C6C6C;padding: 2px 40px 0 47px;}
+.text2 {font-size: 10pt; line-height: 16pt; }
+.title1 {	font-size: 22px;font-weight: bold;color: #ED135A;}
+.font-131 {	font-size: 13px;color: 636363;}
+.te13{font-family: "Arial";color: #454545;font-size: 13px;line-height: 26px;padding: 0 30px 0 15px;}
+.cb13 {font-weight: bold;margin-left: 4px;color: #F26521;}
+/* EPAPERCSS   END  2007.02.06更新 */
+.t13i  a{TEXT-DECORATION: none;color: #FF0000; }
+.t13i  A:hover{TEXT-DECORATION: underline;color: #FF0000;}
+
+.pt10 {FONT-SIZE: 10pt; LINE-HEIGHT: 140%; FONT-FAMILY: "新細明體"}
+.pt10 a{ TEXT-DECORATION: none; color: #02A2FE;}
+.pt10 a:hover{ TEXT-DECORATION: underline; color: #02A2FE;}
+
+.t16c-1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; LIST-STYLE-IMAGE: url(http://img.store.pchome.com.tw/web_img/st/yel.jpg); COLOR: #02a2fe; LINE-HEIGHT: 26px; FONT-FAMILY: "Verdana"
+}
+.t16c-1 a{color: #02a2fe;TEXT-DECORATION: none}
+.t16c-1 a:hover{color: #02a2fe;TEXT-DECORATION: underline}

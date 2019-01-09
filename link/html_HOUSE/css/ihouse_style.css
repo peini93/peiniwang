@@ -1,0 +1,163 @@
+@import url("reset.css");
+ul,li{ list-style: none; margin: 0; padding: 0;}
+body{
+	font-size: 12px;
+	font-family: "微軟正黑體";
+    padding:0;
+    margin:0;
+    background: #000 url(../img/indexbg.jpg) center center fixed no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.content{
+	width:1000px;
+	height: 100%;
+	position: relative;
+	margin:auto;
+}
+
+.heard{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	z-index: 100;
+}
+
+.logo{
+	width: 170px;
+	height: 50px;
+	background: url(../img/logo.png) no-repeat;
+	position: absolute;
+	left: 50px;
+	top:8px;
+}
+
+.mune{
+	width: 750px;
+	height: 70px;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+
+.phone{
+	width: 210px;
+	height: 20px;
+	margin-top: 28px;
+	float: left;
+}
+
+.mune .nav a{
+    float: left;
+	padding: 10px 20px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 50px;
+	text-decoration: none;
+	text-shadow:1px  1px  1px  #000000;
+	-webkit-transition:0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	background-position: 0 0;
+}
+
+.mune .nav a:hover,.mune .act a{
+	background-color:#ff7500;
+	background-position: 0 100%;
+}
+ 
+.footer{
+	width: 100%;
+	height: 30px;
+	background: url(../img/footer_bg.png) repeat;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+	color: #ffffff;
+	z-index: 101;
+}
+
+.main{
+	width: 1000px;
+	height: 600px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.index_top{
+	width: 611px;
+	height: 267px;
+	position: absolute;
+	top:50%;
+	left: -100px;
+	margin-top: 0;
+	z-index: 99;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+.index_btn{
+	width: 165px;
+	height: 60px;
+	background: url(../img/index_btn.png) no-repeat;
+	position: absolute;
+	top:50%;
+	margin-top: 217px;
+	z-index: 100;
+	left: 200px;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+
+.index_icon{
+	width: 25px;
+	height: 10px;
+	margin-top: 43px;
+	margin-left: 65px;
+}
+
+.listbg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: url(../img/listbg.png) repeat;
+	z-index:2000;
+}
+
+.list{
+	width: 830px;
+	height: 400px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -415px;
+	z-index: 2001;
+	opacity:0;
+}
+
+.listbtn{
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	right: -32px;
+	background: url(../img/list_btn.jpg) no-repeat;
+	z-index: 2001;
+	-webkit-transition:0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+}
+
+.listbtn:hover{
+	background-position: 0 -32px;
+
+}

@@ -1,0 +1,306 @@
+@import url("reset.css");
+body{ font-family: "微軟正黑體"; margin: 0; padding: 0; background-color: #000000;}
+ul,li{ list-style: none; margin: 0; padding: 0;}
+
+.headline{
+	width: 100%;
+    height: 60px;
+    border-bottom: 1px #69b40f solid;
+    background-color: #000000;
+    
+}
+
+.main{
+	width: 1000px;
+	position: relative;
+	margin:auto;
+	background-color: #ff0000;
+}
+
+.logo{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top:15px;
+	left: 15px;
+}
+
+.rule_btn{
+	width: 100px;
+	height: 29px;
+	position: absolute;
+	top:15px;
+	right: 55px;
+	background: url(../img/rule_btn.png) no-repeat;
+}
+
+.fb_btn{
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	top:15px;
+	right: 15px;
+	background: url(../img/fb.png) no-repeat;
+}
+
+.rule_btn:hover,.fb_btn:hover{
+	background-position: 0 -29px;
+}
+
+.footer{
+	width: 100%;
+	height: 60px;
+	position: relative;
+	background: url(../img/footer_line.jpg) repeat;
+}
+
+.footerlogo{
+	width: 174px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.footerlogo img{
+	width: 174px;
+	height: 60px;
+}
+
+.content{
+	width: 1000px;
+	height: 2600px;
+	position: relative;
+	margin:auto;
+}
+
+.header01{
+	width: 200px;
+	height: 40px;
+	position: absolute;
+	z-index: 99;
+	top:45px;
+	left: 80px;
+}
+
+.header02{
+	width: 240px;
+	height: 70px;
+	position: absolute;
+	z-index: 99;
+	top:95px;
+	left: 60px;
+}
+
+.header03{
+	width: 240px;
+	height: 160px;
+	position: absolute;
+	z-index: 99;
+	top:30px;
+	left: 320px;
+}
+
+.header04{
+	width: 350px;
+	height: 90px;
+	position: absolute;
+	z-index: 89;
+	top:90px;
+	left: 20px;
+}
+
+.header05{
+	width: 220px;
+	height: 50px;
+	position: absolute;
+	z-index: 99;
+	top:40px;
+	left: 70px;
+}
+
+.toptxt{
+	width: 480px;
+	height: 70px;
+	position: absolute;
+	top:190px;
+	left: 70px;
+	z-index: 99;
+}
+
+.mayday{
+	width: 524px;
+	height: 660px;
+	position: absolute;
+	top:0;
+	right: -90px;
+	z-index: 99;
+}
+
+.ponitbg{
+	width: 638px;
+	height: 531px;
+	position: absolute;
+	z-index: 100;
+	top:380px;
+	right: -100px;
+}
+
+.probox{
+	width: 560px;
+	height: 330px;
+	position: absolute;
+	top:345px;
+	left: 25px;
+	z-index: 100;
+}
+
+.imgbox{
+	width: 460px;
+	height: 330px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+}
+
+.proimg{
+	width: 2300px;
+	height: 330px;
+	position: absolute;
+}
+
+.ii{
+	width: 460px;
+	height: 330px;
+	float: left;
+}
+
+.probtn{
+	width: 60px;
+	height: 330px;
+	position: absolute;
+	top:20px;
+	left: 45px;
+}
+
+.btn1,.btn2,.btn3,.btn4{
+	width: 60px;
+	height: 55px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.btn1{
+	background: url(../img/btn01.png) no-repeat;
+}
+
+.btn2{
+	background: url(../img/btn02.png) no-repeat;
+}
+
+.btn3{
+	background: url(../img/btn03.png) no-repeat;
+}
+
+.btn4{
+	background: url(../img/btn04.png) no-repeat;
+}
+
+.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover,.select{
+	width: 60px;
+	height: 55px;
+	background-position: 0 -55px;
+}
+
+.rule_top{
+	width: 230px;
+	height: 70px;
+	position: absolute;
+	top:630px;
+	left: 80px;
+	z-index: 99;
+}
+
+.rule_bg{
+	width: 350px;
+	height: 90px;
+	position: absolute;
+	top:640px;
+	left: 10px;
+	z-index: 89;
+}
+
+.rule_box{
+	width: 900px;
+	height: 800px;
+	position: absolute;
+	top:730px;
+	left: 100px;
+}
+
+.rule_box ol li{
+	list-style-type: decimal;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 25px;
+	font-family: "微軟正黑體";
+	margin-left: 50px;
+}
+
+.rule_list ul li{
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.listimg{
+	width: 299px;
+	height: 116px;
+	margin:20px 0 10px 20px; 
+}
+
+.gotop{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-color: #65ad0e;
+	color: #ffffff;
+	font-size: 13px;
+	font-family: "微軟正黑體";
+	line-height: 50px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	margin-left:1030px;
+	bottom: 80px;
+	position: fixed;
+	-webkit-transition:0.5s ease;
+	-moz-transition: 0.5s ease;
+	-ms-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	transition: 0.5s ease;
+	z-index: 100;
+	opacity:0; 
+}
+
+.gotop:hover{
+	background-color: #ffffff;
+	color: #65ad0e;
+}
+
+.rule_main{
+	width: 900px;
+	height: 565px;
+}
+
+.otherbtn{
+	width: 260px;
+	height: 55px;
+	display: block;
+	background: url(../img/otherbtn.png) no-repeat;
+	position: absolute;
+	top:280px;
+	left: 170px;
+}
+
+.otherbtn:hover{
+	background-position: 0 -55px;
+}

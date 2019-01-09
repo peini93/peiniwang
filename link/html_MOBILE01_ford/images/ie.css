@@ -1,0 +1,162 @@
+#google-search {
+	LINE-HEIGHT: 16px
+}
+#headline A {
+	HEIGHT: 460px
+}
+#index-category .category {
+	DISPLAY: inline
+}
+#section .main {
+	DISPLAY: inline
+}
+#index-category .item {
+	DISPLAY: inline
+}
+#index-category .category A.group H3 {
+	MARGIN-TOP: -3px; WHITE-SPACE: normal; OVERFLOW: visible
+}
+#index-category .category A.group P {
+	HEIGHT: 30px; MARGIN-LEFT: 100px; OVERFLOW: hidden; CURSOR: pointer
+}
+#index-category .category .row {
+	PADDING-BOTTOM: 12px
+}
+.sidebar A {
+	HEIGHT: 1%
+}
+.sidebar H2 {
+	HEIGHT: 1%
+}
+.sidebar .inner {
+	POSITION: relative; TOP: 0px
+}
+.footer-article LI {
+	HEIGHT: 1%
+}
+.panel-item:hover {
+	
+}
+.btns .btn {
+	BORDER-BOTTOM: #a1bea0 1px solid; BORDER-LEFT: #a1bea0 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 1.3em; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #bee0bd; BORDER-TOP: #a1bea0 1px solid; BORDER-RIGHT: #a1bea0 1px solid; PADDING-TOP: 7px
+}
+.btns BUTTON {
+	BORDER-BOTTOM: #a1bea0 1px solid; BORDER-LEFT: #a1bea0 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 1.3em; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: #bee0bd; BORDER-TOP: #a1bea0 1px solid; BORDER-RIGHT: #a1bea0 1px solid; PADDING-TOP: 7px
+}
+.btns BUTTON {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 8px
+}
+.btns .btn:hover {
+	BORDER-BOTTOM-COLOR: #676; BORDER-TOP-COLOR: #676; COLOR: #454; BORDER-RIGHT-COLOR: #676; BORDER-LEFT-COLOR: #676
+}
+.btns BUTTON:hover {
+	BORDER-BOTTOM-COLOR: #676; BORDER-TOP-COLOR: #676; COLOR: #454; BORDER-RIGHT-COLOR: #676; BORDER-LEFT-COLOR: #676
+}
+.btns .btn:active {
+	BACKGROUND: #a9a25d
+}
+.btns BUTTON:active {
+	BACKGROUND: #a9a25d
+}
+.tablelist .btns .btn {
+	DISPLAY: block
+}
+#section .main .fast A:hover .reply-icon {
+	BACKGROUND: url(../images/replysymbol2.png) no-repeat left top
+}
+.forum-content .single-post .inner {
+	MARGIN-BOTTOM: 70px; HEIGHT: 55px; MAX-HEIGHT: 55px
+}
+.forum-content .single-post .inner .author-detail {
+	TOP: 65px
+}
+#section .post-page FORM TEXTAREA {
+	DISPLAY: block; FLOAT: left
+}
+#section .main TABLE .subject-text IMG {
+	VERTICAL-ALIGN: middle
+}
+* HTML .group {
+	HEIGHT: 1%
+}
+* HTML #index-category .item H2 A:hover:after {
+	LETTER-SPACING: 1px
+}
+* HTML .sidebar .fast-ad A:hover .row {
+	BORDER-BOTTOM: #ccc 100px solid; BORDER-LEFT: #ccc 100px solid; BORDER-TOP: #ccc 100px solid; BORDER-RIGHT: #ccc 100px solid
+}
+* HTML .sidebar .fast-ad A:hover .row P {
+	TEXT-DECORATION: underline
+}
+* HTML #section .main {
+	HEIGHT: 1500px
+}
+* HTML #section .main FORM DIV {
+	HEIGHT: 1%; OVERFLOW: visible
+}
+* HTML #section .main FORM .title {
+	POSITION: relative; TOP: 2px
+}
+* HTML #section .main FORM .input-text {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+* HTML #section .sidebar FORM .input-text {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+* HTML #section .main FORM TEXTAREA {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+* HTML #section .main FORM .btns {
+	PADDING-LEFT: 214px
+}
+* HTML #section .main FORM .item-text {
+	PADDING-LEFT: 214px
+}
+* HTML #section .main FORM .note {
+	PADDING-LEFT: 214px
+}
+* HTML #section .main FORM .ie-text {
+	PADDING-LEFT: 0px
+}
+* HTML #section .main FORM .ie-button {
+	PADDING-LEFT: 113px
+}
+* #section .left-side .inner {
+	MARGIN-LEFT: 11px; MARGIN-RIGHT: 0px
+}
+*:first-child + HTML .group {
+	MIN-HEIGHT: 1px
+}
+.navbar {
+	LINE-HEIGHT: 1.2em
+}
+#section BUTTON {
+	PADDING-TOP: 5px
+}
+#action {
+	PADDING-TOP: 5px
+}
+#section .main .subject-menu UL LI A.subject-menu-ad {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 4px
+}
+#section .main FORM .item-text #forumrule {
+	BORDER-BOTTOM: #eeeeee 1px solid; BORDER-LEFT: #eeeeee 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; HEIGHT: 180px; MARGIN-LEFT: 0px; OVERFLOW: scroll; BORDER-TOP: #eeeeee 1px solid; BORDER-RIGHT: #eeeeee 1px solid; PADDING-TOP: 5px
+}
+#section .main FORM .item-text #previewblock {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#section .main FORM .item-text #imagepreview {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#section FORM {
+	PADDING-LEFT: 0px
+}
+.navbar-b {
+	MARGIN-TOP: 20px; WIDTH: 740px; MARGIN-LEFT: 20px
+}
+#section .main BLOCKQUOTE {
+	BORDER-BOTTOM: #cccccc 1px dotted; BORDER-LEFT: #cccccc 1px dotted; PADDING-BOTTOM: 5px; LINE-HEIGHT: 1.2em; MARGIN: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #666666; FONT-SIZE: 12px; BORDER-TOP: #cccccc 1px dotted; BORDER-RIGHT: #cccccc 1px dotted; PADDING-TOP: 5px
+}
+.single-post .tools .btn {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 3px
+}

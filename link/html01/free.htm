@@ -1,0 +1,613 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+
+<title>
+商店街網路開店平台邀請您網路開店逗陣成就e個好生意！東西沒賣出去，不收錢！歡迎中小企業、實體通路店家、各大購物平台以及網路開店平台黃金店家、拍賣
+優良賣家以及有志創業者加入商店街網路開店！網路開店免月租年租、上架費，上架不限商品數，完整金流制度及網路開店電子商務基礎教育訓練。商店街網路開店
+超高流量來客數大，自行研發技術維護更新快，網路開店整合行銷方案。PChome ONline
+商店街網路開店讓你的商品得到全新的銷售通路，網路開店，多一個通路增加一份收入。</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Big5">
+<meta name="description" content="商店街開店邀請您逗陣成就e個好生意！東西沒賣出去，不收錢！歡迎中小企業、實體通路店家、各大購物平台黃金店家、拍賣優良賣家以及有志創業者加入開店！開店免租金、上架費，上架不限商品數，完整金流制度及電子商務經驗訓練，超高流量來客數大，自行研究技術維護更新快，網站整合行銷工具，PChome ONline 商店街開店讓你的商品得到全新的銷售通路，多一個通路增加一份收入。">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<script language="JavaScript" src="free_files/store.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+
+  function save_btn() {
+  
+    var m_title;
+    var err = 0;
+    var obj=document.main_store;
+    
+    vtTypeCode = document.main_store.vtTypeCode.value.split(';');
+        
+    if(!obj.taxno.value.match(/^[\d]+$/) && vtTypeCode[1] != 'Y' ) {
+      alert("統一編號 請輸入半形數字");  
+      obj.taxno.focus();  return -1;
+    }
+      
+    for(var i=0;i<obj.elements.length;i++){
+      if(obj.elements[i].isContentEditable){
+      	 m_title = "";
+        if(obj.elements[i].title) m_title = obj.elements[i].title;
+        if(m_title.match(/NOT_CHECK/)) continue;
+        var tmp_value =  obj.elements[i].value.replace(/^\s*/,"");
+        if(!tmp_value.replace(/\s*$/,"")){ 
+          if ( m_title == "公司名稱" && vtTypeCode[1] == "Y")
+            m_title += "(若為個人請填寫申請人)";
+          if ( m_title == "統一編號" && vtTypeCode[1] == "Y") continue;
+          alert(" " + ((m_title)?m_title:"") + "資料填寫內容不可空白！"); 
+          obj.elements[i].focus();
+          return false;
+        }
+      }
+    }
+      	
+    if ( !emailCheck(document.main_store.email.value) ) {
+      document.main_store.email.focus();
+      return false;
+    }
+    if ( document.main_store.vtTypeCode.value == "" ) {
+      alert("請選擇招商分類");
+      document.main_store.vtTypeCode.focus();
+      return false;
+    } 
+    if ( document.main_store.vtCityNo.value == "" ) {
+      alert("請選擇所在地");
+      document.main_store.vtCityNo.focus();
+      return false;
+    }    
+   
+    document.main_store.save_fg.value   = "T";
+    document.main_store.action          = "seminar.htm";
+    document.main_store.button.disabled = 'true';
+    document.main_store.submit();
+  }
+  function change_place(){
+    vtTypeCode = document.main_store.vtTypeCode.value.split(';');
+    if ( vtTypeCode[1] == "Y" ){
+      document.getElementById("cmp_name_word").innerHTML = "公司名稱<br>(若為個人請填寫申請人)";
+      document.getElementById("taxno_word").innerHTML = "統一編號<br>(若為個人可不填寫此欄位)";
+      document.getElementById("cmp_info_word").innerHTML = "公司簡述<br>(若為個人請填寫販賣商品資料)";
+    }
+    else
+    {
+      document.getElementById("cmp_name_word").innerHTML = "公司名稱";
+      document.getElementById("taxno_word").innerHTML = "統一編號";
+      document.getElementById("cmp_info_word").innerHTML = "公司簡述";
+    }
+  }
+
+</script>
+<link href="free_files/boss.css" rel="stylesheet" type="text/css">
+<script charset="utf-8" id="injection_graph_func" src="free_files/injection_graph_func.js"></script><link href="free_files/injection_graph.css" type="text/css" rel="stylesheet" charset="utf-8" id="injection_graph_css"></head><body leftmargin="0" topmargin="0" onload="MM_preloadImages('http://img.store.pchome.com.tw/web_img/st/y_05.jpg','http://img.store.pchome.com.tw/web_img/st/y_07.jpg','http://img.store.pchome.com.tw/web_img/st/y_01.jpg','http://img.store.pchome.com.tw/web_img/st/y_02.jpg','http://img.store.pchome.com.tw/web_img/st/y_03.jpg','http://img.store.pchome.com.tw/web_img/st/y_04.jpg','http://img.store.pchome.com.tw/web_img/st/y_06.jpg')" marginheight="0" marginwidth="0">
+<a name="top"></a>
+<form method="post" name="main_store" action="">
+<input name="status" value="" type="hidden">
+<input name="save_fg" value="" type="hidden">
+<input name="bos" value="" type="hidden">
+
+<style>
+body{
+  
+}
+</style>
+    <table style="background-repeat: no-repeat;" width="970" align="center" background="" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+                <td valign="top" width="356" align="left" height="74">
+<a href="http://store.pchome.com.tw/"><img src="free_files/logo-1.gif" width="263" border="0" height="69"></a><a href="http://boss.store.pchome.com.tw/"><img src="free_files/logo-2.gif" width="93" border="0" height="69"></a>          
+        </td>
+<td valign="top" width="341"></td>        
+        <td valign="top" width="261" align="center">
+        <!-- <td align="Center" valign="Top"> -->
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td width="20">
+<img src="free_files/a_5.gif" width="20" height="26">                
+              </td>                                          
+              <td style="font-size: 11px; color: rgb(73, 73, 73); font-family: Verdana;" align="center" bgcolor="#f1f1f1">
+                <img src="free_files/blue-dot.gif" width="6" align="absmiddle" height="6" hspace="3"><a href="http://boss.store.pchome.com.tw/recruit.htm?param=join">我要開店</a> 
+                <img src="free_files/blue-dot.gif" width="6" align="absmiddle" height="6" hspace="3"><a href="http://store.pchome.com.tw/">商店街</a> 
+                <img src="free_files/blue-dot.gif" width="6" align="absmiddle" height="6" hspace="3"><a href="http://share.pchome.com.tw/">分紅網</a>
+                <img src="free_files/blue-dot.gif" width="6" align="absmiddle" height="6" hspace="3"><a href="http://www.pchome.com.tw/">PChome</a>                 
+              </td>
+              <td width="7" bgcolor="#f1f1f1" height="26">
+              <img src="free_files/a_6.gif" width="7" height="26">              </td>
+            </tr>
+          </tbody></table>          
+        </td>
+      </tr>
+    </tbody></table>
+
+  <table width="970" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td colspan="3" align="center">
+                <table border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr> 
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="free_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="free_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="free_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/">網路開店首頁</a></td>
+                        <td><img src="free_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                      <!-- <a href="/" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_01.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_01.jpg" name="a011" width="108" height="31" border="0" id="a01"></a></td> -->
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="free_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="free_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="free_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/intro.htm">開店說明</a></td>
+                        <td><img src="free_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                      <!-- <td><a href="/intro.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_02.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_02.jpg" name="a021" width="109" height="31"border="0" id="a02"></a></td> -->
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><A href="/topicstore.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_03.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_03.jpg" name="a031" width="109" height="31"border="0" id="a03"></A></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="free_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="free_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="free_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/topicstore.htm">話題商店</a></td>
+                        <td><img src="free_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><A href="/recruit.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_04.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_04.jpg" name="a041" width="109" height="31"border="0" id="a04"></A></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="free_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="free_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="free_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/recruit.htm">加入商店街</a></td>
+                        <td><img src="free_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><A href="/seminar.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_05.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_05.jpg" name="a051" width="109" height="31"border="0" id="a05"></A></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="index_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="index_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="index_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/seminar.htm">開店說明會</a></td>
+                        <td><img src="index_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><A href="/eCamp_news.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_07.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_07.jpg" name="a07" width="109" height="31"border="0" id="a07"></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="free_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="free_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="free_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/eCamp_index.htm?type=sum">商學院</a></td>
+                        <td><img src="free_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><a href="http://mypaper.pchome.com.tw/news/estore/?param=comm" target='_blank' onMouseOver="MM_swapImage('a0611','','http://img.store.pchome.com.tw/web_img/st/y_06.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_06.jpg" name="a0611" width="109" height="31"border="0" id="a06"></a></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="free_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="free_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="free_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://mypaper.pchome.com.tw/news/estore/?param=comm" target="_blank">開店交流站</a></td>
+                        <td><img src="free_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td><img src="free_files/key-1.gif" width="107" height="31"></td>
+              </tr>
+            </tbody>
+          </table> 
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#58d2f8" height="12"></td>
+    </tr>
+    <tr>
+      <td width="8" height="12"><img src="free_files/top_13.jpg" width="8" height="32"></td>
+      <td class="t12top" width="955" background="free_files/top_14.jpg"><div align="left"><img src="free_files/topp.jpg" width="13" height="9"> <a href="http://www.pchome.com.tw/">PChome</a>&gt; <a href="http://store.pchome.com.tw/">商店街</a>&gt;  <a href="http://boss.store.pchome.com.tw/index.htm">網路開店首頁</a>&gt; 開店說明會</div></td>
+      <td width="7"><img src="free_files/top_17.jpg" width="7" height="32"></td>
+    </tr>
+  </tbody></table>
+  <table width="970" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr> 
+   <td valign="top" width="215" background="free_files/menu_bg.gif"><table width="214" border="0" cellpadding="0" cellspacing="0">
+     
+     
+        <tbody><tr>
+          <td bgcolor="#ffffff" height="5"></td>
+        </tr>
+        <tr>
+          <td><img src="free_files/menu_top.gif" width="214" height="28"></td>
+        </tr><tr>
+          <td><a href="http://boss.store.pchome.com.tw/"><img src="free_files/menu01_01.gif" width="214" border="0" height="17"></a></td>
+        </tr>
+        <tr>
+          <td height="25"><img src="free_files/menu_li.gif" width="214" height="7"></td>
+        </tr>
+        <tr>
+          <td><a href="http://boss.store.pchome.com.tw/intro.htm?param=readme&amp;type=introduce"><img src="free_files/menu01_02.gif" width="214" border="0" height="17"></a></td>
+        </tr>
+     <tr>
+       <td height="25"><img src="free_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td>
+       <a href="http://boss.store.pchome.com.tw/topicstore.htm?param=success"><img src="free_files/menu01_03.gif" width="214" border="0" height="18"></a></td>
+     </tr>
+     
+     <tr>
+       <td height="25"><img src="free_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td>
+       <a href="http://boss.store.pchome.com.tw/recruit.htm?param=join"><img src="free_files/menu01_04.gif" width="214" border="0" height="17"></a></td>
+     </tr>
+     <tr>
+       <td height="25"><img src="free_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td>
+       <img src="free_files/menu01_06.gif" width="214" border="0" height="17"></td>
+     </tr>
+     <tr>
+       <td height="25"><img src="free_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td>
+       <a href="http://boss.store.pchome.com.tw/eCamp_index.htm?type=sum"><img src="free_files/menu01_07.gif" width="214" border="0" height="18"></a></td>
+     </tr>
+     <tr>
+       <td height="25"><img src="free_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+     </tr><tr>
+                <td><a href="http://mypaper.pchome.com.tw/news/estore/?param=comm" target="_blank"><img src="free_files/menu01_06.gif" width="214" border="0" height="17"></a></td>
+     </tr>
+     <tr>
+       <td height="25"><img src="free_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+
+
+
+
+
+          
+     <tr>
+                <td><img src="free_files/menu_08.gif" width="214" border="0" height="17"></td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+   </tbody></table></td>
+   <td width="25"></td>
+   <td valign="top" width="730" align="left"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr> 
+                <td><img src="free_files/h8.jpg" width="730" height="45"></td>
+        </tr>
+        <tr>
+          <td align="center">
+<table width="90%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr> 
+                        <td align="left" valign="top">
+<table width="150" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="10px"></td>
+                            </tr>
+                            <tr>
+                              <td><img src="free_files/cd-1.jpg" width="160" height="150" alt=""></td>
+                            </tr>
+                          </table>
+                        </td>
+                         
+                        <td align="left" valign="top">
+<div class="t15d">網路開店經驗分享包</div>
+                          <div class="t12top"><font color="#666666">&nbsp;&nbsp;&nbsp;&nbsp;想了解更多有關於商店街的各項服務及功能嗎? 
+                            請將下面資料填寫完整後，我們將會免費郵<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;寄商店街網路開店經驗分享包給您！ 分享包內付<font color="#000000"><strong>40頁手冊+光碟</strong></font>，內容包括:<font color="#000000"><strong>商店街簡介、<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;人氣店家經驗分享、商店街後台系統</strong></font>等與您分享PChome商店街網路開店成功經驗精華！ 
+                            </font></div>
+                          <div class="t15c"><a href="http://boss.store.pchome.com.tw/seminar.htm"></a> 
+                          </div>
+                          <div class="t12b">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">若有任何問題，歡迎撥打</font> 
+                            <span fn_index="0" isdynflag="1" info="通話 +886227000898;0;+886227000898;0;" onmouseup="SkypeSetCallButtonPressed(this, 0,0,0)" onmousedown="SkypeSetCallButtonPressed(this, 1,0,0)" onmouseover="SkypeSetCallButton(this, 1,0,0);skype_active=SkypeCheckCallButton(this);" onmouseout="SkypeSetCallButton(this, 0,0,0);HideSkypeMenu();" context="(02)2700-0898" reallyisdynflag="1" fax="0" rtl="false" class="skype_tb_injection" id="__skype_highlight_id"><span title="Skype行動" onmouseout="SkypeSetCallButtonPart(this, 0);" onmouseover="SkypeSetCallButtonPart(this, 1);" class="skype_tb_injection_left" id="__skype_highlight_id_left"><span style="background-image: url(chrome://skype_ff_toolbar_win/content/cb_normal_l.gif);" class="skype_tb_injection_left_img" id="__skype_highlight_id_left_adge"><img src="free_files/cb_transparent_l.gif" style="height: 11px; width: 7px;" class="skype_tb_img_adge" height="11"></span><span class="skype_tb_injection_left_img" id="__skype_highlight_id_left_img"><img style="width: 16px;" src="free_files/tw.gif" title="" class="skype_tb_img_flag" name="skype_tb_img_f0"><img src="free_files/space.gif" style="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1"><img src="free_files/space.gif" style="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1"><img src="free_files/arrow.gif" title="" class="skype_tb_img_arrow" name="skype_tb_img_a0"><img src="free_files/space.gif" style?="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1"><img src="free_files/space.gif" style="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1"></span></span><img src="free_files/space.gif" style="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1"><span title="用Skype&#25320;打台灣﹝中華民國﹞的&#30005;&#35805;&#21495;&#30721;：+886227000898" onmouseout="SkypeSetCallButtonPart(this, 0)" onmouseover="SkypeSetCallButtonPart(this, 1)" class="skype_tb_injection_right" id="__skype_highlight_id_right"><span class="skype_tb_innerText" id="__skype_highlight_id_innerText"><img src="free_files/space.gif" style="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1"><img src="free_files/space.gif" style="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1"><img src="free_files/space.gif" style="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1"><img src="free_files/space.gif" style="margin: 0px; padding: 0px; height: 1px; width: 1px;" class="skype_tb_img_space" width="1" height="1">(02)2700-0898</span><span style="background-image: url(chrome://skype_ff_toolbar_win/content/cb_normal_r.gif);" class="skype_tb_injection_left_img" id="__skype_highlight_id_right_adge"><img src="free_files/cb_transparent_r.gif" style="height: 11px; width: 19px;" class="skype_tb_img_adge" height="11"></span></span></span> 
+                            <font color="#000000">按1988 將有專人為您服務，謝謝!</font><br>
+                            <font color="#990000">&nbsp;&nbsp;&nbsp;&nbsp;資料未填寫完整者，恕無法受理 
+                            郵寄需三到五個工作天，請耐心等候! </font></div></td>
+                      </tr>
+                      <!-- <tr>
+                <td align="left"><div class="t12b">
+                  <font color="Red">商店街於春節期間（2月6日 – 2月11日），網路線上報名不打烊！請您留下完整聯絡方式，先行保留參加權益，<br>我們將於2月12日開始處理並儘速回覆您。</font>
+                </div></td>
+              </tr> -->
+                    </tbody>
+                  </table>
+          </td>
+        </tr>
+        <tr> 
+          <td> 
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr> 
+                    <td align="middle" height="30"><br> 
+                          <table width="660" align="center" border="1" bordercolor="#d8d7da" cellpadding="5" cellspacing="0">
+                            <tbody>
+                              <tr> 
+                                <td class="t12h" width="191" align="right" bgcolor="#f4f4f4"><span id="cmp_name_word">公司名稱</span></td>
+                                <td width="443" align="left"><input maxlength="100" title="公司名稱" size="40" name="cmp_name" value="" type="text"></td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4"><span id="taxno_word">統一編號</span></td>
+                                <td align="left"><input title="統一編號" maxlength="8" size="40" id="taxno" name="taxno" value="" type="text"> 
+                                  <font class="t12h" color="red">&nbsp;&nbsp;請輸入半形數字，勿用全形。</font> 
+                                </td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4">負責人</td>
+                                <td align="left"><input title="負責人  " maxlength="12" size="40" name="bos" value=""></td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4">聯絡人</td>
+                                <td align="left"><input title="聯絡人" maxlength="12" size="40" name="cpeo" value="" type="text"></td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4">聯絡電話</td>
+                                <td align="left"><input title="聯絡電話" maxlength="30" size="40" name="tel" value="" type="text"></td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4"><font face="Arial, Helvetica, sans-serif">Email</font></td>
+                                <td align="left"><input title="Email" maxlength="255" size="40" name="email" type="text"></td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4">郵遞區號</td>
+                                <td align="left"><input title="Email" maxlength="255" size="10" name="email3" type="text"></td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4">郵寄地址</td>
+                                <td align="left"><input title="Email" maxlength="255" size="40" name="email2" type="text"></td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4"><span id="cmp_info_word">公司簡述</span></td>
+                                <td align="left"><textarea name="cmp_info" title="公司簡述" rows="4" cols="40" maxlength="1500"></textarea></td>
+                              </tr>
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4">所在地</td>
+                                <td align="left"> <select name="vtCityNo">
+                                    <option value="" selected="selected">選擇所在地</option>
+                                    <option value="001">台中市</option>
+                                    <option value="002">台中縣</option>
+                                    <option value="003">台北市</option>
+                                    <option value="004">台北縣</option>
+                                    <option value="005">台東縣</option>
+                                    <option value="006">台南市</option>
+                                    <option value="007">台南縣</option>
+                                    <option value="008">宜蘭縣</option>
+                                    <option value="009">花蓮縣</option>
+                                    <option value="010">金門縣</option>
+                                    <option value="011">南投縣</option>
+                                    <option value="012">南海諸島</option>
+                                    <option value="013">屏東縣</option>
+                                    <option value="014">苗栗縣</option>
+                                    <option value="015">桃園縣</option>
+                                    <option value="016">高雄市</option>
+                                    <option value="017">高雄縣</option>
+                                    <option value="018">基隆市</option>
+                                    <option value="019">連江縣</option>
+                                    <option value="020">釣魚台</option>
+                                    <option value="021">雲林縣</option>
+                                    <option value="022">新竹市</option>
+                                    <option value="023">新竹縣</option>
+                                    <option value="024">嘉義市</option>
+                                    <option value="025">嘉義縣</option>
+                                    <option value="026">彰化縣</option>
+                                    <option value="027">澎湖縣</option>
+                                  </select> </td>
+                              </tr>
+                              <!-- <TR> 
+                            <TD class=t12h align=right bgColor=#f4f4f4>場次別</TD>
+                            <TD align=left >
+                  <select name="vtTypeCode">
+                    <option value="" selected>選擇分類</option>
+<option value="CF09011003">02月11日彰化場說明會</option><option value="CF09011707">02月11日台南場說明會</option><option value="CF09011706">02月13日台北場說明會</option><option value="CF09011004">02月18日高雄場說明會</option><option value="CF09011005">02月20日台中場說明會</option>                  </select>
+                            </TD>
+                          </TR> -->
+                              <tr> 
+                                <td class="t12h" align="right" bgcolor="#f4f4f4">備註</td>
+                                <td align="left"><textarea title="備註" name="memo" rows="4" cols="40" maxlength="1500"></textarea></td>
+                              </tr>
+                              <tr bgcolor="#666666"> 
+                                <td class="t12h" align="right"> <input name="EDM" checked="checked" type="checkbox"> 
+                                  <font color="#FFFFFF">願意參加網路開店說明會</font></td>
+                                <td align="left"  class="t12h"><font color="#FFFFFF">場次別 
+                                  <select name="select" onchange="change_place();">
+                                    <option value="" selected="selected">選擇分類</option>
+                                    <option value="CF09011003;N">02月11日彰化場說明會</option>
+                                    <option value="CF09011707;N">02月11日台南場說明會</option>
+                                    <option value="CF09011706;N">02月13日台北場說明會</option>
+                                    <option value="CF09011004;N">02月18日高雄場說明會</option>
+                                    <option value="CF09011005;N">02月20日台中場說明會</option>
+                                  </select>
+                                  </font></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      <p align="center"> 
+                        <input name="button" value=" 確認送出 " onclick="save_btn()" type="button">
+                        <input name="reset" value=" 取消重填 " type="reset">
+                        <br>
+                        <br>
+                      </p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+        </tr>
+        <tr> 
+          <td valign="bottom" align="right" height="50"> <table width="45%" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr> 
+                <td align="right" height="20"><img src="free_files/mainicon01.jpg" width="21" align="absmiddle" height="14" hspace="5"><span class="t16d"><a href="http://boss.store.pchome.com.tw/index.htm">回開店首頁</a></span></td>
+                <td align="right"><span class="t16d"><img src="free_files/mainicon02.jpg" width="24" align="absmiddle" height="17" hspace="5"><a href="http://boss.store.pchome.com.tw/recruit.htm?param=join">加入商店街</a></span></td>
+                <td align="right"><span class="t16d"><img src="free_files/mainicon03.jpg" width="16" align="absmiddle" height="16" hspace="5"><a href="#top">TOP</a></span></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table> </td>
+  </tr>
+</tbody></table>
+<br>
+<table width="970" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr> 
+    <td bgcolor="#58d2f8" height="2"></td>
+  </tr>
+  <tr>
+  <td class="footer" align="center"><br>【PChome Online商店街】所銷售的商品或服務，都是由各該商家所銷售或提供<br>
+      網路家庭版權所有 Copyright PC home Online 版權所有，轉載必究 <p></p></td>
+  </tr>
+</tbody></table>
+
+<br>
+
+<!-- boss.store.pchome.com.tw	w1.store 2009/02/06 16:54:44 -->
+<script language="JavaScript">
+  var html_end_js_var=true;
+    var new_foot_div_top = 0;
+  var useragent_str = navigator.userAgent;
+  function set_new_div_position(nextTimeout) {
+    if(!$("inside_content_loct")) return;    
+    var fix_offinfo = getOffset($("inside_content_loct"));
+    var real_offinfo = getOffset($("inside_content"));
+    var obj = document.getElementById("inside_content");
+    
+    var obj_side = document.getElementById("side");
+    var side_offinfo = getOffset(obj_side);
+
+    if(fix_offinfo.top + 100 > real_offinfo.top && 
+        fix_offinfo.left == real_offinfo.left) {      
+      var cNode=document.getElementById('inside_content_loct');
+      cNode.parentNode.removeChild(cNode);
+      return;
+    }
+
+    if(obj.style.position != "absolute") {
+      obj.style.position = "absolute";
+      obj.style.zIndex = 10;
+    }
+    
+    obj.style.left = (fix_offinfo.left + 0) + "px";
+    obj.style.top = fix_offinfo.top + "px";
+    
+    var tmp_top = real_offinfo.top + real_offinfo.height;
+    if(tmp_top != new_foot_div_top) {
+      new_foot_div_top = tmp_top;
+      Args_setTimeout(set_new_div_position, nextTimeout * 2);
+    } 
+    
+    obj = document.getElementById("footer");
+    obj_offinfo = getOffset(obj);
+    
+    if(obj.style.position != "absolute") {
+      obj.style.position = "absolute";
+      obj.style.zIndex = 10;
+    }
+    
+    var tmp_new_foot_div_top;
+    if (new_foot_div_top < side_offinfo.height) tmp_new_foot_div_top=side_offinfo.height + 50;
+    else tmp_new_foot_div_top=new_foot_div_top;
+    obj.style.top = tmp_new_foot_div_top + "px";
+  }
+  if (document.getElementById("inside_content") && !!window.ActiveXObject && useragent_str.match(/MSIE 6/)) {
+    set_new_div_position(200);  
+  }
+
+  window.document.onclick = chk_link;
+  
+  function chk_link(e) {
+    if(!event) return;
+    
+    var obj;
+    for(obj = event.srcElement; obj; obj = obj.parentNode) {
+      if(obj.tagName == 'A') {
+      	//if(obj.href.match("http://") && !obj.href.match(/pchome.com.tw/)) {
+        if(obj.href.match("http://") && (obj.href.match(/bid.yahoo.com/) || obj.href.match(/shop.rakuten.tw/) 
+            || obj.href.match(/obuy.com.tw/) || obj.href.match(/sh1.yahoo./) || obj.href.match(/sh2.yahoo./)
+            || obj.href.match(/www.r989.com/) )
+        ) {
+           //obj.target="_BLANK";     
+          return false;
+        }
+      	break;
+      }
+    }
+    return true;
+  }
+
+  if(window.cal_impression && !window.cal_black) cal_impression("http://img.store.pchome.com.tw");
+  
+
+  eval(unescape("if%28window.stpgflag%29%20stpgflag%28%29"));
+  
+</script>
+</form></body></html>

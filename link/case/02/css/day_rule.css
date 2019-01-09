@@ -1,0 +1,72 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+#container{
+	width:1000px;
+	background:url(../img/day_rulebg.gif) top center no-repeat #dcdcdc;
+	margin:auto;
+}
+
+#header a,#footer a{
+	width:100%;
+	height:100%;
+	text-indent:-9999px; 
+    font-size:0;
+	display:block;
+}
+
+#header{
+	width:100%;
+	height: 75px;
+	background: #000;
+	position:fixed;
+	z-index: 7999;
+}
+
+#header a#logo{
+	width: 156px;
+	height: 75px;
+	background: url(../img/sony_logo.png) no-repeat;
+	float: left;
+}
+
+
+#header ul{
+	width: 389px;
+	height:75px;
+	float:right;
+}
+#header ul li{float:left;}
+#header a{height:75px;}
+#header a.nav1{width:150px; background:url(../img/nav1.jpg) no-repeat top;}
+#header a.nav2{width:107px; background:url(../img/nav2.jpg) no-repeat top;}
+#header a.nav3{width:132px; background:url(../img/nav3.jpg) no-repeat top;}
+#header a.nav1:hover,#header a.nav2:hover,#header a.nav3:hover,#header a.selected{background-position:bottom;}
+
+#footer{width:100%; height: 30px; background: #000; position:fixed; z-index: 9999; bottom:0px;}
+
+#footer #fL{width:350px; height:30px; background:url(../img/footer_l.png) no-repeat; position:relative; float:left;}
+#footer #fL a.share{width:50px; height:15px; position:absolute; top:8px; left:293px; background:url(../img/share_btn.png) no-repeat top;}
+#footer #fL a.share:hover{background-position:bottom;}
+
+#footer #fR{width:200px; height:30px; position:relative; float:right;}
+#footer #fR a.fans{width:150px; height:16px; position:absolute; top:7px; left:25px; background:url(../img/fans_btn.png) no-repeat top;}
+#footer #fR a.fans:hover{background-position:bottom;}
+
+
+#main{ width:100%; position:relative;}
+
+ol,ul,li{ list-style: none; }
+ol,.list li{ list-style-type:decimal; line-height:20px; margin-left:15px; color:#00000; margin-top:8px; }
+body{font-family:Verdana, Arial,微軟正黑體; margin:0; -webkit-text-size-adjust: none;}
+.rule_area{ width:1000px; height:900px; margin:auto; position:relative;}
+.text_area{ width:800px; height:900px; position:absolute; top:170px; left:65px;}
+.text_area p{color:#000000; font-size:13px; line-height:18px; margin-top:8px; margin-left:10px;}
+h1{ width:120px; height:24px; background:url(../img/day_rule_btn.png) no-repeat; color:#fefefe; font-size:15px; line-height:24px; padding-left:10px; margin-top:30px;}
+.rule_gife{ width:398px; height:310px; position:absolute; top:110px; left:380px;} 
+.pro1{ width:294px; height:413px; position:absolute; top:30px; left:650px; z-index:997; opacity: 0; filter:alpha(opacity=0);}
+.pro2{ width:294px; height:432px; position:absolute; top:100px; left:770px; z-index:998; opacity: 0; filter:alpha(opacity=0);}
+

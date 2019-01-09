@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+/*RESET OVER*/
+body{-webkit-text-size-adjust: none;/*  background-color: #000; */}
+
+input{
+	width: 241px;
+	height: 31px;
+	position: absolute;
+	left: 150px;
+	border: 2px solid #949494;
+	font-size:15px;
+	font-weight:bold;
+	font-family:Arial,"新細明體";
+	color:#333;
+	background:#f4f4f4;
+	padding: 0 10px;
+}
+input:focus { 
+	border: 2px solid #833197;
+	}
+
+.data{
+	width: 703px;
+	height: 342px;
+	background: url(../img/databg1.png) 0 0 no-repeat;
+	position: relative;
+/* 	position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -171px;
+margin-left: -351.5px; */
+}
+
+.datadone{
+	width: 703px;
+	height: 342px;
+	background: url(../img/databg2.png) 0 0 no-repeat;
+	position: relative;
+/* 	position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -171px;
+margin-left: -351.5px; */
+}
+
+.data_name{top: 100px;}
+.data_phone{top: 150px;}
+.data_email{top: 199px;}
+.data_check{
+	padding: 0;
+	width: 15px;
+	height: 15px;
+	top: 260px;
+	left: 60px;
+}
+
+.data_closebtn{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 13px;
+	left: 646px;
+	background: url(../img/wclosebtn.png) 0 0 no-repeat;
+}
+.data_sendbtn{
+	width: 123px;
+	height: 42px;
+	position: absolute;
+	top: 260px;
+	left: 484px;
+	background: url(../img/wsendbtn.png) 0 0 no-repeat;
+}
+.data_backbtn{
+	width: 177px;
+	height: 42px;
+	position: absolute;
+	top: 212px;
+	left: 262px;
+	background: url(../img/wbackbtn.png) 0 0 no-repeat;
+}
+.data_closebtn:hover,.data_sendbtn:hover,.data_backbtn:hover{
+	background-position: 0 100%;
+	
+}
+
+/*******************************20130827**********************************/
+.screenbg{width:100%; height:100%; position:fixed; z-index:100; background:url(../img/screenbg.png);}
+.wclzbtn{
+	width: 47px;
+	height: 47px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	background: url(../img/clzbtn.png) 0 0 no-repeat;
+	z-index: 150;
+}
+.wdata,.wsharedone,.wsharealldone,.wtext{
+	width: 765px;
+	height: 443px;
+	position: absolute;
+	top: -443px;
+	left:0;
+	z-index: 150;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.wdata{background: url(../img/wdatabg.jpg) 0 0 no-repeat}
+.wtext{background: url(../img/wtextbg.jpg) 0 0 no-repeat}
+.wsharedone{background: url(../img/wsharedonebg.jpg) 0 0 no-repeat}
+.wsharealldone{background: url(../img/wsharealldonebg.jpg) 0 0 no-repeat}
+.wdata_name,.wdata_phone,.wdata_email{
+	width: 140px;
+	height: 22px;
+	position: absolute;
+	left: 506px;
+	border: 1px solid #000;
+	font-size:13px;
+	font-family:Arial,"新細明體";
+	color:#333;
+	background:#fff;
+	padding: 0 10px;
+}
+.wdata_name:focus,.wdata_phone:focus,.wdata_email:focus {border: 1px solid #000;}
+.wdata_name{top: 128px;}
+.wdata_phone{top: 166px;}
+.wdata_email{top: 202px;}
+.wdata_check{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 254px;
+	left: 388px;
+}
+.wtext_check1{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 180px;
+	left: 390px;
+}
+.wtext_check2{
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 232px;
+	left: 390px;
+}
+.wdata_sendbtn{
+	width: 150px;
+	height: 46px;
+	position: absolute;
+	background: url(../img/sendbtnb.png) 0 0 no-repeat;
+	left: 495px;
+	top: 352px;
+}
+.wtext_sendbtn{
+	width: 150px;
+	height: 46px;
+	position: absolute;
+	background: url(../img/sendbtnw.png) 0 0 no-repeat;
+	top: 328px;
+	left: 462px;
+}
+.wsharedone_sendbtn,.wsharealldone_sendbtn{
+	width: 150px;
+	height: 46px;
+	position: absolute;
+	background: url(../img/sendbtnw2.png) 0 0 no-repeat;
+	left: 582px;
+	top: 337px;
+}
+.wclzbtn:hover,.wdata_sendbtn:hover,.wtext_sendbtn:hover,.wsharedone_sendbtn:hover,.wsharealldone_sendbtn:hover{background-position: bottom;}

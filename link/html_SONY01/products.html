@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="">
+<meta property="og:title" content="" />
+<meta property="og:image" content="" />
+<title>Sony Xperia™ Z 感動，才正要開始！</title>
+<link rel="shortcut icon" href="http://www.sonymobile.com/global-zh/wp-content/themes/semc-main/img/ico/favicon.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+<link href="style/reset.css" rel="stylesheet" type="text/css" />
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/sonyZ.js"></script>
+<script type="text/javascript" src="js/share.js"></script>
+<script type='text/javascript'>
+$(document).ready(function(){
+	Resize();
+	setSubBtn();
+	
+	$(function(){
+		$('body').waitForImages({
+			waitForAll: true,
+			finished: function() {
+				$("#loading").fadeOut("slow");
+				goColor("toD","#f05a89");
+			}
+		});
+	});
+
+});
+</script>
+</head>
+
+<body>
+<div id="container">
+<div id="loading"></div>
+
+<div id="header">
+<div id="logo"><a href="http://www.sonymobile.com/" target="_blank">sony</a></div>
+<ul id="nav">
+<li><a href="index.html">活動首頁</a></li>
+<li><a href="game.html">新年祈願</a></li>
+<li><a href="wall.html">作品牆</a></li>
+<li><a href="rule.html">活動辦法</a></li>
+<li><a href="products.html" class="selected">產品介紹</a></li>
+<li><a href="video.html">影片欣賞</a></li>
+<li><a href="experience.html">體驗會參加說明</a></li>
+</ul>
+</div><!--header End-->
+
+<div class="colorball"></div><!--四顆彩色球 End-->
+
+<div id="main">
+<div id="colorItem"></div>
+
+
+<!--產品選單 start-->
+<div class="pro_btn">
+  <ul>
+  <li><a href="#" onclick="goPro(1); return false;" class="btnarea_a"></a></li>
+  <li><a href="#" onclick="goPro(2); return false;" class="btnarea_b"></a></li>
+  <li><a href="#" onclick="goPro(3); return false;" class="btnarea_c"></a></li>
+  <li><a href="#" onclick="goPro(4); return false;" class="btnarea_d"></a></li>
+  <li><a href="#" onclick="goPro(5); return false;" class="btnarea_e"></a></li>
+  <li><a href="#" onclick="goPro(6); return false;" class="btnarea_f"></a></li>
+  <li><a href="#" onclick="goPro(7); return false;" class="btnarea_h"></a></li>
+  <li><a href="#" onclick="goPro(8); return false;" class="btnarea_g"></a></li>
+ 
+  </ul>
+</div>
+<!--產品選單 End-->
+
+<!--設計p1 start-->
+<div id="pro_p1">
+    <ul class="sub_btn">
+        <li><a href="#" onclick="goProSub(2); return false;" class="sub_p1 selected"></a></li>
+        <li><a href="#" onclick="goProSub(3); return false;" class="sub_p1"></a></li>
+    </ul>
+
+    <div id="p1_1" class="pArea">
+       <div class="pro_text"><img src="images/pp1.png" width="280" height="150" /><a href="#" onclick="goProSub(2); return false;" class="pt1"></a></div>
+       <div id="bg1_1" class="pro_imgResizeC"><img src="images/design_p1.jpg"/></div>
+    </div>
+
+
+    <div id="p1_2" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/design_main_p2.png"/><a href="#" onclick="goProSub(3); return false;" class="pt1 btn1_2"></a></div>
+       </div>
+       <div id="bg1_2" class="pro_imgResizeR"><img src="images/design_p2.jpg"/></div>
+    </div>
+
+
+    <div id="p1_3" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/design_main_p3.png"/><a href="#" onclick="goPro(2); return false;" class="pt1 btn1_3"></a></div>
+       </div>
+       <div id="bg1_3" class="pro_imgResizeR"><img src="images/design_p3.jpg"/></div>
+    </div>
+</div><!--設計p1 End-->
+
+
+
+<!--螢幕p2 start-->
+<div id="pro_p2">
+    <ul class="sub_btn">
+        <li><a href="#" onclick="goProSub(2); return false;" class="sub_p2 selected"></a></li>
+        <li><a href="#" onclick="goProSub(3); return false;" class="sub_p2"></a></li>
+        <li><a href="#" onclick="goProSub(4); return false;" class="sub_p2"></a></li>
+    </ul>
+
+    <div id="p2_1" class="pArea">
+       <div class="pro_text"><img src="images/pp2.png" width="280" height="150" /><a href="#" onclick="goProSub(2); return false;" class="pt2"></a></div>
+       <div id="bg2_1" class="pro_imgResizeC"><img src="images/display_p1.jpg"/></div>
+    </div>
+    
+    
+    <div id="p2_2" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/display_main_p2.png"/><a href="#" onclick="goProSub(3); return false;" class="pt2 btn2_2"></a></div>
+       </div>
+       <div id="bg2_2" class="pro_imgResizeR"><img src="images/display_p2.jpg"/></div>
+    </div>
+
+
+    <div id="p2_3" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/display_main_p3.png"/><a href="#" onclick="goProSub(4); return false;" class="pt2 btn2_3"></a></div>
+       </div>
+       <div id="bg2_3" class="pro_imgResizeR"><img src="images/display_p3.jpg"/></div>
+    </div>
+
+
+    <div id="p2_4" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/display_main_p4.png"/><a href="#" onclick="goPro(3); return false;" class="pt2 btn2_4"></a></div>
+       </div>
+       <div id="bg2_4" class="pro_imgResizeR"><img src="images/display_p4.jpg"/></div>
+    </div>
+
+</div><!--螢幕p2 End-->
+
+
+<!--相機p3 start-->
+<div id="pro_p3">
+    <ul class="sub_btn">
+        <li><a href="#" onclick="goProSub(2); return false;" class="sub_p3 selected"></a></li>
+        <li><a href="#" onclick="goProSub(3); return false;" class="sub_p3"></a></li>
+        <li><a href="#" onclick="goProSub(4); return false;" class="sub_p3"></a></li>
+        <li><a href="#" onclick="goProSub(5); return false;" class="sub_p3"></a></li>
+        <li><a href="#" onclick="goProSub(6); return false;" class="sub_p3"></a></li>
+        <li><a href="#" onclick="goProSub(7); return false;" class="sub_p3"></a></li>
+    </ul>
+    
+    <div id="p3_1" class="pArea">
+       <div class="pro_text_w"><img src="images/pp3.png" width="280" height="150" /><a href="#" onclick="goProSub(2); return false;" class="pt3"></a></div>
+       <div id="bg3_1" class="pro_imgResizeC"><img src="images/camera_p1.jpg"/></div>
+    </div>
+
+
+    <div id="p3_2" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/camera_main_p2.png"/><a href="#" onclick="goProSub(3); return false;" class="pt3 btn3_2"></a></div>
+       </div>
+       <div id="bg3_2" class="pro_imgResizeR"><img src="images/camera_p2.jpg"/></div>
+    </div>
+    
+        <div id="p3_3" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/camera_main_p3.png"/><a href="#" onclick="goProSub(4); return false;" class="pt3 btn3_3"></a></div>
+       </div>
+       <div id="bg3_3" class="pro_imgResizeR"><img src="images/camera_p3.jpg"/></div>
+    </div>
+
+
+    <div id="p3_4" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/camera_main_p7.png"/><a href="#" onclick="goProSub(5); return false;" class="pt3 btn3_4"></a></div>
+       </div>
+       <div id="bg3_4" class="pro_imgResizeR"><img src="images/camera_p7.jpg"/></div>
+    </div>
+
+
+    <div id="p3_5" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/camera_main_p4.png"/><a href="#" onclick="goProSub(6); return false;" class="pt3 btn3_5"></a></div>
+       </div>
+       <div id="bg3_5" class="pro_imgResizeR"><img src="images/camera_p4.jpg"/></div>
+    </div>
+
+
+    <div id="p3_6" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/camera_main_p5.png"/><a href="#" onclick="goProSub(7); return false;" class="pt3 btn3_6"></a></div>
+       </div>
+       <div id="bg3_6" class="pro_imgResizeR"><img src="images/camera_p5.jpg"/></div>
+    </div>
+    
+     <div id="p3_7" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/camera_main_p6.png"/><a href="#" onclick="goPro(4); return false;" class="pt3 btn3_7"></a></div>
+       </div>
+       <div id="bg3_7" class="pro_imgResizeR"><img src="images/camera_p3.jpg"/></div>
+    </div>
+
+</div><!--相機p3 End-->
+
+
+<!--音樂p4 start-->
+<div id="pro_p4">
+    <ul class="sub_btn">
+        <li><a href="#" onclick="goProSub(2); return false;" class="sub_p4 selected"></a></li>
+        <li><a href="#" onclick="goProSub(3); return false;" class="sub_p4"></a></li>
+        <li><a href="#" onclick="goProSub(4); return false;" class="sub_p4"></a></li>
+    </ul>
+    
+    <div id="p4_1" class="pArea">
+       <div class="pro_text_w"><img src="images/pp4.png" width="280" height="150" /><a href="#" onclick="goProSub(2); return false;" class="pt4"></a></div>
+       <div id="bg4_1" class="pro_imgResizeC"><img src="images/music_p1.jpg"/></div>
+    </div>
+
+    
+    <div id="p4_2" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/music_main_p2.png" /><a href="#" onclick="goProSub(3); return false;" class="pt4 btn4_2"></a></div>
+       </div>
+       <div id="bg4_2" class="pro_imgResizeR"><img src="images/music_p2.jpg"/></div>
+    </div>
+
+
+    <div id="p4_3" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/music_main_p3.png" /><a href="#" onclick="goProSub(4); return false;" class="pt4 btn4_3"></a></div>
+       </div>
+       <div id="bg4_3" class="pro_imgResizeR"><img src="images/music_p3.jpg"/></div>
+    </div>
+
+
+    <div id="p4_4" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/music_main_p4.png" /><a href="#" onclick="goPro(5); return false;" class="pt4 btn4_4"></a></div>
+       </div>
+       <div id="bg4_4" class="pro_imgResizeR"><img src="images/music_p4.jpg"/></div>
+    </div>
+
+</div><!--音樂p4 End-->
+
+
+<!--連接p5 start-->
+<div id="pro_p5">
+    <ul class="sub_btn">
+        <li><a href="#" onclick="goProSub(2); return false;" class="sub_p5 selected"></a></li>
+        <li><a href="#" onclick="goProSub(3); return false;" class="sub_p5"></a></li>
+    </ul>
+    
+    <div id="p5_1" class="pArea">
+       <div class="pro_text"><img src="images/pp5.png" width="280" height="150" /><a href="#" onclick="goProSub(2); return false;" class="pt5"></a></div>
+       <div id="bg5_1" class="pro_imgResizeC"><img src="images/connectivity_p1.jpg"/></div>
+    </div>
+
+
+    <div id="p5_2" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/connectivity_main_p2.png" /><a href="#" onclick="goProSub(3); return false;" class="pt5 btn5_2"></a></div>
+       </div>
+       <div id="bg5_2" class="pro_imgResizeR"><img src="images/connectivity_p2.jpg"/></div>
+    </div>
+
+
+    <div id="p5_3" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/connectivity_main_p3.png" /><a href="#" onclick="goPro(6); return false;" class="pt5 btn5_3"></a></div>
+       </div>
+       <div id="bg5_3" class="pro_imgResizeR"><img src="images/connectivity_p3.jpg"/></div>
+    </div>
+
+</div><!--連接p5 End-->
+
+
+<!--操作p6 start-->
+<div id="pro_p6">
+    <ul class="sub_btn">
+        <li><a href="#" onclick="goProSub(2); return false;" class="sub_p6 selected"></a></li>
+        <li><a href="#" onclick="goProSub(3); return false;" class="sub_p6"></a></li>
+        <li><a href="#" onclick="goProSub(4); return false;" class="sub_p6"></a></li>
+        <li><a href="#" onclick="goProSub(5); return false;" class="sub_p6"></a></li>
+        <!--<li><a href="#" onclick="goProSub(6); return false;" class="sub_p6"></a></li>-->
+    </ul>
+    
+    <div id="p6_1" class="pArea">
+       <div class="pro_text"><img src="images/pp6.png" width="280" height="150" /><a href="#" onclick="goProSub(2); return false;" class="pt6"></a></div>
+       <div id="bg6_1" class="pro_imgResizeC"><img src="images/usibility_p1.jpg"/></div>
+    </div>
+
+
+    <div id="p6_2" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/usibility_maim_p2.png" /><a href="#" onclick="goProSub(3); return false;" class="pt6 btn6_2"></a></div>
+       </div>
+       <div id="bg6_2" class="pro_imgResizeR"><img src="images/usibility_p2.jpg"/></div>
+    </div>
+
+
+    <div id="p6_3" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/usibility_maim_p3.png" /><a href="#" onclick="goProSub(4); return false;" class="pt6 btn6_3"></a></div>
+       </div>
+       <div id="bg6_3" class="pro_imgResizeR"><img src="images/usibility_p3.jpg"/></div>
+    </div>
+    
+    
+    <div id="p6_4" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/usibility_maim_p4.png" /><a href="#" onclick="goProSub(5); return false;" class="pt6 btn6_4"></a></div>
+       </div>
+       <div id="bg6_4" class="pro_imgResizeR"><img src="images/usibility_p4.jpg"/></div>
+    </div>
+
+
+    <div id="p6_5" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/usibility_maim_p5.png" /><a href="#" onclick="goPro(7); return false;" class="pt6 btn6_5"></a></div>
+       </div>
+       <div id="bg6_5" class="pro_imgResizeR"><img src="images/usibility_p5.jpg"/></div>
+    </div>
+
+
+    <!--<div id="p6_6" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/usibility_maim_p6.png" /></div>
+       </div>
+       <div id="bg6_6" class="pro_imgResizeR"><img src="images/usibility_p6.jpg"/></div>
+    </div>-->
+    
+</div><!--操作p6 End-->
+
+
+<!--配件p8 start-->
+<div id="pro_p8">
+    <ul class="sub_btn">
+        <li><a href="#" onclick="goProSub(2); return false;" class="sub_p7 selected"></a></li>
+        <li><a href="#" onclick="goProSub(3); return false;" class="sub_p7"></a></li>
+        <li><a href="#" onclick="goProSub(4); return false;" class="sub_p7"></a></li>
+        <li><a href="#" onclick="goProSub(5); return false;" class="sub_p7"></a></li>
+    </ul>
+    
+    <div id="p8_1" class="pArea">
+       <div class="pro_text"><img src="images/pp8.png" width="280" height="150" /><a href="#" onclick="goProSub(2); return false;" class="pt7"></a></div>
+       <div id="bg8_1" class="pro_imgResizeC"><img src="images/accessory_p1.jpg"/></div>
+    </div>
+
+
+    <div id="p8_2" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/accessory_main_p2.png" /><a href="#" onclick="goProSub(3); return false;" class="pt7 btn7_2"></a></div>
+       </div>
+       <div id="bg8_2" class="pro_imgResizeR"><img src="images/accessory_p2.jpg"/></div>
+    </div>
+    
+    
+    <div id="p8_3" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/accessory_main_p3.png" /><a href="#" onclick="goProSub(4); return false;" class="pt7 btn7_3"></a></div>
+       </div>
+       <div id="bg8_3" class="pro_imgResizeR"><img src="images/accessory_p3.jpg"/></div>
+    </div>
+    
+    
+    <div id="p8_4" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/accessory_main_p4.png" /><a href="#" onclick="goProSub(5); return false;" class="pt7 btn7_4"></a></div>
+       </div>
+       <div id="bg8_4" class="pro_imgResizeR"><img src="images/accessory_p4.jpg"/></div>
+    </div>
+    
+    
+    <div id="p8_5" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/accessory_main_p5.png" /><a href="#" onclick="goPro(1); return false;" class="pt7 btn7_5"></a></div>
+       </div>
+       <div id="bg8_5" class="pro_imgResizeR"><img src="images/accessory_p5.jpg"/></div>
+    </div>    
+ 
+</div><!--配件p8 End-->
+
+<!--防水p7 star-->
+<div id="pro_p7">
+    <div id="p7_1" class="pArea">
+       <div class="pro_text"><img src="images/pp7.png" width="280" height="150" /><a href="#" onclick="goProSub(2); return false;" class="pt8"></a></div>
+       <div id="bg7_1" class="pro_imgResizeC"><img src="images/water_p1.jpg"/></div>
+    </div>
+
+
+    <div id="p7_2" class="pArea">
+       <div class="pro_content">
+           <div class="pro_main"><img src="images/water_main_p2.png" /><a href="#" onclick="goPro(8); return false;" class="pt8 btn8_2"></a></div>
+       </div>
+       <div id="bg7_2" class="pro_imgResizeR"><img src="images/water_p2.jpg"/></div>
+    </div>
+
+
+  
+</div>
+<!--防水p7 End-->
+
+</div><!--main End-->
+
+
+<div id="footer" class="hideword">
+<div id="L"><a href="#" onclick="share('f'); return false;" class="share">分享fb</a></div>
+<div id="R"><a href="https://www.facebook.com/sonymobiletw" target="_blank" class="fans">加入Sony Mobile TW 粉絲團</a></div>
+</div><!--footer End-->
+
+
+</div><!--containter End-->
+
+</body>
+</html>

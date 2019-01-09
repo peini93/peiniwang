@@ -1,0 +1,197 @@
+@import compass/utilities/color/brightness
+@import compass/reset
+@import compass/css3
+@import myMixin
+
+$ff1: "微軟正黑體","Microsoft JhengHei"
+$w:1000px
+$img:"../img/"
+
+html,body
+	width: 100%
+	background: #08253f
+	position: relative
+	font-family: $ff1
+
+a
+	font-family: $ff1
+	text-decoration: none
+
+
+
+#jSplash
+	width: 430px
+	height: 150px
+	background: url(#{$img}loading.gif) no-repeat
+	margin: auto
+
+.wrap
+	width: 100%
+	height: 910px
+	min-width: 1200px
+	position: relative
+	background: url(#{$img}bg.png) no-repeat center top
+	background-size: 100% 950px
+	overflow: hidden
+	@include transition (0.3s)
+	+rwd(pc)
+		height: 850px
+
+.type
+	width: 533px
+	height: 220px
+	margin: auto
+	+poa(30px,0,null,0,10)
+	@include transition (0.3s)
+	+rwd(pc)
+		width: 480px
+		height: 198px
+	& img
+		display:block
+		width: 100%
+
+.logo1
+	width: 123px
+	height: 26px
+	display: block
+	background: url(#{$img}mobile-01.png) 0 0 no-repeat
+	+poa(10px,null,null,10px,null)
+
+.logo2
+	width: 40px
+	height: 40px
+	background: url(#{$img}fb-icon.png) 0 0 no-repeat
+	display: block
+	+poa(10px,10px,null,null,null)
+	&:hover
+		background-position: 0 -40px
+	
+.btn1
+	width: 180px
+	height: 180px
+	display: block
+	margin: auto
+	background: url(#{$img}btn.png) 0 0 no-repeat
+	+animation(btnAni 0.4s linear infinite alternate)
+	+poa(385px,0,null,0,11)
+	&:hover
+		background-position: 0 -180px
+
++keyframes(btnAni)
+	0%
+		top: 380px
+	50%
+		top: 385px
+	100%
+		top: 390px
+
+.btn2
+	width: 260px
+	height: 556px
+	display: block
+	background: url(#{$img}pl.png) 0 0 no-repeat
+	+poa(280px,null,null,30%,10)
+	+rwd(pc)
+		+poa(280px,null,null,23%,10)
+	&:hover
+		background-position: 0 -556px
+
+.btn3
+	width: 260px
+	height: 556px
+	display: block
+	background: url(#{$img}pr.png) 0 0 no-repeat
+	+poa(280px,30%,null,null,10)
+	+rwd(pc)
+		+poa(280px,23%,null,null,10)
+	&:hover
+		background-position: 0 -556px
+
+.ml
+	width: 492px
+	height: 894px
+	+poa(60px,null,null,11%,9)
+	+rwd(pc)
+		+poa(80px,null,null,3%,9)
+	@include transition (0.3s)
+	& img
+		display: block
+		width: 100%
+		+rwd(pc)
+			width: 90%
+
+.mr
+	width: 351px
+	height: 885px
+	+poa(70px,15%,null,null,9)
+	+rwd(pc)
+		+poa(80px,5%,null,null,9)
+	@include transition (0.3s)
+	& img
+		display: block
+		width: 100%
+		+rwd(pc)
+			width: 90%
+
+.l_title
+	width: 430px
+	height: 234px
+	+poa(400px,null,null,6%,11)
+	+rwd(pc)
+		+poa(400px,null,null,1%,11)
+		width: 300px
+		height: 164px
+	@include transition (0.3s)
+	& img
+		display: block
+		width: 100%
+
+
+.r_title
+	width: 359px
+	height: 235px
+	+poa(400px,8%,null,null,11)
+	+rwd(pc)
+		+poa(400px,1%,null,null,11)
+		width: 280px
+		height: 183px
+	@include transition (0.3s)
+	& img
+		display: block
+		width: 100%
+
+
+.l_icon
+	width: 184px
+	height: 161px
+	+poa(160px,null,null,5%,10)
+	@include transition (0.3s)
+	+rwd(pc)
+		+poa(90px,null,null,3%,10)
+	& img
+		display: block
+		width: 100%
+		+rwd(pc)
+			width: 70%
+
+.r_icon
+	width: 112px
+	height: 230px
+	+poa(160px,10%,null,null,10)
+	+rwd(pc)
+		+poa(90px,3%,null,null,10)
+	@include transition (0.3s)
+	& img
+		display: block
+		width: 100%
+		+rwd(pc)
+			width: 70%
+
+.footer
+	width: 1200px
+	height: 20px
+	text-align: center
+	font-size: 13px
+	margin: 10px auto
+	position: relative
+	color: #fff

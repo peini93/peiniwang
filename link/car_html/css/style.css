@@ -1,0 +1,423 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: url(../img/body_bg.jpg) center top no-repeat #000000;
+}
+
+.area01 {
+  width: 1000px;
+  height: 440px;
+  position: relative;
+  margin: auto;
+}
+.area01 ul {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  bottom: 10px;
+  z-index: 20;
+}
+.area01 ul li {
+  display: inline-block;
+  margin-left: -4px;
+}
+.area01 ul li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/point.png) no-repeat 0 -30px;
+}
+.area01 ul li a:hover {
+  background-position: 0 0;
+}
+.area01 ul li a.act {
+  background-position: 0 0;
+}
+
+.area02 {
+  width: 1000px;
+  height: 550px;
+  position: relative;
+  margin: auto;
+}
+
+.area03 {
+  width: 1000px;
+  height: 667px;
+  position: relative;
+  margin: auto;
+}
+
+.area04 {
+  width: 1000px;
+  height: 550px;
+  position: relative;
+  margin: auto;
+}
+
+.toppic {
+  width: 1000px;
+  height: 380px;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+.toppic a {
+  width: 1000px;
+  height: 380px;
+  display: block;
+  position: absolute;
+  outline: none;
+}
+.toppic .img2, .toppic .img3, .toppic .img4 {
+  display: none;
+}
+
+.previous {
+  width: 36px;
+  height: 65px;
+  background: url(../img/arrow_left.png) no-repeat;
+  position: absolute;
+  display: block;
+  left: -36px;
+  top: 210px;
+  text-indent: -9999px;
+}
+
+.next {
+  width: 36px;
+  height: 65px;
+  background: url(../img/arrow_right.png) no-repeat;
+  position: absolute;
+  display: block;
+  right: -36px;
+  top: 210px;
+  text-indent: -9999px;
+}
+
+.autologo {
+  width: 250px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -125px;
+  z-index: 20;
+}
+
+.mobilelogo {
+  width: 138px;
+  height: 30px;
+  display: block;
+  background: url(../img/m01_logo.png) no-repeat;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.main02 {
+  width: 100%;
+  height: 550px;
+  background-color: #ffffff;
+}
+
+.main03 {
+  width: 100%;
+  height: 667px;
+  background: url(../img/pro_bg.jpg) no-repeat center top;
+}
+
+.main04 {
+  width: 100%;
+  height: 550px;
+  background-color: #202020;
+}
+
+.words {
+  width: 130px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.box::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.box .boxmain {
+  width: 310px;
+  height: 192px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.box .boxmain:nth-child(3) {
+  margin-right: 0;
+}
+.box .boxmain:nth-child(6) {
+  margin-right: 0;
+}
+.box .boxmain a {
+  width: 310px;
+  height: 192px;
+  display: block;
+}
+.box .boxmain a .up {
+  width: 9px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+}
+.box .boxmain a .down {
+  width: 9px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+}
+.box .boxmain a .pic {
+  width: 310px;
+  height: 150px;
+  overflow: hidden;
+}
+.box .boxmain a .pic img {
+  width: 310px;
+  height: 150px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.box .boxmain a:hover .pic img {
+  width: 320px;
+  height: 160px;
+  margin-top: -5px;
+  margin-left: -5px;
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6);
+}
+.box .boxmain a .banner {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.box .boxmain a:hover .banner {
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6);
+}
+.box .carmain {
+  width: 490px;
+  height: 160px;
+  float: left;
+  position: relative;
+  margin-bottom: 25px;
+  margin-right: 20px;
+}
+.box .carmain:nth-child(even) {
+  margin-right: 0;
+}
+.box .carmain::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.box .carmain a {
+  width: 490px;
+  height: 160px;
+  display: block;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.box .carmain a:hover {
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6);
+}
+.box .carmain a img {
+  float: left;
+  display: block;
+}
+.box .carmain a .txtbox {
+  float: right;
+  width: 290px;
+  height: 160px;
+  background: url(../img/txtbg.png) no-repeat;
+  position: relative;
+}
+.box .carmain a .txtbox h2 {
+  width: 250px;
+  font-size: 15px;
+  font-family: "微軟正黑體";
+  line-height: 20px;
+  color: #ffd48b;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.box .carmain a .txtbox p {
+  width: 250px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "微軟正黑體";
+  color: #ffffff;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.box .carmain a .txtbox img {
+  width: 93px;
+  height: 22px;
+  position: absolute;
+  bottom: 15px;
+  left: 98px;
+}
+
+.footer {
+  width: 100%;
+  height: 160px;
+  text-align: center;
+}
+.footer ul {
+  width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+.footer ul li {
+  display: inline-block;
+  height: 80px;
+}
+.footer ul li a {
+  display: block;
+  height: 80px;
+  text-indent: -9999px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer ul li a:hover {
+  -webkit-filter: brightness(0.4);
+  filter: brightness(0.4);
+}
+.footer ul li:nth-of-type(1) a {
+  width: 133px;
+  background: url(../img/footer_logo_01.png) no-repeat;
+}
+.footer ul li:nth-of-type(2) a {
+  width: 168px;
+  background: url(../img/footer_logo_02.png) no-repeat;
+}
+.footer ul li:nth-of-type(3) a {
+  width: 90px;
+  background: url(../img/footer_logo_03.png) no-repeat;
+}
+.footer ul li:nth-of-type(4) a {
+  width: 128px;
+  background: url(../img/footer_logo_04.png) no-repeat;
+}
+.footer ul li:nth-of-type(5) a {
+  width: 84px;
+  background: url(../img/footer_logo_05.png) no-repeat;
+}
+.footer ul li:nth-of-type(6) a {
+  width: 97px;
+  background: url(../img/footer_logo_06.png) no-repeat;
+}
+
+.gotop {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 13px;
+  text-align: center;
+  background-color: #7c6a3d;
+  color: #ffffff;
+  font-family: "微軟正黑體";
+  position: absolute;
+  text-decoration: none;
+  right: -80px;
+  bottom: 80px;
+  display: block;
+  opacity: 0;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gotop:hover {
+  background-color: #ffffff;
+  color: #7c6a3d;
+}
+
+/*# sourceMappingURL=style.css.map */

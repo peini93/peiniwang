@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>素肌迷戀 健康化妝水 │ ALBION</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/albion_style.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type='text/javascript' src='http://news.gamme.com.tw/wp-content/themes/transcript/includes/tab.js?ver=3.0.4'></script>
+<script>
+$(document).ready(function(){
+		  $(".map_poplist1").animate({
+          opacity: 1,
+          marginTop: -295
+          }, 500 );
+
+});
+
+</script>
+<script type="text/javascript">
+	$(function(){
+
+		var $block = $('#TopTenNews'),
+			$slides = $block.find('div.TopTenNews_body'),
+			_width = $block.width(),
+			$li = $slides.find('li'),
+			$control = $block.find('.abgne-control')
+			_animateSpeed = 600;
+		
+		$slides.css('width', ($li.length + 1) * _width);
+		var _str = '';
+		for(var i=0, j=$li.length;i<j;i++){
+			_str += '<li class="abgne-player-control_' + (i+1) + '">' + (i+1) + '</li>';
+		}
+
+		var $number = $('<ul class="numbers"></ul>').html(_str).appendTo($control), 
+			$numberLi = $number.find('li');
+
+		$numberLi.click(function(){
+			var $this = $(this);
+			$this.addClass('current').siblings('.current').removeClass('current');
+				$slides.stop().animate({
+				left: _width * $this.index() * -1
+			}, _animateSpeed);
+			
+			return false;
+		}).eq(0).click();
+		
+		$control.find('ul.arrows li').click(function(){
+			var _index = $numberLi.filter('.current').index();
+			$numberLi.eq((this.className.indexOf('next')>-1?_index+1:_index-1+$numberLi.length)%$numberLi.length).click();
+
+			return false;
+		});
+		
+		$control.find('li').hover(function(){
+			$(this).addClass('hover');
+		}, function(){
+			$(this).removeClass('hover');
+		});
+	});
+</script>
+
+</head>
+
+<body>
+<div class="map_poplist1"> 
+<div class="map_poplist1-1_btn"><a href="#"></a></div>
+<div class="map_poplist1-2_btn"><a href="#"></a></div>
+<div class="map_poplist1-3_btn"><a href="#"></a></div>	
+<div id="TopTenNews">
+                         <div class="tab01">
+                         <a href="javascript:;"  rel="p1"></a>
+                          </div>
+                           <div class="tab02">
+                         <a href="javascript:;"  rel="p2"></a>
+                          </div>
+                           <div class="tab03">
+                         <a href="javascript:;"  rel="p3"></a>
+                          </div>
+                          <div class="tab04">
+                         <a href="javascript:;"  rel="p4"></a>
+                          </div>
+                       
+                         <div id="TopTenNews_body">
+                         <img src="img/map_pop3_1.png" id="p1"/>
+                         <img src="img/map_pop3_2.png" id="p2"/>
+                         <img src="img/map_pop3_3.png" id="p3"/>
+                         <img src="img/map_pop3_4.png" id="p4"/>
+                           
+                            
+                         
+						   <script type="text/javascript"> 
+								var TopTenNews=new ddtabcontent("TopTenNews")
+								TopTenNews.setpersist(true)
+								TopTenNews.setselectedClassTarget("link")
+								TopTenNews.init()
+							</script>		
+    
+    
+    
+    </div>
+
+
+</div>
+</div>
+<div class="popup_bg"></div>
+</body>
+</html>

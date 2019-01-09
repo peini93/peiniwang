@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=1200, user-scalable=1">
+	<title>最強AI智慧拍照【vivo V11/V11i】。-Mobile01特輯</title>
+	<meta property="og:title" content="最強AI智慧拍照【vivo V11/V11i】。-Mobile01特輯" />
+	<meta name="description" content="首創自動人像構圖，瘦臉微整一鍵搞定
+" />
+	<meta property="og:image" content="https://www.mobile01.com/campaign/vivo_V11/img/fb.jpg" />
+<meta property="og:url" content="https://www.mobile01.com/campaign/vivo_V11/index.html">
+	<link rel="stylesheet" type="text/css" href="css/sass.css">
+	<link rel="stylesheet" type="text/css" href="js/lib/jpreloader.css">
+	<script src="js/lib/jquery-1.11.0.min.js"></script>
+	<script src="js/lib/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/lib/TweenMax.min.js"></script>
+	<script src="js/lib/jpreloader.min.js"></script>
+	<script src="js/lib/plax.js"></script>	
+</head>
+  <script language="JavaScript" type="text/javascript">
+// -- AD counter
+function addListener(element, event, listener, bubble) {
+	if(element.addEventListener) {
+		if(typeof(bubble) == "undefined") bubble = false;
+		element.addEventListener(event, listener, bubble);
+	} else if(this.attachEvent) {
+		element.attachEvent("on" + event, listener);
+	}
+}
+
+function HttpRequest(id) {
+	var url = '/promo_counter.php?id=' + id;
+	var http_request = false;
+	
+	if (window.XMLHttpRequest) {
+		http_request = new XMLHttpRequest();
+    } else if (window.ActiveXObject) {
+		try {
+			http_request = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+        	try {
+				http_request = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e) {}
+		}
+	}
+
+	if (http_request) {
+		http_request.onreadystatechange = function() { 
+			if (http_request.readyState == 4) {
+				if (http_request.status == 200) {
+					result = http_request.responseText;
+				}
+			}
+		};   
+		http_request.open('GET', url, true);
+		http_request.send(null);
+	} else {
+		return false;
+	}
+}
+
+var ad_id = 74893;
+
+addListener(this, "load", function() {HttpRequest(ad_id);});
+addListener(window, "load", function() {HttpRequest(ad_id);});
+addListener(document, "load", function() {HttpRequest(ad_id);});
+addListener(document, "DOMContentLoaded", function() {HttpRequest(ad_id);});
+
+document.onload = function() {HttpRequest(ad_id);}
+window.onload = function() {HttpRequest(ad_id);}
+this.onload = function() {HttpRequest(ad_id);}
+  </script>
+<body>
+<div id="jSplash"></div>
+<div class="wrap">
+    <a href="https://www.mobile01.com/" title="mo01logo" class="logo1" target="_blank"></a>
+    <a href="javascript:void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)),'_blank','width=550,height=400,top=100,left=50'));" title="logo" class="logo2"></a>
+	<a href="https://www.mobile01.com/adredir.php?id=74835" title="投票去" class="btn1" target="_blank"></a>
+	<a href="https://www.mobile01.com/adredir.php?id=74837
+" title="最懂你的心手機" class="btn2" target="_blank"></a>
+	<a href="https://www.mobile01.com/adredir.php?id=74836
+" title="更懂你的美手機" class="btn3" target="_blank"></a>
+	<div class="l_title"><img src="img/left_title.png"></div>
+	<div class="r_title"><img src="img/right_title.png"></div>
+	<div class="l_icon"><img src="img/left_icon.png"></div>
+	<div class="r_icon"><img src="img/right_icon.png"></div>
+	<div class="type"><a href="https://www.mobile01.com/adredir.php?id=74834" target="_blank"><img src="img/type.png"></a></div>
+	<div class="ml"><img src="img/model-left.png"></div>
+	<div class="mr"><img src="img/model-right.png"></div>
+</div>
+	
+<div class="footer">
+	Copyright © 2018 Vivo Communication Technology Co. Ltd. All rights reserved.
+</div>
+<script src="js/page.js"></script>	
+</body>
+</html>

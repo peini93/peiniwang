@@ -1,0 +1,838 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+
+<title>
+商店街網路開店平台邀請您網路開店逗陣成就e個好生意！東西沒賣出去，不收錢！歡迎中小企業、實體通路店家、各大購物平台以及網路開店平台黃金店家、拍賣
+優良賣家以及有志創業者加入商店街網路開店！網路開店免月租年租、上架費，上架不限商品數，完整金流制度及網路開店電子商務基礎教育訓練。商店街網路開店
+超高流量來客數大，自行研發技術維護更新快，網路開店整合行銷方案。PChome ONline
+商店街網路開店讓你的商品得到全新的銷售通路，網路開店，多一個通路增加一份收入。</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Big5">
+<meta name="description" content="商店街開店邀請您逗陣成就e個好生意！東西沒賣出去，不收錢！歡迎中小企業、實體通路店家、各大購物平台黃金店家、拍賣優良賣家以及有志創業者加入開店！開店免租金、上架費，上架不限商品數，完整金流制度及電子商務經驗訓練，超高流量來客數大，自行研究技術維護更新快，網站整合行銷工具，PChome ONline 商店街開店讓你的商品得到全新的銷售通路，多一個通路增加一份收入。">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<script language="javascript" src="topicstore_files/store.js"></script>
+<script language="javascript" src="topicstore_files/storeObj.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+function changeAD(video,video_content,logo){
+ 
+  objOfMedia = document.getElementById('Media');
+  // var new_video = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="320" height="240"><param name="movie" value="http://img.store.pchome.com.tw/web_img/store_start.swf"><param name="quality" value="high"><param name="allowFullScreen" value="true" /><param name="FlashVars" value="vcastr_file='+video+'"/> <embed src="http://img.store.pchome.com.tw/web_img/store_start.swf" FlashVars="vcastr_file=' +video+'" allowFullScreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="320" height="240"></embed></object>';
+  var new_video = '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"  ID="roll" WIDTH="320" HEIGHT="282"><PARAM NAME="wmode" value="transparent"><PARAM NAME="movie" VALUE="http://img.store.pchome.com.tw/web_img/player.swf"><PARAM NAME="FlashVars" VALUE="flvName='+video+'"><EMBED src="http://img.store.pchome.com.tw/web_img/player.swf" WIDTH="320" HEIGHT="282" FlashVars="flvName='+video+'" wmode="transparent" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></object>';
+  
+  // 更新影片
+  objOfMedia.innerHTML = new_video;
+  
+  // 修改 店家 Logo 
+  objofLogo  = document.getElementById('logo');
+  objofLogo.setAttribute("src",logo);  
+
+  // Video 影片內容說明更新
+  // document.getElementById('video_content').innerHTML
+  // = document.getElementById(video_content).getAttribute('value');
+  
+  new_video_content = document.getElementById(video_content).innerHTML;
+  
+  while ( new_video_content.match(/&gt;/) )
+    new_video_content = new_video_content.replace(/&gt;/,">");
+  while ( new_video_content.match(/&lt;/) )
+    new_video_content = new_video_content.replace(/&lt;/,"<");
+  
+  document.getElementById('video_content').innerHTML = new_video_content;
+  
+  window.location = "#top";
+}
+
+</script>
+<link href="topicstore_files/boss.css" rel="stylesheet" type="text/css">
+<script charset="utf-8" id="injection_graph_func" src="topicstore_files/injection_graph_func.js"></script></head><body leftmargin="0" topmargin="0" onload="MM_preloadImages('http://img.store.pchome.com.tw/web_img/st/y_04.jpg','http://img.store.pchome.com.tw/web_img/st/y_05.jpg','http://img.store.pchome.com.tw/web_img/st/y_07.jpg','http://img.store.pchome.com.tw/web_img/st/y_01.jpg','http://img.store.pchome.com.tw/web_img/st/y_02.jpg','http://img.store.pchome.com.tw/web_img/st/y_06.jpg')" marginheight="0" marginwidth="0">
+<a name="top"></a>
+<form method="post" name="main_store" action="">
+<style>
+body{
+  
+}
+</style>
+    <table style="background-repeat: no-repeat;" width="970" align="center" background="" border="0" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+                <td valign="top" width="356" align="left" height="74">
+<a href="http://store.pchome.com.tw/"><img src="topicstore_files/logo-1.gif" width="263" border="0" height="69"></a><a href="http://boss.store.pchome.com.tw/"><img src="topicstore_files/logo-2.gif" width="93" border="0" height="69"></a>          
+        </td>
+<td valign="top" width="341"></td>        
+        <td valign="top" width="261" align="center">
+        <!-- <td align="Center" valign="Top"> -->
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+              <td width="20">
+<img src="topicstore_files/a_5.gif" width="20" height="26">                
+              </td>                                          
+              <td style="font-size: 11px; color: rgb(73, 73, 73); font-family: Verdana;" align="center" bgcolor="#f1f1f1">
+                <img src="topicstore_files/blue-dot.gif" width="6" align="absmiddle" height="6" hspace="3"><a href="http://boss.store.pchome.com.tw/recruit.htm?param=join">我要開店</a> 
+                <img src="topicstore_files/blue-dot.gif" width="6" align="absmiddle" height="6" hspace="3"><a href="http://store.pchome.com.tw/">商店街</a> 
+                <img src="topicstore_files/blue-dot.gif" width="6" align="absmiddle" height="6" hspace="3"><a href="http://share.pchome.com.tw/">分紅網</a>
+                <img src="topicstore_files/blue-dot.gif" width="6" align="absmiddle" height="6" hspace="3"><a href="http://www.pchome.com.tw/">PChome</a>                 
+              </td>
+              <td width="7" bgcolor="#f1f1f1" height="26">
+              <img src="topicstore_files/a_6.gif" width="7" height="26">              </td>
+            </tr>
+          </tbody></table>          
+        </td>
+      </tr>
+    </tbody></table>
+
+  <table width="970" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td colspan="3" align="center">
+                <table border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr> 
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="topicstore_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="topicstore_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="topicstore_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/">網路開店首頁</a></td>
+                        <td><img src="topicstore_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                      <!-- <a href="/" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_01.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_01.jpg" name="a011" width="108" height="31" border="0" id="a01"></a></td> -->
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="topicstore_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="topicstore_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="topicstore_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/intro.htm">開店說明</a></td>
+                        <td><img src="topicstore_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                      <!-- <td><a href="/intro.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_02.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_02.jpg" name="a021" width="109" height="31"border="0" id="a02"></a></td> -->
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><A href="/topicstore.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_03.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/top_05.jpg" name="a031" width="109" height="31"border="0" id="a03"></A></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="topicstore_files/bw_01.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="topicstore_files/bw_03.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10b" width="95" align="center" background="topicstore_files/bw_04.jpg">話題商店</td>
+                        <td><img src="topicstore_files/bw_05.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><A href="/recruit.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_04.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_04.jpg" name="a041" width="109" height="31"border="0" id="a04"></A></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="topicstore_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="topicstore_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="topicstore_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/recruit.htm">加入商店街</a></td>
+                        <td><img src="topicstore_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><A href="/seminar.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_05.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_05.jpg" name="a051" width="109" height="31"border="0" id="a05"></A></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="topicstore_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="topicstore_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="topicstore_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/seminar.htm">開店說明會</a></td>
+                        <td><img src="topicstore_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><A href="/eCamp_news.htm" onMouseOver="MM_swapImage('a0711','','http://img.store.pchome.com.tw/web_img/st/y_07.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_07.jpg" name="a07" width="109" height="31"border="0" id="a07"></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="topicstore_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="topicstore_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="topicstore_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://boss.store.pchome.com.tw/eCamp_index.htm?type=sum">商學院</a></td>
+                        <td><img src="topicstore_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td> <table width="109" border="0" cellpadding="0" cellspacing="0">
+                    <!-- <td><a href="http://mypaper.pchome.com.tw/news/estore/?param=comm" target='_blank' onMouseOver="MM_swapImage('a0611','','http://img.store.pchome.com.tw/web_img/st/y_06.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="http://img.store.pchome.com.tw/web_img/st/yelltop_06.jpg" name="a0611" width="109" height="31"border="0" id="a06"></a></td> -->
+                    <tbody>
+                      <tr> 
+                        <td colspan="3"><img src="topicstore_files/bw_02.jpg" alt="" width="109" height="5"></td>
+                      </tr>
+                      <tr> 
+                        <td><img src="topicstore_files/bw_06.jpg" alt="" width="7" height="26"></td>
+                        <td class="t10c" width="95" align="center" background="topicstore_files/bw_07.jpg" bgcolor="#ff6600"><a href="http://mypaper.pchome.com.tw/news/estore/?param=comm" target="_blank">開店交流站</a></td>
+                        <td><img src="topicstore_files/bw_08.jpg" alt="" width="7" height="26"></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td><a href="free.htm"><img src="free_files/key.gif" width="107" height="31" border="0"></a></td>
+              </tr>
+            </tbody>
+          </table> 
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" bgcolor="#58d2f8" height="12"></td>
+    </tr>
+    <tr>
+      <td width="8" height="12"><img src="topicstore_files/top_13.jpg" width="8" height="32"></td>
+      <td class="t12top" width="955" background="topicstore_files/top_14.jpg"><div align="left"><img src="topicstore_files/topp.jpg" width="13" height="9"> 
+        <a href="http://www.pchome.com.tw/">PChome</a>&gt; <a href="http://store.pchome.com.tw/">商店街</a>&gt; 
+        <a href="http://boss.store.pchome.com.tw/">網路開店首頁</a>&gt; 話題商店&gt; 人氣店家經驗談</div></td>
+      <td width="7"><img src="topicstore_files/top_17.jpg" width="7" height="32"></td>
+    </tr>
+  </tbody></table>
+  <table width="970" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr> 
+      
+   <td valign="top" width="215" background="topicstore_files/menu_bg.gif"><table width="214" border="0" cellpadding="0" cellspacing="0">
+     
+        <tbody><tr>
+          <td bgcolor="#ffffff" height="5"></td>
+        </tr>
+        <tr>
+          <td><img src="topicstore_files/menu_top.gif" width="214" height="28"></td>
+        </tr><tr>
+          <td><a href="http://boss.store.pchome.com.tw/"><img src="topicstore_files/menu01_01.gif" width="214" border="0" height="17"></a></td>
+        </tr>
+        <tr>
+          <td height="25"><img src="topicstore_files/menu_li.gif" width="214" height="7"></td>
+        </tr>
+        <tr>
+          <td><a href="http://boss.store.pchome.com.tw/intro.htm?param=readme&amp;type=introduce"><img src="topicstore_files/menu01_02.gif" width="214" border="0" height="17"></a></td>
+        </tr>
+     <tr>
+       <td height="25"><img src="topicstore_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td>
+       <img src="topicstore_files/menu_03.gif" width="214" border="0" height="18">       </td>
+     </tr>
+     <tr>
+       <td height="25"><img src="topicstore_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td align="center"><table width="150" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                                <td><img src="topicstore_files/menu_211.gif" width="10" height="8"></td>
+                <td class="t15e" width="139"><div class="style1" align="left">
+                人氣店家經驗談                </div></td>
+              </tr>
+              <tr align="center">
+                <td colspan="2"><img src="topicstore_files/main2cut_18.gif" width="128" height="5"></td>
+              </tr>
+              <tr>
+                                <td><img src="topicstore_files/menu_16.gif" width="10" height="8"></td>
+                <td class="t15e"><div class="style3" align="left">
+                <a href="http://boss.store.pchome.com.tw/top_news.htm?param=report&amp;Pages=1">話題店家報報</a>                </div></td>
+              </tr>
+              <tr align="center">
+                <td colspan="2"><img src="topicstore_files/main2cut_18.gif" width="128" height="5"></td>
+              </tr>
+              <tr>
+                                <td><img src="topicstore_files/menu_16.gif" width="10" height="8"></td>
+                <td class="t15e"><div class="style3" align="left">
+                <a href="http://boss.store.pchome.com.tw/top_weekly.htm?param=week">開店e週刊</a>                </div></td>
+              </tr>
+            </tbody></table></td>
+     </tr>
+     <tr>
+       <td height="25"><img src="topicstore_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td>
+       <a href="http://boss.store.pchome.com.tw/recruit.htm?param=join"><img src="topicstore_files/menu01_04.gif" width="214" border="0" height="17"></a>       </td>
+     </tr>
+     <tr>
+       <td height="25"><img src="topicstore_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td>
+       <a href="http://boss.store.pchome.com.tw/seminar.htm?param=metting"><img src="topicstore_files/menu01_05.gif" width="214" border="0" height="17"></a>       </td>
+     </tr>
+     <tr>
+       <td height="25"><img src="topicstore_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+       <td>
+       <a href="http://boss.store.pchome.com.tw/eCamp_index.htm?type=sum"><img src="topicstore_files/menu01_07.gif" width="214" border="0" height="18"></a>       </td>
+     </tr>
+     <tr>
+       <td height="25"><img src="topicstore_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+     <tr>
+     </tr><tr>
+       <td><a href="http://mypaper.pchome.com.tw/news/estore/?param=comm" target="_blank"><img src="topicstore_files/menu01_06.gif" width="214" border="0" height="17"></a></td>
+     </tr>
+     <tr>
+       <td height="25"><img src="topicstore_files/menu_li.gif" width="214" height="7"></td>
+     </tr>
+
+
+
+
+
+                  
+     <tr>
+                <td height="25"><a href="free.htm?param=comm" target="_blank"><img src="free_files/menu_08-1.gif" width="214" border="0" height="17"></a></td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+     <tr>
+       <td height="25">&nbsp;</td>
+     </tr>
+   </tbody></table></td>
+   <td width="25"></td>
+   <td valign="top" width="730" align="left"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr> 
+          <td><p><img src="topicstore_files/h07.jpg" width="730" height="45"><br>
+            </p></td>
+        </tr>
+        <tr> 
+          <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr> 
+              
+                <td width="10"></td>
+                <td id="Media" width="320" height="240">
+                
+                <!-- <embed src="http://img.store.pchome.com.tw/boss/000/002/000002007/s13.flv" autostart="true" width="320" height="240" id="Video" loop="true" ></embed> -->
+                
+<!-- 第一代 
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="320" height="240">
+<param name="movie" value="http://img.store.pchome.com.tw/web_img/store_start.swf">
+<param name="quality" value="high">
+<param name="allowFullScreen" value="true" />
+<param name="FlashVars" value="vcastr_file=http://img.store.pchome.com.tw/boss/000/002/000002007/s13.flv" /> 
+
+<embed src="http://img.store.pchome.com.tw/web_img/store_start.swf" 
+       FlashVars="vcastr_file=http://img.store.pchome.com.tw/boss/000/002/000002007/s13.flv" 
+       allowFullScreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="320" height="240"></embed>
+</object> */      
+<!-- 第二代 -->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" id="roll" width="320" height="282">
+<param name="wmode" value="transparent">
+<param name="movie" value="http://img.store.pchome.com.tw/web_img/player.swf">
+<param name="FlashVars" value="flvName=http://img.store.pchome.com.tw/boss/000/002/000002007/s13.flv">
+<embed src="topicstore_files/player.swf" flashvars="flvName=http://img.store.pchome.com.tw/boss/000/002/000002007/s13.flv" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" width="320" height="282">
+ 
+</object>                   
+                </td>
+                <td width="22"></td>
+                <td valign="top" width="384"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tbody><tr> 
+                      <td height="5"></td>
+                    </tr>
+                    <tr>
+                      <td>
+                      <img src="topicstore_files/logo02.jpg" id="logo" width="132" height="33">                      </td>
+                    </tr>                    
+                    <tr>
+                      <td id="video_content" style="">
+                        <div class="t15g"><a href="http://store.pchome.com.tw/debbyscake/">
+</a><li><a href="http://store.pchome.com.tw/debbyscake/">黛比蛋糕藝術工房</a></li></div><div class="t12i">
+<a href="http://store.pchome.com.tw/debbyscake/">http://store.pchome.com.tw/debbyscake/</a></div>
+
+<div class="t15g"><li>店家介紹</li></div><div class="t12j">
+店家黛比出生於傳統糕餅世家，當了三年的電腦程式工程師後發現電腦並非她的生命，而是蛋糕，因此決定放棄工程師的頭銜及優渥的薪資投入造型蛋糕的行列。</div>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+        <tr> 
+          <td height="20"></td>
+        </tr>
+        <tr>
+          <td valign="bottom"><img src="topicstore_files/tvicon.jpg" width="17" align="absmiddle" height="16"><span class="t16f">更多店家經驗談</span></td>
+        </tr>
+        <tr> 
+          <td align="center"><img src="topicstore_files/store02cut_01.gif" width="713" height="11"></td>
+        </tr>
+        <tr> 
+          <td>
+                      <table width="736" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td colspan="7" height="10"></td>
+              </tr>
+              <tr>
+              
+                <td width="228">
+                  <textarea id="readme0" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div class="t15g"&gt;&lt;a href="http://store.pchome.com.tw/fish/"&gt;
+&lt;li&gt;魚魚網路生活館&lt;/li&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t12i"&gt;&lt;a href="http://store.pchome.com.tw/fish/"&gt;
+http://store.pchome.com.tw/fish/&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;
+
+&lt;div class="t12j"&gt;
+專賣各類耳機、百貨、防身用品、家用五金等電動工具，很多商品已經賣出好口碑了!相信有買過的客人都知道，保證讓您不用出門就可以享受最好的服務.最優的品質唷!~歡迎公司行號禮贈品大量訂購喔。&lt;/div&gt;
+</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/01.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類別 / 居家<br>2006年10月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" fish="">魚魚網路生活館
+專賣各類耳機、百貨、防身用品、家用五金等電動工具....
+                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002006/s08.flv','readme0','http://img.store.pchome.com.tw/boss/000/002/000002006/logo01.gif')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002006"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+              
+                <td width="228">
+                  <textarea id="readme1" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div class="t15g"&gt;&lt;a href="http://store.pchome.com.tw/debbyscake/"&gt;
+&lt;li&gt;黛比蛋糕藝術工房&lt;/li&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class="t12i"&gt;
+&lt;a href="http://store.pchome.com.tw/debbyscake/"&gt;http://store.pchome.com.tw/debbyscake/&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;&lt;div class="t12j"&gt;
+店家黛比出生於傳統糕餅世家，當了三年的電腦程式工程師後發現電腦並非她的生命，而是蛋糕，因此決定放棄工程師的頭銜及優渥的薪資投入造型蛋糕的行列。&lt;/div&gt;
+</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/02.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類別 / 食品<br>2006年10月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" debbyscake="">黛比蛋糕藝術工房店家黛比出生於傳統糕餅世家，當了三年的電腦程式工程師後...                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002007/s13.flv','readme1','http://img.store.pchome.com.tw/boss/000/002/000002007/logo02.jpg')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002007"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+              
+                <td width="228">
+                  <textarea id="readme2" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div class="t15g"&gt;&lt;a href="http://store.pchome.com.tw/pomodoro/"&gt;
+&lt;li&gt;蕃茄主義&lt;/li&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t12i"&gt;&lt;a href="http://store.pchome.com.tw/pomodoro/"&gt;
+http://store.pchome.com.tw/pomodoro/&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;
+
+&lt;div class="t12j"&gt;
+由知名藝人張小雯帶領消費者體驗蕃茄健康飲食新概念，採用各種新鮮食材及香料來製作美味可口的食物，讓顧客在滿足口腹之慾的同時也享有了健康的權利。&lt;/div&gt;
+</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/04.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類食 / 食品<br>2006年10月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" pomodoro="">蕃茄主義知名藝人張小雯帶領消費者體驗蕃茄健康飲食新概念...                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002009/s05.flv','readme2','http://img.store.pchome.com.tw/boss/000/002/000002009/logo04.jpg')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002009"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+                                
+              </tr>
+            </tbody></table>
+            <table width="736" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td colspan="7" height="10"></td>
+              </tr>
+              <tr>
+              
+                <td width="228">
+                  <textarea id="readme3" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div class="t15g"&gt;&lt;a href="http://store.pchome.com.tw/muggle/"&gt;&lt;li&gt;麻瓜糖果屋&lt;/li&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t12i"&gt;&lt;a href="http://store.pchome.com.tw/muggle/"&gt;
+http://store.pchome.com.tw/muggle/&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;
+
+&lt;div class="t12j"&gt;
+全台首家直接自美國原廠引進「哈利波特．柏蒂全口味糖豆」的公司，未來與美國同步推出Jelly Bean 新上市的季節性限量商品，以及其他哈利波特產品。希望能滿足本地消費者的期許以及美食家們嬌貴的品味，讓台灣的消費群與美國同步不落伍。&lt;/div&gt;</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/05.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類別 / 食品<br>2006年10月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" muggle="">麻瓜糖果屋想體驗哈利波特書中的柏蒂豆及鄧不利多吃的耳垢嗎....                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002010/s07.flv','readme3','http://img.store.pchome.com.tw/boss/000/002/000002010/logo05.jpg')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002010"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+              
+                <td width="228">
+                  <textarea id="readme4" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div class="t15g"&gt;&lt;a href="http://store.pchome.com.tw/fishever/"&gt;&lt;li&gt;漁泳優質食品館&lt;/li&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t12i"&gt;&lt;a href="http://store.pchome.com.tw/fishever/"&gt;
+http://store.pchome.com.tw/fishever/&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;
+
+&lt;div class="t12j"&gt;
+本館精選榮獲HACCP合格認證、CAS認證等多項產品並為消費者投保2000萬產品責任險！只要輕鬆透過網路訂購，即可享受專家嚴選最新鮮、安全、健康、物美價廉之優質漁特產品。&lt;/div&gt;</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/06.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類別 / 食品<br>2006年10月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" fishever="">漁泳優質食品館本館榮獲HACCP合格認證、CAS認證等多項產品，只要....                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002011/s06.flv','readme4','http://img.store.pchome.com.tw/boss/000/002/000002011/logo06.jpg')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002011"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+              
+                <td width="228">
+                  <textarea id="readme5" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div class="t15g"&gt;&lt;a href="http://store.pchome.com.tw/herbtown/"&gt;
+&lt;li&gt;香草小鎮&lt;/li&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t12i"&gt;&lt;a href="http://store.pchome.com.tw/herbtown/"&gt;
+http://store.pchome.com.tw/herbtown/&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;
+
+&lt;div class="t12j"&gt;
+商品來自歐美紐澳無污染的土地上所栽培出來的香草，再由專業人員調配出過敏肌膚專用的保養品或精油，所有植物原料皆來自世界公認品質最好的精油產地，經由Hans Rahn &amp; Co.的專業技術粹取出各種濃度100﹪的精油相關產品。&lt;/div&gt;
+</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/07.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類別 / 保養<br>2006年10月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" herbtown="">香草小鎮商品全來自歐美紐澳快樂的農夫們在無污染的土地上所栽培出來的香草....                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002012/s11.flv','readme5','http://img.store.pchome.com.tw/boss/000/002/000002012/logo07.jpg')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002012"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+                                
+              </tr>
+            </tbody></table>
+            <table width="736" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td colspan="7" height="10"></td>
+              </tr>
+              <tr>
+              
+                <td width="228">
+                  <textarea id="readme6" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div
+class="t15g"&gt;&lt;a
+href="http://store.pchome.com.tw/tankhome/"&gt;&lt;li&gt;數位導航&lt;/li&
+gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="t12i"&gt;&lt;a
+href="http://store.pchome.com.tw/tankhome/"&gt;http://store.pchome.com.tw/tankhome/&lt;/a&gt;&lt;/div&gt;&lt;div
+class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;
+&lt;div class="t12j"&gt;
+經營實體門市及批發商多年經驗，有感於世界潮流變遷也面臨新的型態，為服務原有客戶及新客戶故結合網路開店成立數位導航Moblie館，希望服務更多的顧
+客。&lt;/div&gt;
+</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/08.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類別 / 通訊<br>2006年6月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" tankhome="">數位導航經營實體門市及批發商多年經驗，有感於世界潮流變遷也面臨新的型態...                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002013/s04.flv','readme6','http://img.store.pchome.com.tw/boss/000/002/000002013/logo08.gif')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002013"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+              
+                <td width="228">
+                  <textarea id="readme7" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div class="t15g"&gt;&lt;a href="http://store.pchome.com.tw/rabbit/"&gt;
+&lt;li&gt;數位小兔攝影器材批發&lt;/li&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t12i"&gt;&lt;a href="http://store.pchome.com.tw/rabbit/"&gt;
+http://store.pchome.com.tw/rabbit/&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;
+
+&lt;div class="t12j"&gt;
+提供數位相機、攝影機、相機包、電池、充電器等攝影週邊商品，有鑑於購物環境的轉變，希望藉由網路提供更多不同族群的消費者更便利的購物管道，讓消費者能夠在網路上買到品質優良的數位周邊商品。&lt;/div&gt;
+</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/09.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類別 / 相機<br>2006年6月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" rabbit="">數位小兔攝影器材批發提供數位相機、攝影機、相機包、電池、充電器...                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002014/s10.flv','readme7','http://img.store.pchome.com.tw/boss/000/002/000002014/09.jpg')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002014"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+              
+                <td width="228">
+                  <textarea id="readme8" cols="1" rows="1" style="visibility: hidden;" title="NOT_CHECK">&lt;div
+class="t15g"&gt;&lt;a
+href="http://store.pchome.com.tw/shopgarden/"&gt;&lt;li&gt;購物花園&lt;/li&
+gt;&lt;/a&gt;&lt;/div&gt;&lt;div class="t12i"&gt;&lt;a
+href="http://store.pchome.com.tw/shopgarden/"&gt;
+http://store.pchome.com.tw/shopgarden/&lt;/a&gt;&lt;/div&gt;
+&lt;div class="t15g"&gt;&lt;li&gt;店家介紹&lt;/li&gt;&lt;/div&gt;
+&lt;div class="t12j"&gt;
+三個女生組成的年輕團隊，愛四處旅遊的個性，使得有機會探訪各國的名勝之外，還可以尋找各國流行精品。希望藉由他們的努力找尋、代購等方式，讓所有的網友
+以低於市面的價格買到高級的精品，享受時尚。&lt;/div&gt;
+</textarea>
+                  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <!-- <tr> 
+                      <td colspan="3"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_02.gif" width="226" height="7"></td>
+                    </tr> -->
+                    <tbody><tr bgcolor="#fffdd5" height="100"> 
+                      <td rowspan="2" valign="top" width="10">&nbsp;</td>
+                      <td rowspan="2" valign="top" width="100"><img src="topicstore_files/10.jpg" hspaces="5" vspace="5" width="100" height="77"><span class="t12top">
+                      類別 / 包包<br>2006年6月拍攝</span></td>
+                      <td valign="top" width="120"><divclass="t13n"><ahref="http: store.pchome.com.tw="" shopgarden="">購物花園由三個女生組成的年輕團隊，愛四處旅遊，在探訪各國的名勝之外....                      </ahref="http:></divclass="t13n"></td>
+                    </tr>
+                    <tr bgcolor="#fffdd5">
+                      <td valign="bottom" align="right"><a href="javascript:changeAD('http://img.store.pchome.com.tw/boss/000/002/000002015/s02.flv','readme8','http://img.store.pchome.com.tw/boss/000/002/000002015/logo10.jpg')"><img src="topicstore_files/store02cut_03.gif" vspace="2" width="47" border="0" height="15" hspace="10"></a></td>
+                      <!-- <td align="right" valign="bottom"><a href="/topicstore.htm?param=success&no=000002015"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_03.gif" width="47" height="15" hspace="10" vspace="2" border="0" ></a></td> -->
+                    </tr>
+                    <!-- <tr> 
+                      <td colspan="3"><div align="center"><img src="http://img.store.pchome.com.tw/web_img/st/store02cut_04.gif" width="226" height="10"></div></td>
+                    </tr> -->
+                  </tbody></table>
+                </td>
+                                
+              </tr>
+            </tbody></table>
+            <table width="736" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr>
+                <td colspan="7" height="10"></td>
+              </tr>
+              <tr>
+<td width="228">&nbsp;</td><td width="228">&nbsp;</td><td width="228">&nbsp;</td>                                
+              </tr>
+            </tbody></table>
+                        
+           </td>
+        </tr>
+        <tr>
+          <td>
+          <script language="JavaScript" type="text/JavaScript">
+             function index_Page(s_page){
+	              window.location.href = "topicstore.htm?param=success&Pages="+s_page;
+             }
+             document.write(get_page_bar(1,2,12,'index_Page'));
+          </script><table align="center" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td valign="bottom"></td><td width="20">&nbsp;</td><td style="font-size: 12pt; font-family: Arial; color: rgb(0, 0, 0);" valign="top"><span style="font-size: 13pt; font-weight: bold;">1</span>&nbsp;.&nbsp;<a href="javascript:index_Page('2')">2</a>&nbsp;&nbsp;</td><td width="20">&nbsp;</td><td valign="bottom"><a href="javascript:index_Page('2')" style="font-size: 9pt;">下一頁<b style="font-family: verdana;">&#8250;</b></a></td></tr></tbody></table><table align="center" border="0" cellpadding="3" cellspacing="0"><tbody><tr> <td valign="bottom"></td><td width="20">&nbsp;</td><td style="font-size: 9pt;" valign="bottom">第 1 / 2 頁，共 12 筆 </td><td width="20">&nbsp;</td><td valign="bottom"></td></tr></tbody></table>
+          </td>
+        </tr>
+        <tr> 
+          <td valign="bottom" align="right" height="50">
+            <table width="45%" border="0" cellpadding="0" cellspacing="0">
+              <tbody><tr> 
+                <td align="right" height="20"><img src="topicstore_files/mainicon01.jpg" width="21" align="absmiddle" height="14" hspace="5"><span class="t16d"><a href="http://boss.store.pchome.com.tw/">回開店首頁</a></span></td>
+                <td align="right"><span class="t16d"><img src="topicstore_files/mainicon02.jpg" width="24" align="absmiddle" height="17" hspace="5"><a href="http://boss.store.pchome.com.tw/recruit.htm?param=join">加入商店街</a></span></td>
+                <td align="right"><span class="t16d"><img src="topicstore_files/mainicon03.jpg" width="16" align="absmiddle" height="16" hspace="5"><a href="#top">TOP</a></span></td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+      </tbody></table></td>
+  </tr>
+</tbody></table>
+<br>
+<table width="970" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr> 
+    <td bgcolor="#58d2f8" height="2"></td>
+  </tr>
+  <tr>
+  <td class="footer" align="center"><br>【PChome Online商店街】所銷售的商品或服務，都是由各該商家所銷售或提供<br>
+      網路家庭版權所有 Copyright PC home Online 版權所有，轉載必究 <p></p></td>
+  </tr>
+</tbody></table>
+
+<br>
+</form>
+<!-- boss.store.pchome.com.tw	w4.store 2009/02/06 16:54:25 -->
+<script language="JavaScript">
+  var html_end_js_var=true;
+    var new_foot_div_top = 0;
+  var useragent_str = navigator.userAgent;
+  function set_new_div_position(nextTimeout) {
+    if(!$("inside_content_loct")) return;    
+    var fix_offinfo = getOffset($("inside_content_loct"));
+    var real_offinfo = getOffset($("inside_content"));
+    var obj = document.getElementById("inside_content");
+    
+    var obj_side = document.getElementById("side");
+    var side_offinfo = getOffset(obj_side);
+
+    if(fix_offinfo.top + 100 > real_offinfo.top && 
+        fix_offinfo.left == real_offinfo.left) {      
+      var cNode=document.getElementById('inside_content_loct');
+      cNode.parentNode.removeChild(cNode);
+      return;
+    }
+
+    if(obj.style.position != "absolute") {
+      obj.style.position = "absolute";
+      obj.style.zIndex = 10;
+    }
+    
+    obj.style.left = (fix_offinfo.left + 0) + "px";
+    obj.style.top = fix_offinfo.top + "px";
+    
+    var tmp_top = real_offinfo.top + real_offinfo.height;
+    if(tmp_top != new_foot_div_top) {
+      new_foot_div_top = tmp_top;
+      Args_setTimeout(set_new_div_position, nextTimeout * 2);
+    } 
+    
+    obj = document.getElementById("footer");
+    obj_offinfo = getOffset(obj);
+    
+    if(obj.style.position != "absolute") {
+      obj.style.position = "absolute";
+      obj.style.zIndex = 10;
+    }
+    
+    var tmp_new_foot_div_top;
+    if (new_foot_div_top < side_offinfo.height) tmp_new_foot_div_top=side_offinfo.height + 50;
+    else tmp_new_foot_div_top=new_foot_div_top;
+    obj.style.top = tmp_new_foot_div_top + "px";
+  }
+  if (document.getElementById("inside_content") && !!window.ActiveXObject && useragent_str.match(/MSIE 6/)) {
+    set_new_div_position(200);  
+  }
+
+  window.document.onclick = chk_link;
+  
+  function chk_link(e) {
+    if(!event) return;
+    
+    var obj;
+    for(obj = event.srcElement; obj; obj = obj.parentNode) {
+      if(obj.tagName == 'A') {
+      	//if(obj.href.match("http://") && !obj.href.match(/pchome.com.tw/)) {
+        if(obj.href.match("http://") && (obj.href.match(/bid.yahoo.com/) || obj.href.match(/shop.rakuten.tw/) 
+            || obj.href.match(/obuy.com.tw/) || obj.href.match(/sh1.yahoo./) || obj.href.match(/sh2.yahoo./)
+            || obj.href.match(/www.r989.com/) )
+        ) {
+           //obj.target="_BLANK";     
+          return false;
+        }
+      	break;
+      }
+    }
+    return true;
+  }
+
+  if(window.cal_impression && !window.cal_black) cal_impression("http://img.store.pchome.com.tw");
+  
+
+  eval(unescape("if%28window.stpgflag%29%20stpgflag%28%29"));
+  
+</script>
+</body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="zh-TW">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="zh-tw">
+	<meta name="description" content="即日起，至活動網站上傳照片，加入櫻花改造行列，就有機會獲得渦輪變頻除油煙機、雙內焰安全爐、淨水器，最大獎10萬元改造金！參加票選還能再抽康寧平底鍋！快! 立馬參加~即刻拍照上傳，大獎就有機會到你家!">
+	<meta property="og:title" content="【10萬獎金等你拿，櫻花改造地獄廚房！】" />
+	<meta property="og:image" content="http://sakura.2of3.net/img/200x200.jpg" />
+	<title>櫻花愛在家</title>
+	<script src="https://connect.facebook.net/zh_TW/all.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script src="js/jpreloader.min.js"></script>
+	<script type="text/javascript" src="js/ga.js"></script>
+	<script type="text/javascript" src="js/share.js"></script>
+	<link rel="shortcut icon" href="img/16x16.jpg"/>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/style_sakura.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/jpreloader.css" />
+
+	<link rel="stylesheet" href="csphotoselector.css" />
+	<script src="js/csphotoselector.js"></script>
+	<script src="js/example.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			addPageView("index");
+			Resize();
+			$('body').jpreLoader({
+				splashID: "#jSplash",
+				loaderVPos: '41%',
+				autoClose: true
+    	 	}, function() {	
+				$('#wrapper').fadeIn(500);
+	    	});
+		});	
+
+		var flashvars = {}
+  		var attributes = {name:"flashcontent"}
+  		var params ={allowFullScreen:'true',allowScriptAccess:'always',quality:'high',menu:'false',wmode:'opaque'}
+  		swfobject.embedSWF("swf/main.swf", "flashcontent", "100%", "800","11","js/expressInstall.swf",flashvars,params,attributes);
+
+		function openFancyBox(){
+			$('#FBfans').css("visibility","visible");
+			//$('#FBfans').html('<fb:like href="https://www.facebook.com/sakura.tw" send="false" layout="button_count" width="90" show_faces="false"></fb:like>');
+			FB.XFBML.parse();
+			// $('#FBfans').css({width:90,height:20,overflow:'hidden'}});
+		}
+
+		function closeFancyBox(){
+			$('#FBfans').css("visibility","hidden");;
+		}
+
+		window.onresize=Resize;
+		function Resize(){
+			var _dw=$(window).width();
+			var _dh=$(window).height();
+			if (_dw<=750){
+				$('#FBfans').css("left",197);
+				$('#flashcontent').css("width",750);
+			}else{
+				$('#FBfans').css("left",197+(_dw-750)/2);
+				$('#flashcontent').css("width","100%");
+			}
+	
+		}
+	</script>
+</head>
+<body>
+	
+	<div id="FBfans"><fb:like href="https://www.facebook.com/sakura.tw" send="false" layout="button_count" width="90" show_faces="false"></fb:like></div>
+
+<!-- Markup for Carson Shold's Photo Selector -->
+		<div id="CSPhotoSelector">
+			<div class="CSPhotoSelector_dialog">
+				<a href="#" id="CSPhotoSelector_buttonClose">x</a>
+				<div class="CSPhotoSelector_form">
+					<div class="CSPhotoSelector_header">
+						<p>櫻花愛在家</p>
+					</div>
+
+					<div class="CSPhotoSelector_content CSAlbumSelector_wrapper">
+						<p>請選擇相簿</p>
+						<div class="CSPhotoSelector_searchContainer CSPhotoSelector_clearfix">
+							<div class="CSPhotoSelector_selectedCountContainer">Select an album</div>
+						</div>
+						<div class="CSPhotoSelector_photosContainer CSAlbum_container"></div>
+					</div>
+
+					<div class="CSPhotoSelector_content CSPhotoSelector_wrapper">
+						<p>請選擇一張照片</p>
+						<div class="CSPhotoSelector_searchContainer CSPhotoSelector_clearfix">
+							<div class="CSPhotoSelector_selectedCountContainer"><span class="CSPhotoSelector_selectedPhotoCount">0</span> / <span class="CSPhotoSelector_selectedPhotoCountMax">0</span> photos selected</div>
+							<a href="#" id="CSPhotoSelector_backToAlbums">返回相簿</a>
+						</div>
+						<div class="CSPhotoSelector_photosContainer CSPhoto_container"></div>
+					</div>
+
+					<div id="CSPhotoSelector_loader"></div>
+
+
+					<div class="CSPhotoSelector_footer CSPhotoSelector_clearfix">
+						<a href="#" id="CSPhotoSelector_pagePrev" class="CSPhotoSelector_disabled">Previous</a>
+						<a href="#" id="CSPhotoSelector_pageNext">Next</a>
+						<div class="CSPhotoSelector_pageNumberContainer">
+							Page <span id="CSPhotoSelector_pageNumber">1</span> / <span id="CSPhotoSelector_pageNumberTotal">1</span>
+						</div>
+						<a href="#" id="CSPhotoSelector_buttonOK">確定</a>
+						<a href="#" id="CSPhotoSelector_buttonCancel">取消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	<!-- loading Screen -->
+	<div id="jSplash">
+		<img src="img/logo.gif" ></div>
+	<!-- End loading Screen -->
+
+	<div id="wrapper">
+		<!--上選單開始 -->
+		<div class="top">
+			<div class="top_main">
+				<ul>
+					<li class="top_main1"></li>
+					<li class="top_main2">
+						<a href="index.html" onclick="addEvent('btn','index');"><div class="btn01">上傳照片活動截止囉!即日起，參加【地獄廚房票選】就有機會獲得廚房好禮喔!</div></a>
+					</li>
+					<li class="top_main3">
+						<a href="vote.html" onclick="addEvent('btn','vote');"></a>
+					</li>
+					<li class="top_main4">
+						<a href="rule.html" onclick="addEvent('btn','rule');"></a>
+					</li>
+					<li class="top_main5">
+						<a href="service.html" onclick="addEvent('btn','serve');"></a>
+					</li>
+					<li class="top_main6">
+						<a href="winners.html" onclick="addEvent('btn','winners');"></a>
+						<!-- <a href="list.html"></a> -->
+					</li>
+					<li class="top_main7">
+						<a href="#" onclick="addEvent('btn','fb_1'); share(); return false;"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--上選單結束 -->
+		<div class="index_main">
+			<div id="fb-root"></div>
+			<div id="flashcontent"></div>
+		<div class="footer">
+			<a href="https://www.facebook.com/sakura.tw" class="fbicon" onclick="addEvent('btn','fb_2');"></a>
+			服務專線 0800-021818 / 服務信箱 service@sakura.com.tw Copyright © 2013 Taiwan Sakura Corporation. All rights reserved.
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

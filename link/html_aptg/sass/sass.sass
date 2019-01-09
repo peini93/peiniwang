@@ -1,0 +1,367 @@
+@import compass/utilities/color/brightness
+@import compass/reset
+@import compass/css3
+@import myMixin
+
+
+$ff1: "微軟正黑體","Microsoft JhengHei"
+$w:1000px
+$img:"../img/"
+
+
+html,body
+	width: 100%
+	background: #fff
+	position: relative
+	font-family: $ff1
+
+a
+	font-family: $ff1
+	text-decoration: none
+
+#jSplash
+	width: 430px
+	height: 150px
+	background: url(#{$img}loading.png) no-repeat
+	margin: auto
+
+.wrap1
+	width: 100%
+	height: 940px
+	min-width: 1200px
+	position: relative
+	background: url(#{$img}bg1.jpg) no-repeat center top
+
+.header
+	width: 100%
+	height: 50px
+	background-color: #7fbe25
+	+box-shadow(#787878 1px 1px 60px)
+	& .logo
+		width: 1200px
+		height: 50px
+		margin: auto
+		& .lbox
+			float: left
+
+		& .rbox
+			float: right
+			& a
+				display: inline-block
+
+.main
+	width: 1200px
+	margin: auto
+	position: relative
+
+.top
+	width: 740px
+	margin: auto
+	text-align: center
+	font-size: 22px
+	font-family: $ff1
+	line-height: 28px
+	padding-top: 35px
+	& p
+		padding-top: 20px
+
+.kv
+	width: 550px
+	height: 51px
+	margin: auto
+	margin-top: 30px
+	margin-bottom: 30px
+
+	& a:nth-of-type(1)
+		width: 242px
+		height: 51px
+		background: url(#{$img}btn01.png) 0 0
+		float: left
+		&:hover
+			background-position: 0 -51px
+
+	& a:nth-of-type(2)
+		width: 242px
+		height: 51px
+		float: right
+		background: url(#{$img}btn02.png) 0 0
+		&:hover
+			background-position: 0 -51px
+
+	& a.add
+		background-position: 0 -51px
+
+.box
+	width: 757px
+	height: 540px
+	margin: auto
+	position: relative
+	background: url(#{$img}ipod.png) no-repeat
+	& iframe
+		width: 660px
+		height: 442px
+		position: absolute
+		background-color: #000000
+		top: 40px
+		left: 51px
+
+	& .paper
+		position: absolute
+		top: 60px
+		right: 8px
+		display: none
+
+.bar
+	width: 100%
+	height: 77px
+	position: absolute
+	min-width: 1200px
+
+	& .colorbar
+		width: 100%
+		height: 55px
+		background-color: #2f2927
+		+poa(null,null,null,null,100)
+
+	& .barbtn
+		width: 1200px
+		height: 77px
+		margin: auto
+		+poa(0px,0px,0px,0px,101)
+		
+		& a
+			display: inline-block
+			width: 247px
+			height: 77px
+			margin: 0 50px
+
+		& a.btn1
+			background: url(#{$img}photo01.png) 0 0
+			margin-left: 100px
+			&:hover
+				background-position: 0 -77px
+
+		& a.btn2
+			background: url(#{$img}photo02.png) 0 0
+			&:hover
+				background-position: 0 -77px
+
+		& a.btn3
+			background: url(#{$img}photo03.png) 0 0
+			margin-right: 100px
+			&:hover
+				background-position: 0 -77px
+
+		& a.add01
+			background-position: 0 -77px
+
+
+.wrap2
+	width: 100%
+	height: 895px
+	min-width: 1200px
+	position: relative
+	background: url(#{$img}bg2.jpg) no-repeat center top
+
+.tw01
+	width: 856px
+	height: 810px
+	background: url(#{$img}pohtobox01.png) no-repeat center top
+	+poa(80px,0,0,172px,100)
+		& img
+			width: 705px
+			height: 445px
+			+poa(78px,0,0,69px,100)
+			@include rotate (-3.5)
+
+		& ul
+			width: 300px
+			height: 20px
+			+poa(580px,0,0,300px,101)
+
+		& ul li
+			display: inline-block
+
+		& ul li a
+			width: 20px
+			height: 6px
+			display: block
+			background-color: #c7c7c7
+			margin-left: 4px
+			@include border-radius (6px)
+			@include transition (0.5s)
+			&:hover
+				background-color: #2f2927
+			&.act
+				background-color: #2f2927
+
+
+.tw02
+	width: 856px
+	height: 810px
+	background: url(#{$img}pohtobox02.png) no-repeat center top
+	display: none
+	+poa(80px,0,0,172px,100)
+		& img
+			width: 705px
+			height: 445px
+			+poa(65px,0,0,76px,100)
+			@include rotate (4.7)
+		& ul
+			width: 300px
+			height: 20px
+			+poa(580px,0,0,300px,101)
+
+		& ul li
+			display: inline-block
+
+		& ul li a
+			width: 20px
+			height: 6px
+			display: block
+			background-color: #c7c7c7
+			margin-left: 4px
+			@include border-radius (6px)
+			@include transition (0.5s)
+			&:hover
+				background-color: #2f2927
+			&.act
+				background-color: #2f2927
+
+.tw03
+	width: 856px
+	height: 810px
+	background: url(#{$img}pohtobox01.png) no-repeat center top
+	display: none
+	+poa(80px,0,0,172px,100)
+		& img
+			width: 705px
+			height: 445px
+			+poa(78px,0,0,69px,100)
+			@include rotate (-3.5)
+		& ul
+			width: 300px
+			height: 20px
+			+poa(580px,0,0,300px,101)
+
+		& ul li
+			display: inline-block
+
+		& ul li a
+			width: 20px
+			height: 6px
+			display: block
+			background-color: #c7c7c7
+			margin-left: 4px
+			@include border-radius (6px)
+			@include transition (0.5s)
+			&:hover
+				background-color: #2f2927
+			&.act
+				background-color: #2f2927
+
+.swiper-container
+	width: 950px
+	height: 200px
+	+poa(600px,0,0,-47px,101)
+
+.swiper-wrapper
+	width: 830px
+	height: 170px
+	overflow: hidden
+	+poa(10px,0,0,60px,101)
+
+.all
+	width: 3014px
+	height: 170px
+	+poa(0,0,0,0,101)
+
+.swiper-slide
+	width: 230px
+	height: 147px
+	margin-left: 40px
+	margin-top: 10px
+	position: relative
+	display: inline-block
+	background: url(#{$img}boxbg.png) no-repeat center top
+.swiper-slide a
+	display: block
+	width: 206px
+	height: 121px		
+	& img
+		width: 206px
+		height: 121px
+		+poa(13px,0,0,12px,101)
+		@include rotate (0)
+.swiper-slide a .text
+	width: 206px
+	height: 121px
+	font-size: 14px
+	text-align: center
+	background: url(#{$img}textbg.png) no-repeat center top
+	opacity: 0
+	color: #000000
+	+poa(13px,0,0,12px,102)
+	@include transition (0.5s)
+	&:hover
+		opacity: 1
+
+	& p:nth-of-type(1)
+		width: 170px
+		height: 25px
+		margin-left: 18px
+		margin-top: 15px
+		line-height: 25px
+		border-bottom: solid 1px #7bb824
+	& p:nth-of-type(2)
+		width: 170px
+		margin-top: 5px
+		margin-left: 18px
+		line-height: 18px
+
+.swiper-pagination
+	width: 80px
+	height: 20px
+	+poa(170px,0,0,450px,101)
+
+.swiper-pagination .point1,.swiper-pagination .point2,.swiper-pagination .point3,.swiper-pagination .point4   
+	display: inline-block
+	width: 10px
+	height: 10px
+	background-color: #c7c7c7
+	margin-left: 4px
+	@include transition (0.5s)
+	@include border-radius (10px)
+	&:hover
+		background-color: #7fbe25
+	&.add02
+		background-color: #7fbe25
+
+.swiper-button-next
+	width: 43px
+	height: 43px
+	+poa(70px,0,0,20px,101)
+.swiper-button-next a
+	display: block
+	width: 43px
+	height: 43px	
+	background: url(#{$img}lbtn.png) 0 0
+	&:hover
+		background-position: 0 -43px
+
+.swiper-button-prev
+	width: 43px
+	height: 43px
+	+poa(70px,0,0,910px,101)
+.swiper-button-prev a
+	display: block
+	width: 43px
+	height: 43px	
+	background: url(#{$img}rbtn.png) 0 0
+	&:hover
+		background-position: 0 -43px
+.footer
+	width: 1200px
+	text-align: center
+	font-size: 12px
+	+poa(875px,0,0,0,101)

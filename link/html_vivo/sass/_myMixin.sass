@@ -1,0 +1,140 @@
+// $img: "../images/"
+// $img_m: "../images/mobile/"
+
+%clear
+	content: ''
+	display: block
+	clear: both
+
+@mixin bg($pic)
+	background: url(#{$img}#{$pic}) no-repeat
+	width: image-width("#{$img}#{$pic}")  
+	height: image-height("#{$img}#{$pic}")
+
+
+@mixin rwd($point)
+	@if $point == pc
+		@media only screen and (max-width: 1600px)
+			@content
+	@else if $point == pad
+		@media only screen and (max-width: 1200px)
+			@content
+	@else if $point == mobile
+		@media only screen and (max-width: 768px)
+			@content
+
+@mixin text-hide
+	text-indent: 100%
+	white-space: nowrap
+	overflow: hidden
+
+@mixin poa($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
+	position: absolute
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left
+	z-index: $zindex
+	@content
+
+@mixin por($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
+	position: relative
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left
+	z-index: $zindex
+	@content
+
+@mixin pof($top:null,$right:null,$bottom:null,$left:null,$zindex:null)
+	position: fixed
+	top: $top
+	right: $right
+	bottom: $bottom
+	left: $left
+	z-index: $zindex
+	@content
+
+@mixin border-radius($radius)
+	border-radius: $radius
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	@content
+
+@mixin transition($transition)
+	-moz-transition: $transition
+	-o-transition: $transition
+	-webkit-transition: $transition
+	transition: $transition
+	@content
+
+@mixin transform($transforms)
+	-moz-transform: $transforms
+	-o-transform: $transforms
+	-ms-transform: $transforms
+	-webkit-transform: $transforms
+	transform: $transforms
+	@content
+
+@mixin rotate ($deg)
+	@include transform(rotate(#{$deg}deg))
+	@content
+
+// @mixin scale($scale)
+// 	@include transform(scale($scale))
+// 	@content
+
+// @mixin translate ($x, $y)
+// 	@include transform(translate($x, $y))
+// 	@content
+
+// @mixin skew ($x, $y)
+// 	@include transform(skew(#{$x}deg, #{$y}deg))
+// 	@content
+
+// @mixin transform-origin ($origin)
+// 	-moz-transform-origin: $origin
+// 	-o-transform-origin: $origin
+// 	-ms-transform-origin: $origin
+// 	-webkit-transform-origin: $origin
+// 	transform-origin: $origin
+// 	@content
+
+// @mixin animation ($delay,$duration,$animation)
+// 	-webkit-animation-delay: $delay
+// 	-webkit-animation-duration: $duration
+// 	-webkit-animation-name: $animation
+// 	/*-webkit-animation-fill-mode: forwards this prevents the animation from restarting! */
+	
+// 	-moz-animation-delay: $delay
+// 	-moz-animation-duration: $duration
+// 	-moz-animation-name: $animation
+// 	/*-moz-animation-fill-mode: forwards  this prevents the animation from restarting! */
+	
+// 	-o-animation-delay: $delay
+// 	-o-animation-duration: $duration
+// 	-o-animation-name: $animation
+// 	/*-o-animation-fill-mode: forwards  this prevents the animation from restarting! */
+	
+// 	animation-delay: $delay
+// 	animation-duration: $duration
+// 	animation-name: $animation
+// 	/*animation-fill-mode: forwards  this prevents the animation from restarting! */
+// 	@content
+
+// @mixin keyframe ($animation_name)
+// 	-webkit-keyframes: $animation_name
+// 	-moz-keyframes: $animation_name
+// 	-o-keyframes: $animation_name
+// 	keyframes: $animation_name
+// 	@content
+// @mixin grid($cloum_number,$cloum_gutter)  
+// 	//總寬度 -    欄位間距  *    (欄位數量-1)      /   欄位數量  
+// 	width: ($width - $cloum_gutter*($cloum_number - 1) ) / $cloum_number  
+// 	margin-right: $cloum_gutter  
+// 	-webkit-box-sizing: border-box  
+// 	-moz-box-sizing: border-box  
+// 	box-sizing: border-box  
+//   //   欄位數量  
+//   &:nth-child(#{$cloum_number}n)  
+// 		margin-right: 0 

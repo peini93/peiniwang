@@ -1,0 +1,240 @@
+$ff1: "微軟正黑體","Microsoft JhengHei"
+
+html,body
+	width: 100%
+	background: #fff
+	position: relative
+	font-family: $ff1
+
+a
+	font-family: $ff1
+	text-decoration: none
+
+#jSplash
+	width: 430px
+	height: 150px
+	background: url(#{$img}loading.png) no-repeat
+	margin: auto
+
+.wrap
+	width: 100%
+	height: 100%
+	min-width: 1200px
+	position: relative
+
+.index
+	background: url(#{$img}indexBG.jpg) no-repeat center top
+
+.content
+	width: 1000px
+	margin: auto
+	position: relative
+	&::after
+		@extend %clear
+	
+
+.header
+	width: 100%
+	height: 54px
+	background: rgba(#fff, 0.7)
+	border-bottom: 2px solid #898989
+	a.logo
+		display: block
+		float: left
+		margin: 15px 0 0 0
+		img
+			display: block
+
+.main
+	width: 100%
+	.content
+		height: 646px
+	h1
+		width: 465px
+		height: 260px
+		+poa(24px,null,null,535px,1)
+	.theta360
+		+poa(24px,null,null,0px,1)
+		.photo360
+			width: 525px
+			height: 267px
+	.btns
+		margin: 18px 0 0 0
+		overflow: hidden
+		&::after
+			@extend %clear
+		a
+			height: 36px
+			padding: 0px 10px 0px 0px
+			display: block
+			float: left
+			position: relative
+			font-size: 18px
+			color: #fff
+			line-height: 36px
+			text-align: center
+			span
+				position: relative
+				z-index: 2
+			.bg
+				height: 36px
+				+poa(0,null,null,0,1)
+				+transition(all,0.5s)
+			&:hover
+				text-decoration: underline
+				.bg
+					background: #787878 url(#{$img}icon1.png) no-repeat right center
+					+transform(scaleY(-1))
+		.btn1
+			width: 165px
+			margin: 0 7px 0 0
+			.bg
+				width: 175px
+				background: #e95a92 url(#{$img}icon1.png) no-repeat right center
+		.btn2
+			width: 175px
+			margin: 0 7px 0 0
+			.bg
+				width: 185px
+				background: #2fbae7 url(#{$img}icon1.png) no-repeat right center
+		.btn3
+			width: 141px
+			.bg
+				width: 151px
+				background: #d8d61a url(#{$img}icon1.png) no-repeat right center
+
+	.cf
+		width: 530px
+		height: 250px
+		background: url(#{$img}main_cf.png) no-repeat
+		+poa(380px,null,null,0px,1)
+		.youtube
+			width: 330px
+			height: 185px
+			+poa(5px,5px,null,null)
+		p
+			width: 330px
+			font-size: 15px
+			color: #000
+			line-height: 20px
+			+poa(195px,5px,null,null)
+	.p1
+		width: 292px
+		height: 349px
+		+poa(323px,null,null,527px,3)
+		+animation(p1ani 2s linear infinite alternate)
+	.p2
+		width: 371px
+		height: 344px
+		+poa(290px,null,null,695px,2)
+		+animation(p2ani 5s linear infinite alternate)
+	.shadow
+		width: 260px
+		height: 100px
+		+poa(620px,null,null,617px,2)
+		+animation(shadowani 2s linear infinite alternate)
+
+
++keyframes(p1ani)
+	to
+		+transform(translate(0,-30px))
+
++keyframes(shadowani)
+	to
+		+opacity(0.3)
+
++keyframes(p2ani)
+	to
+		+transform(translate(10px,-20px) scale(0.93))
+
+.blogger
+	width: 100%
+	height: 260px
+	background: #2fbae7
+	.content
+		padding: 60px 0 0 0
+	h2
+		+poa(-5px,null,null,0px)
+	ul
+		overflow: hidden
+		&::after
+			@extend %clear
+		li
+			float: left
+			margin: 0 20px 0 0
+			margin: 0 13px 0 0\9
+			&:nth-child(3n)
+				margin: 0
+			a
+				// overflow: hidden
+				position: relative
+				&::after
+					@extend %clear
+				display: block
+				.pic
+					float: left
+					+transition(all,0.5s)
+				&:hover
+					.pic
+						+transform(scaleX(-1))
+					.word
+						p
+							text-decoration: underline
+				.word
+					width: 127px
+					float: left
+					margin: 0 0 0 10px
+					font-size: 14px
+					color: #fff
+					line-height: 18px
+					position: relative
+					.name
+						font-size: 16px
+						line-height: 22px
+						color: #faff1c
+						font-weight: bold
+						border-bottom: 1px solid #faff1c
+						padding: 0px 0 5px 0
+						margin: 0 0 5px 0
+						span
+							font-size: 20px
+					.more
+						width: 76px
+						height: 34px
+						+poa(152px,-3px,null,null)
+						img
+							display: block
+
+
+.products
+	width: 100%
+	height: 360px
+	background: #e95a92
+	.content
+		width: 972px
+		padding: 66px 0 0 28px
+	h2
+		+poa(-5px,null,null,0px)
+	ul
+		cursor: pointer
+		overflow: hidden
+		&::after
+			@extend %clear
+		&:hover
+			li
+				p
+					text-decoration: underline
+		li
+			float: left
+			margin: 0 24px 0 0
+			&:nth-child(4n)
+				margin: 0
+			img
+				display: block
+			p
+				font-size: 18px
+				color: #faff1c
+				font-family: $ff1
+				line-height: 23px
+				text-align: center
+				margin: 12px 0 0 0
