@@ -8,6 +8,13 @@ body{
 	font-family: "微軟正黑體";
 }
 
+#jSplash {
+  width: 430px;
+  height: 150px;
+  background: url(../img/loading.gif) no-repeat;
+  margin: auto;
+}
+
 .gotop a{
 	position: fixed;
 	width: 50px;
