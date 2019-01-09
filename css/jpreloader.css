@@ -11,7 +11,7 @@ body{
 	text-align:center;
 	width:430px;
 /*	height:30%;*/
-	margin-top: -180px;
+	margin-top: -70px;
 }
 #jpreLoader{
 	width:430px;
@@ -39,7 +39,7 @@ body{
 	text-align:center;
 	/*text-shadow:1px 1px 1px #333;*/
 	/*top:-100%;*/
-	top:8px;
+	top:15px;
 	font-size: 24px;
 	/*font-style: italic;*/
 	/*margin: 0 0 0 50px;*/

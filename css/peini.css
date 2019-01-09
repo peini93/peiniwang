@@ -10,7 +10,7 @@ body{
 
 #jSplash {
   width: 430px;
-  height: 150px;
+  height: 50px;
   background: url(../img/loading.gif) no-repeat;
   margin: auto;
 }
