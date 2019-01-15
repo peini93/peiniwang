@@ -320,12 +320,16 @@ body{
 }
 .main .box .type h2 , .box02 .area h1{
   padding:40px 0 0 20px;
-	font-size: 40px;
+	font-size: 30px;
 	/*font-weight: bold;*/
 	font-family: "Century Gothic","微軟正黑體";
 	color:#84bd01;
-	height: 50px;
-	line-height: 50px;
+	height: 30px;
+	line-height: 30px;
+}
+
+#a05{
+	padding:40px 0 10px 20px;
 }
 
 .cakebox{
