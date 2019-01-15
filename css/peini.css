@@ -303,19 +303,20 @@ body{
 }
 
 .box03 .area .infor{
-	font-size: 23px;
-	color:#000000;
+	font-size: 15px;
+	color:#fff;
 	font-weight: bold;
-	margin-top: 10px;
+	margin-top: 20px;
+	text-align: center;
 }
 
 .box03 .area .infor a{
-	color:#000000;
+	color:#fff;
 	text-decoration:none;
 }
 
 .box03 .area .infor a:hover{
-	color:#000000;
+	color:#fff;
 	text-decoration:underline;
 }
 .main .box .type h2 , .box02 .area h1{
