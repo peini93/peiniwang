@@ -167,6 +167,7 @@ body{
   background-color: #dddddd;
   margin-right: 10px;
   transition: box-shadow .3s;
+  text-decoration: none
 }
 
 .main .box ul li:hover{
@@ -178,13 +179,10 @@ body{
 
 
 .main .box ul li a .box_img{
-	position: absolute;
 	width: 230px;
 	height: 170px;
 	overflow: hidden;
 	z-index: 1;
-	top:0;
-	left: 0;
 }
   
 .main .box ul li a .box_img img{
@@ -239,26 +237,24 @@ body{
 }
 
 .main .box ul li a h2{
-	position: absolute;
 	width: 210px;
-	height: 15px;
 	font-size: 15px;
+	line-height: 20px;
 	color: #000000;
 	font-family: "微軟正黑體";
-	top:200px;
-	left: 10px;
+	margin: 30px 10px 5px 10px;
 	transition:all 0.3s;
+	text-decoration: none
 }
 
 .main .box ul li a p{
 	width: 210px;
-	position: absolute;
 	font-size: 12px;
 	font-family: "微軟正黑體";
 	color: #7c7c7c;
-	top:225px;
-	left: 10px;
+	margin: 0 10px;
 	line-height: 16px;
+	text-decoration: none
 }
 
 .main .box ul li a:hover h2{
