@@ -15,6 +15,7 @@ $(function(){
 			autoClose: true
 		}, function() { //callback function
 		});
+
 		$('.btn01').on("click", function(){
 			  	$('html,body').animate({scrollTop:$("#a01").offset().top},800);
 			 });
